@@ -20,19 +20,7 @@ dropdowns.forEach(dropdown => {
 
 // Search
 
-const searchButton = document.getElementById('search-btn');
-const searchBar = document.getElementById('search-bar');
 
-searchButton.addEventListener('click', () => {
-  searchButton.classList.toggle('active');
-  searchBar.classList.toggle('active');
-
-  if (searchButton.classList.contains('active')) {
-    searchBar.focus();
-  } else {
-    searchBar.value = '';
-  }
-});
 
 // Change Chapter
 
