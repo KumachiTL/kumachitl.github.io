@@ -116,50 +116,7 @@ nav a:hover{
   
 /* Search */
 
-.search {
-    margin-left: 20px;
-    margin-right: 30px;
-  }
-  
-#search-btn {
-    padding: 5px;
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: large;
-}
-  
-#search-bar {
-    display: none;
-    padding: 9px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-#search-btn:hover {
-    color: #8C52FF;
-    transition: 0.3s;
-}
-
-#search-btn:hover.active {
-    color: gray;
-    transition: 0.3s;
-}
-  
-#search-btn.active {
-    color: #8C52FF;
-    position: absolute;
-    right: 130px;
-    top: 30px;
-}
-  
-#search-bar.active {
-    display: block;
-    width: 200px;
-}
 
 /* Main */
 
