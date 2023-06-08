@@ -24,8 +24,8 @@ dropdowns.forEach(dropdown => {
 
 // Change Chapter
 
-function navigateToLink() {
-  var dropdown = document.getElementById("dropdown");
+function navigateToLink(dropdownId) {
+  var dropdown = document.getElementById(dropdownId);
   var selectedOption = dropdown.value;
   if (selectedOption) {
     window.location.href = selectedOption;
