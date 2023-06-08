@@ -15,14 +15,10 @@ header {
     background: #292929;
     padding: 10px 100px;
 }
-  
-.logo {
-    font-weight: bold;
-}
 
 .logo img {
-    width: 200px; /* Adjust the width to your desired size */
-    height: auto; /* Preserve the aspect ratio */
+    width: 200px;
+    height: auto;
 }  
 
 nav{
@@ -110,8 +106,8 @@ nav a:hover{
 /* Icons */
 
 .fa-angle-down {
-    font-size: 15px; /* Adjust the size as needed */
-    margin-left: 5px; /* Add some spacing between the menu text and the icon */
+    font-size: 15px;
+    margin-left: 5px;
   }
   
 /* Search */
@@ -121,37 +117,36 @@ nav a:hover{
 /* Main */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: -80px;
-  }  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}  
     
-  .box {
-    width: 100%;
-    max-width: 1075px;
-    height: 312px;
-    background-color: #292929;
-    margin: 30px auto; /* Adjust the desired margin */
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 25px;
-    padding-top: 20px;
-    padding-right: 25px;
-    align-items: left;
-    color: #ffffff;
-    font-family: "Outfit", sans-serif;
-  }
+.box {
+  width: 100%;
+  max-width: 1075px;
+  height: 312px;
+  background-color: #292929;
+  margin: 25px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 25px;
+  align-items: left;
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+}
 
 .works-box {
   width: 100%;
   max-width: 1075px;
   height: 324px;
   background-color: #292929;
-  margin: 30px auto; /* Adjust the desired margin */
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -163,78 +158,78 @@ nav a:hover{
   font-family: "Outfit", sans-serif;
 }
   
-  .row {
-    left: auto;
-  }
+.row {
+  left: auto;
+}
   
-  .text {
-    font-size: 35px;
-    text-shadow: inset 0 0 10px #000000;
-    text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-  }
+.text {
+  font-size: 35px;
+  text-shadow: inset 0 0 10px #000000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
   
-  .text::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 5px;
-    border-radius: 3px;
-    background-color: #8C52FF;
-  }
+.text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #8C52FF;
+}
 
 .title {
-    font-size: 22px;
-    text-decoration: underline;
-    color: white;
+  font-size: 22px;
+  text-decoration: underline;
+  color: white;
 }
 
 .title:hover {
-    color: #8C52FF;
-    transition: 0.3s;
+  color: #8C52FF;
+  transition: 0.3s;
   }
 
-  .date {
-    color: lightgray;
-    font-size: 16px;
-    margin-top: 0;
-    position: relative;
-  }
+.date, .date-last {
+  color: lightgray;
+  font-size: 16px;
+  margin-top: 0;
+  position: relative;
+}
   
-  .date::after {
-    content: "";
-    position: absolute;
-    bottom: -22px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #383838; /* Your desired color for the line */
-    border-radius: 2px;
-  }
+.date::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #383838;
+  border-radius: 2px;
+}
   
-  .date-row {
-    margin-bottom: 300px; /* Adjust the value as needed */
-  }
+.date-row {
+  margin-bottom: 300px;
+}
   
-  .title-row {
-    margin-top: 35px; /* Adjust the value as needed */
-  }
+.title-row {
+  margin-top: 35px;
+}
 
 /* About Page */
 
 .about {
   color: lightgrey;
-  margin-top: 30px;
+  margin-top: 45px;
   font-size: 16px;
   font-family: "Poppins";
 }
 
 .disclaimer {
   color: lightgrey;
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 16px;
   font-family: "Poppins";
 }
@@ -242,9 +237,26 @@ nav a:hover{
 .about-box {
   width: 100%;
   max-width: 1075px;
+  height: 230px;
+  background-color: #292929;
+  margin: 25px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 25px;
+  align-items: left;
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+}
+
+.disclaimer-box {
+  width: 100%;
+  max-width: 1075px;
   height: 200px;
   background-color: #292929;
-  margin: 30px auto; /* Adjust the desired margin */
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -265,9 +277,9 @@ nav a:hover{
 .description-box {
   width: 100%;
   max-width: 1075px;
-  height: 400px;
+  height: 335px;
   background-color: #292929;
-  margin: 30px auto; /* Adjust the desired margin */
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -279,9 +291,28 @@ nav a:hover{
   font-family: "Outfit", sans-serif;
 }
 
+.story-title {
+  font-size: 30px;
+  text-shadow: inset 0 0 10px #000000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.story-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #8C52FF;
+}
+
 .story-description {
+  margin-top: 25px;
   color: lightgrey;
-  margin-top: 30px;
   font-size: 16px;
   font-family: "Poppins";
 }
@@ -291,7 +322,7 @@ nav a:hover{
   max-width: 1075px;
   height: 320px;
   background-color: #292929;
-  margin: 30px auto; /* Adjust the desired margin */
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -329,7 +360,7 @@ nav a:hover{
   max-width: 1075px;
   height: 712px;
   background-color: #292929;
-  margin: 30px auto; /* Adjust the desired margin */
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -364,7 +395,7 @@ nav a:hover{
   margin-top: 35px; /* Adjust the value as needed */
 }
 
-.chapter {
+.chapter, .chapter-last {
   font-size: 19px;
   text-decoration: underline;
   color: white;
@@ -383,7 +414,7 @@ nav a:hover{
   left: 0;
   width: 1075px;
   height: 3px;
-  background-color: #383838; /* Your desired color for the line */
+  background-color: #383838;
   border-radius: 2px;
 }
 
@@ -394,7 +425,7 @@ nav a:hover{
   max-width: 1075px;
   height: 50px;
   background-color: #292929;
-  margin: 30px auto;
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   padding-left: 25px;
@@ -409,7 +440,7 @@ nav a:hover{
   width: 100px;
   height: 40px;
   border: none;
-  background-color: #8C52FF;
+  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
   color: white;
   padding: 10px 20px;
   margin: 10px;
@@ -443,7 +474,7 @@ select {
   max-width: 1075px;
   height: 1225px;
   background-color: #292929;
-  margin: 30px auto;
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -469,7 +500,7 @@ select {
   max-width: 1075px;
   height: 4570px;
   background-color: #292929;
-  margin: 30px auto;
+  margin: 25px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -488,6 +519,29 @@ select {
   font-family: "Poppins";
 }
 
+/* Back to top btn */
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
+  color: #fff;
+  cursor: pointer;
+  font-family: outfit;
+  border-radius: 7px;
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+#backToTopBtn.show {
+  opacity: 1; /* Show the button with full opacity */
+}
+
 /* Footer */
   
   footer {
@@ -495,6 +549,7 @@ select {
     padding: 15px;
     text-align: center;
     color: white;
+    margin-top: auto;
   }
 
   footer a {
@@ -505,3 +560,428 @@ select {
   footer a:hover {
     color: #FF6F00;
   }
+
+/* Tablet Version */
+
+@media (max-width: 768px) {
+  header {
+    padding-left: 60px; 
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav li {
+    margin-right: 5px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Dropdown Content */
+
+  .dropdown-content {
+    padding: 15px;
+    left: 34.2%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 45.6%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 55%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 68.4%;
+  }
+
+  /* Main */
+    
+  .box {
+    margin: 15px auto;
+    max-width: 550px;
+    height: 277px;
+  }
+
+  .works-box {
+    margin: 15px auto;
+    max-width: 550px;
+    height: 287px;
+  }
+  
+  .text {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .date, .date-last {
+    font-size: 13px;
+  }
+  
+  .date::after {
+    bottom: -20px;
+    height: 2px;
+}
+  
+.title-row {
+  margin-top: 34px;
+}
+
+/* About Page */
+
+.about {
+  margin-top: 55px;
+  font-size: 15px;
+}
+
+.disclaimer {
+  margin-top: 46px;
+  font-size: 15px;
+}
+
+.about-box {
+  margin: 15px auto;
+  max-width: 550px;
+  height: 300px;
+}
+
+.disclaimer-box {
+  margin: 15px auto;
+  max-width: 550px;
+  height: 200px;
+}
+
+/* Kokuhaku Page */
+
+.description-box {
+  margin: 15px auto;
+  max-width: 550px;
+  height: 405px;
+}
+
+.story-title {
+  font-size: 22px;
+}
+
+.story-title::after {
+  height: 3px;
+}
+
+.story-description {
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+.info-box {
+  margin: 15px auto;
+  max-width: 550px;
+  height: 275px;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.info2 {
+  font-size: 13px;
+}
+
+.source {
+  font-size: 13px;
+}
+
+.chapter-box {
+  margin: 15px auto;
+  max-width: 550px;
+  height: 488px;
+}
+
+.chapter-text {
+  font-size: 22px;
+}
+
+.chapter-text::after {
+  height: 3px;
+}
+
+.chapter-row {
+  margin-top: 20px;
+}
+
+.chapter, .chapter-last {
+  font-size: 14px;
+}
+
+.chapter::after {
+  bottom: -13px;
+  width: 550px;
+  height: 2px;
+}
+
+/* Chapters */
+
+.change-chap-box {
+  max-width: 550px;
+  height: 40px;
+  margin: 15px auto;
+  padding-top: 10px;
+}
+
+.prev-btn, .next-btn {
+  width: 90px;
+  height: 38px;
+}
+
+select {
+  font-size: 14px;
+  width: 190px;
+  height: 38px;
+}
+
+/* Kokuhaku*/
+/* Prologue */
+
+.kp-box {
+  margin: 15px auto;
+  max-width: 550px;
+  height: 1180px;
+}
+
+.kokuhaku-prologue, .kc1 {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* Ch1 */
+
+.kc1-box {
+  max-width: 550px;
+  height: 4000px;
+  margin: 15px auto;
+}
+
+/* Back to top btn */
+
+#backToTopBtn {
+  font-size: 14px;
+}
+
+/* Footer */
+  
+footer {
+  font-size: 14px;
+  padding: 18px;
+  margin-top: auto;
+}
+
+}
+
+/* Mobile Version */
+
+@media (max-width: 320px) {
+
+
+
+  /* Main */
+    
+  .box {
+    margin: 15px auto;
+    max-width: 270px;
+    border-radius: 0;
+    height: 277px;
+  }
+
+  .works-box {
+    margin: 15px auto;
+    max-width: 270px;
+    border-radius: 0;
+    height: 287px;
+  }
+  
+  .text {
+    font-size: 30px;
+  }
+
+  .text::after {
+    height: 4px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .date, .date-last {
+    font-size: 13px;
+  }
+  
+  .date::after {
+    bottom: -20px;
+    height: 2px;
+}
+  
+.title-row {
+  margin-top: 34px;
+}
+
+/* About Page */
+
+.about {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.about-box {
+  margin: 15px auto;
+  max-width: 270px;
+  height: 350px;
+  border-radius: 0;
+}
+
+.disclaimer-box {
+  margin: 15px auto;
+  max-width: 270px;
+  height: 194px;
+  border-radius: 0;
+}
+
+/* Kokuhaku Page */
+
+.description-box {
+  margin: 15px auto;
+  max-width: 270px;
+  height: 627px;
+  border-radius: 0;
+}
+
+.story-title {
+  font-size: 17px;
+}
+
+.story-title::after {
+  height: 2.5px;
+}
+
+.story-description {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.info-box {
+  margin: 15px auto;
+  max-width: 270px;
+  height: 400px;
+  border-radius: 0;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.info2 {
+  font-size: 13px;
+}
+
+.source {
+  font-size: 13px;
+}
+
+.chapter-box {
+  margin: 15px auto;
+  max-width: 270px;
+  height: 488px;
+  border-radius: 0;
+}
+
+.chapter-text {
+  font-size: 22px;
+}
+
+.chapter-text::after {
+  height: 3px;
+}
+
+.chapter-row {
+  margin-top: 20px;
+}
+
+.chapter, .chapter-last {
+  font-size: 14px;
+}
+
+.chapter::after {
+  bottom: -13px;
+  width: 270px;
+  height: 2px;
+}
+
+/* Chapters */
+
+.change-chap-box {
+  max-width: 270px;
+  height: 70px;
+  margin: 15px auto;
+  border-radius: 0;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 0.1px;
+}
+
+select {
+  font-size: 14px;
+  width: 90px;
+  height: 38px;
+}
+
+/* Kokuhaku*/
+/* Prologue */
+
+.kp-box {
+  margin: 15px auto;
+  max-width: 270px;
+  height: 1567px;
+  border-radius: 0;
+}
+
+.kokuhaku-prologue, .kc1 {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* Ch1 */
+
+.kc1-box {
+  max-width: 270px;
+  height: 5730px;
+  margin: 15px auto;
+  border-radius: 0;
+}
+
+/* Back to top btn */
+
+#backToTopBtn {
+  font-size: 14px;
+}
+
+/* Footer */
+  
+footer {
+  font-size: 14px;
+  padding: 16px;
+  margin-top: auto;
+}
+
+}
