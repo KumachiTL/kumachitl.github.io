@@ -31,3 +31,20 @@ function navigateToLink() {
     window.location.href = selectedOption;
   }
 }
+
+// Back to top btn
+
+var backToTopButton = document.getElementById("backToTopBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+    backToTopButton.classList.add("show"); // Add the "show" class to make the button visible
+  } else {
+    backToTopButton.classList.remove("show"); // Remove the "show" class to hide the button
+  }
+};
+
+backToTopButton.onclick = function() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+};
