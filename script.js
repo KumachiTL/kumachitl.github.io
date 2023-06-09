@@ -32,19 +32,4 @@ function navigateToLink(dropdownId) {
 
 // Back to top btn
 
-window.addEventListener('scroll', function() {
-  var backToTopButton = document.getElementById('backToTopBtn');
-  if (window.pageYOffset > 20) {
-    backToTopButton.classList.add('show');
-  } else {
-    backToTopButton.classList.remove('show');
-  }
-});
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
 
