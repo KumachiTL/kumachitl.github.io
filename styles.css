@@ -1024,8 +1024,6 @@ footer {
   border-radius: 10px;
 }
 
-#dsq-context-menu a.dsq-reaction-link.dsq-react-up.active,
-#dsq-context-menu a.dsq-reaction-link.dsq-react-down.active {
+#disqus_thread {
   color: #8C52FF;
 }
-
