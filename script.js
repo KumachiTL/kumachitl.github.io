@@ -63,13 +63,18 @@ function navigateToLink(dropdownId) {
 
 // Back to top btn
 
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-  var backToTopBtn = document.getElementById("backToTopBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    backToTopBtn.classList.add("show");
+window.addEventListener('scroll', function() {
+  var backToTopButton = document.getElementById('backToTopBtn');
+  if (window.pageYOffset > 20) {
+    backToTopButton.classList.add('show');
   } else {
-    backToTopBtn.classList.remove("show");
+    backToTopButton.classList.remove('show');
   }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 }
