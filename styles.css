@@ -1027,3 +1027,26 @@ footer {
 #disqus_thread a {
   color: #8C52FF;
 }
+
+/* Back to top btn */
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
+  color: #fff;
+  cursor: pointer;
+  font-family: outfit;
+  border-radius: 7px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#backToTopBtn.show {
+  opacity: 1;
+}
