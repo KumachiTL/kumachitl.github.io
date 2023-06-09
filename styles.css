@@ -1009,3 +1009,12 @@ footer {
 }
 
 }
+
+/* Disqus comments */
+
+.comments-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
