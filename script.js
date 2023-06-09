@@ -63,17 +63,13 @@ function navigateToLink(dropdownId) {
 
 // Back to top btn
 
-var backToTopButton = document.getElementById("backToTopBtn");
+window.onscroll = function() { scrollFunction() };
 
-window.onscroll = function() {
-  if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
-    backToTopButton.classList.add("show"); // Add the "show" class to make the button visible
+function scrollFunction() {
+  var backToTopBtn = document.getElementById("backToTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.classList.add("show");
   } else {
-    backToTopButton.classList.remove("show"); // Remove the "show" class to hide the button
+    backToTopBtn.classList.remove("show");
   }
-};
-
-backToTopButton.onclick = function() {
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
-};
+}
