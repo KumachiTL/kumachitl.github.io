@@ -1023,3 +1023,9 @@ footer {
   margin-right: auto;
   border-radius: 10px;
 }
+
+#dsq-context-menu a.dsq-reaction-link.dsq-react-up.active,
+#dsq-context-menu a.dsq-reaction-link.dsq-react-down.active {
+  color: #8C52FF;
+}
+
