@@ -553,17 +553,16 @@ select {
   font-size: 16px;
   padding: 10px;
   border: none;
-  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
+  background: #8C52FF;
   color: #fff;
   cursor: pointer;
-  font-family: outfit;
   border-radius: 7px;
-  opacity: 0; /* Start with 0 opacity */
-  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #backToTopBtn.show {
-  opacity: 1; /* Show the button with full opacity */
+  opacity: 1;
 }
 
 /* Footer */
