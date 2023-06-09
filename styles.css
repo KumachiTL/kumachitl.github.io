@@ -1024,6 +1024,6 @@ footer {
   border-radius: 10px;
 }
 
-#disqus_thread {
+#disqus_thread a {
   color: #8C52FF;
 }
