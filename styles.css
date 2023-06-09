@@ -570,6 +570,7 @@ select {
 
 @media (max-width: 768px) {
   header {
+    max-width: 100%;
     padding-left: 60px; 
   }
   
@@ -579,7 +580,7 @@ select {
   }
   
   nav li {
-    margin-right: 5px;
+    margin-right: 6px;
   }
   
   nav a {
@@ -776,47 +777,90 @@ select {
 /* Back to top btn */
 
 #backToTopBtn {
-  font-size: 14px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
+  color: #fff;
+  cursor: pointer;
+  font-family: outfit;
+  border-radius: 7px;
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
 /* Footer */
   
 footer {
-  font-size: 14px;
-  padding: 18px;
-  margin-top: auto;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 18px;
+    margin-top: auto;
 }
 
 }
 
-/* Mobile Version */
+/* Mobile L ver */
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
+  header {
+    max-width: 100%;
+    padding-left: 10px; 
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav li {
+    margin-right: 1px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
 
+  /* Dropdown Content */
 
+  .dropdown-content {
+    padding: 15px;
+    left: 34.2%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 45.6%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 55%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 68.4%;
+  }
 
   /* Main */
     
   .box {
     margin: 15px auto;
-    max-width: 270px;
-    border-radius: 0;
+    max-width: 375px;
     height: 277px;
+    border-radius: 0;
   }
 
   .works-box {
     margin: 15px auto;
-    max-width: 270px;
-    border-radius: 0;
+    max-width: 375px;
     height: 287px;
+    border-radius: 0;
   }
   
   .text {
     font-size: 30px;
-  }
-
-  .text::after {
-    height: 4px;
   }
 
   .title {
@@ -839,26 +883,484 @@ footer {
 /* About Page */
 
 .about {
-  margin-top: 20px;
+  margin-top: 28px;
   font-size: 14px;
 }
 
 .disclaimer {
+  margin-top: 37px;
+  font-size: 14px;
+}
+
+.about-box {
+  margin: 15px auto;
+  max-width: 375px;
+  height: 300px;
+  border-radius: 0;
+}
+
+.disclaimer-box {
+  margin: 15px auto;
+  max-width: 375px;
+  height: 200px;
+  border-radius: 0;
+}
+
+/* Kokuhaku Page */
+
+.description-box {
+  margin: 15px auto;
+  max-width: 375px;
+  height: 502px;
+  border-radius: 0;
+}
+
+.story-title {
+  font-size: 18px;
+}
+
+.story-title::after {
+  height: 3px;
+}
+
+.story-description {
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+.info-box {
+  margin: 15px auto;
+  max-width: 375px;
+  height: 340px;
+  border-radius: 0;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.info2 {
+  font-size: 13px;
+}
+
+.source {
+  font-size: 13px;
+}
+
+.chapter-box {
+  margin: 15px auto;
+  max-width: 375px;
+  height: 488px;
+  border-radius: 0;
+}
+
+.chapter-text {
+  font-size: 22px;
+}
+
+.chapter-text::after {
+  height: 3px;
+}
+
+.chapter-row {
   margin-top: 20px;
-  font-size: 15px;
+}
+
+.chapter, .chapter-last {
+  font-size: 14px;
+}
+
+.chapter::after {
+  bottom: -13px;
+  width: 375px;
+  height: 2px;
+}
+
+/* Chapters */
+
+.change-chap-box {
+  max-width: 375px;
+  height: 40px;
+  margin: 15px auto;
+  padding-top: 10px;
+  border-radius: 0;
+}
+
+.prev-btn, .next-btn {
+  width: 90px;
+  height: 38px;
+}
+
+select {
+  font-size: 14px;
+  width: 190px;
+  height: 38px;
+}
+
+/* Kokuhaku*/
+/* Prologue */
+
+.kp-box {
+  margin: 15px auto;
+  max-width: 375px;
+  height: 1328px;
+  border-radius: 0;
+}
+
+.kokuhaku-prologue, .kc1 {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* Ch1 */
+
+.kc1-box {
+  max-width: 375px;
+  height: 4730px;
+  margin: 15px auto;
+  border-radius: 0;
+}
+
+/* Footer */
+  
+footer {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 18px;
+    margin-top: auto;
+}
+
+}
+
+/* Mobile M ver */
+
+@media (max-width: 375px) {
+  header {
+    max-width: 100%;
+    padding-left: 10px; 
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav li {
+    margin-right: 1px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Dropdown Content */
+
+  .dropdown-content {
+    padding: 15px;
+    left: 34.2%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 45.6%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 55%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 68.4%;
+  }
+
+  /* Main */
+    
+  .box {
+    margin: 15px auto;
+    max-width: 325px;
+    height: 277px;
+    border-radius: 0;
+  }
+
+  .works-box {
+    margin: 15px auto;
+    max-width: 325px;
+    height: 287px;
+    border-radius: 0;
+  }
+  
+  .text {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .date, .date-last {
+    font-size: 13px;
+  }
+  
+  .date::after {
+    bottom: -20px;
+    height: 2px;
+}
+  
+.title-row {
+  margin-top: 34px;
+}
+
+/* About Page */
+
+.about {
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.disclaimer {
+  margin-top: 37px;
+  font-size: 14px;
+}
+
+.about-box {
+  margin: 15px auto;
+  max-width: 325px;
+  height: 320px;
+  border-radius: 0;
+}
+
+.disclaimer-box {
+  margin: 15px auto;
+  max-width: 325px;
+  height: 200px;
+  border-radius: 0;
+}
+
+/* Kokuhaku Page */
+
+.description-box {
+  margin: 15px auto;
+  max-width: 325px;
+  height: 545px;
+  border-radius: 0;
+}
+
+.story-title {
+  font-size: 18px;
+}
+
+.story-title::after {
+  height: 3px;
+}
+
+.story-description {
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+.info-box {
+  margin: 15px auto;
+  max-width: 325px;
+  height: 380px;
+  border-radius: 0;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.info2 {
+  font-size: 13px;
+}
+
+.source {
+  font-size: 13px;
+}
+
+.chapter-box {
+  margin: 15px auto;
+  max-width: 325px;
+  height: 488px;
+  border-radius: 0;
+}
+
+.chapter-text {
+  font-size: 22px;
+}
+
+.chapter-text::after {
+  height: 3px;
+}
+
+.chapter-row {
+  margin-top: 20px;
+}
+
+.chapter, .chapter-last {
+  font-size: 14px;
+}
+
+.chapter::after {
+  bottom: -13px;
+  width: 325px;
+  height: 2px;
+}
+
+/* Chapters */
+
+.change-chap-box {
+  max-width: 325px;
+  height: 40px;
+  margin: 15px auto;
+  padding-top: 10px;
+  border-radius: 0;
+}
+
+.prev-btn, .next-btn {
+  width: 90px;
+  height: 38px;
+}
+
+select {
+  font-size: 14px;
+  width: 135px;
+  height: 38px;
+}
+
+/* Kokuhaku*/
+/* Prologue */
+
+.kp-box {
+  margin: 15px auto;
+  max-width: 325px;
+  height: 1410px;
+  border-radius: 0;
+}
+
+.kokuhaku-prologue, .kc1 {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* Ch1 */
+
+.kc1-box {
+  max-width: 325px;
+  height: 5170px;
+  margin: 15px auto;
+  border-radius: 0;
+}
+
+/* Footer */
+  
+footer {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 18px;
+    margin-top: auto;
+}
+
+}
+
+/* Mobile S ver */
+
+@media (max-width: 320px) {
+  header {
+    max-width: 100%;
+    padding-left: 10px; 
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav li {
+    margin-right: 1px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Dropdown Content */
+
+  .dropdown-content {
+    padding: 15px;
+    left: 34.2%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 45.6%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 55%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 68.4%;
+  }
+
+  /* Main */
+    
+  .box {
+    margin: 15px auto;
+    max-width: 270px;
+    height: 277px;
+    border-radius: 0;
+  }
+
+  .works-box {
+    margin: 15px auto;
+    max-width: 270px;
+    height: 287px;
+    border-radius: 0;
+  }
+  
+  .text {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .date, .date-last {
+    font-size: 13px;
+  }
+  
+  .date::after {
+    bottom: -20px;
+    height: 2px;
+}
+  
+.title-row {
+  margin-top: 34px;
+}
+
+/* About Page */
+
+.about {
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.disclaimer {
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 .about-box {
   margin: 15px auto;
   max-width: 270px;
-  height: 350px;
+  height: 360px;
   border-radius: 0;
 }
 
 .disclaimer-box {
   margin: 15px auto;
   max-width: 270px;
-  height: 194px;
+  height: 200px;
   border-radius: 0;
 }
 
@@ -867,27 +1369,27 @@ footer {
 .description-box {
   margin: 15px auto;
   max-width: 270px;
-  height: 627px;
+  height: 670px;
   border-radius: 0;
 }
 
 .story-title {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .story-title::after {
-  height: 2.5px;
+  height: 3px;
 }
 
 .story-description {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 13px;
 }
 
 .info-box {
   margin: 15px auto;
-  max-width: 270px;
-  height: 400px;
+  max-width: 290px;
+  height: 380px;
   border-radius: 0;
 }
 
@@ -936,18 +1438,20 @@ footer {
 
 .change-chap-box {
   max-width: 270px;
-  height: 70px;
+  height: 40px;
   margin: 15px auto;
-  border-radius: 0;
-  padding-left: 25px;
   padding-top: 10px;
-  padding-right: 25px;
-  padding-bottom: 0.1px;
+  border-radius: 0;
+}
+
+.prev-btn, .next-btn {
+  width: 90px;
+  height: 38px;
 }
 
 select {
   font-size: 14px;
-  width: 90px;
+  width: 100px;
   height: 38px;
 }
 
@@ -957,7 +1461,7 @@ select {
 .kp-box {
   margin: 15px auto;
   max-width: 270px;
-  height: 1567px;
+  height: 1570px;
   border-radius: 0;
 }
 
@@ -975,18 +1479,13 @@ select {
   border-radius: 0;
 }
 
-/* Back to top btn */
-
-#backToTopBtn {
-  font-size: 14px;
-}
-
 /* Footer */
   
 footer {
-  font-size: 14px;
-  padding: 16px;
-  margin-top: auto;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 18px;
+    margin-top: auto;
 }
 
 }
