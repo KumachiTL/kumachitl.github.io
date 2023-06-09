@@ -20,37 +20,6 @@ dropdowns.forEach(dropdown => {
 
 // Search
 
-const searchButton = document.getElementById('search-button');
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
-
-searchButton.addEventListener('click', searchGitHub);
-
-function searchGitHub() {
-  const query = searchInput.value;
-
-  // Clear previous search results
-  searchResults.innerHTML = '';
-
-  // Make the API request
-  fetch(`https://api.github.com/search/repositories?q=${query}`)
-    .then(response => response.json())
-    .then(data => {
-      // Display the search results
-      data.items.forEach(item => {
-        const repoName = item.full_name;
-        const repoUrl = item.html_url;
-
-        const resultItem = document.createElement('div');
-        resultItem.innerHTML = `<a href="${repoUrl}" target="_blank">${repoName}</a>`;
-        searchResults.appendChild(resultItem);
-      });
-    })
-    .catch(error => {
-      console.log('An error occurred while searching GitHub:', error);
-    });
-}
-
 // Change Chapter
 
 function navigateToLink(dropdownId) {
@@ -78,3 +47,4 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+
