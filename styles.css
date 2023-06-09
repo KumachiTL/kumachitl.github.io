@@ -553,9 +553,10 @@ select {
   font-size: 16px;
   padding: 10px;
   border: none;
-  background: #8C52FF;
+  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
   color: #fff;
   cursor: pointer;
+  font-family: outfit;
   border-radius: 7px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -563,6 +564,10 @@ select {
 
 #backToTopBtn.show {
   opacity: 1;
+}
+
+#backToTopBtn span {
+  margin-right: 5px;
 }
 
 /* Footer */
