@@ -6,7 +6,7 @@ dropdowns.forEach(dropdown => {
   const submenu = dropdown.querySelector('.dropdown-content');
 
   menu.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default link behavior
+    event.preventDefault();
     submenu.classList.toggle('show');
   });
 
@@ -32,4 +32,17 @@ function navigateToLink(dropdownId) {
 
 // Back to top btn
 
+var backToTopButton = document.getElementById("backToTopBtn");
 
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+};
+
+backToTopButton.onclick = function() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+};
