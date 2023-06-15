@@ -1250,6 +1250,17 @@ select {
   border-radius: 0;
 }
 
+/* Comments */
+
+.comments-box {
+  border: 0;
+  padding: 20px;
+  background-color: #292929;
+  margin-bottom: 30px;
+  max-width: 325px;
+  border-radius: 0;
+}
+    
 /* Footer */
   
 footer {
@@ -1496,16 +1507,12 @@ footer {
   border: 1px solid #ccc;
   padding: 20px;
   background-color: #292929;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
   max-width: 1075px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-}
-
-#disqus_thread {
-  margin-top: 30px;
 }
 
 #disqus_thread a {
