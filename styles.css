@@ -1254,9 +1254,8 @@ select {
 
 .comments-box {
   border: 0;
-  padding: 20px;
-  background-color: #292929;
-  margin-bottom: 30px;
+  padding: 30px;
+  margin-bottom: 40px;
   max-width: 325px;
   border-radius: 0;
 }
