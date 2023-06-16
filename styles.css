@@ -585,21 +585,212 @@ select {
     color: #FF6F00;
   }
 
-/* Tablet Version */
+/* Mobile 1178 ver */
 
-@media (max-width: 768px) {
-  header {
-    max-width: 100%;
-    padding-left: 60px; 
+@media screen and (max-width: 1178px) {
+  .logo img {
+    width: 150px;
+    height: auto;
   }
   
+  /* Dropdown Content */
+
+  .dropdown-content {
+    left: 28%;
+    top: 8%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 37.5%;
+    top: 8%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 46%;
+    top: 8%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 57.3%;
+    top: 8%;
+  }
+
+  /* Main */
+    
+  .box {
+    max-width: 900px;
+    height: 277px;
+  }
+
+  .works-box {
+    max-width: 900px;
+    height: 287px;
+  }
+  
+  .text {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .date, .date-last {
+    font-size: 13px;
+  }
+  
+  .date::after {
+    bottom: -20px;
+    height: 2px;
+  }
+  
+  .title-row {
+    margin-top: 34px;
+  }
+
+  /* About Page */
+
+  .about-box {
+    max-width: 900px;
+    height: 300px;
+  }
+
+  .disclaimer-box {
+    max-width: 900px;
+    height: 200px;
+  }
+
+  .about {
+    margin-top: 80px;
+    font-size: 15px;
+  }
+
+  .disclaimer {
+    margin-top: 50px;
+    font-size: 15px;
+  }
+
+  /* Kokuhaku Page */
+
+  .description-box {
+    max-width: 900px;
+    height: 280px;
+  }
+
+  .story-title {
+    font-size: 25px;
+  }
+
+  .story-title::after {
+    height: 3px;
+  }
+
+  .story-description {
+    margin-top: 25px;
+    font-size: 13px;
+  }
+
+  .info-box {
+    max-width: 900px;
+    height: 260px;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+
+  .info2 {
+    font-size: 13px;
+  }
+
+  .source {
+    font-size: 13px;
+  }
+
+  .chapter-box {
+    max-width: 900px;
+    height: 488px;
+  }
+
+  .chapter-text {
+    font-size: 22px;
+  }
+
+  .chapter-text::after {
+    height: 3px;
+  }
+
+  .chapter-row {
+    margin-top: 20px;
+  }
+
+  .chapter, .chapter-last {
+    font-size: 14px;
+  }
+
+  .chapter::after {
+    bottom: -13px;
+    width: 900px;
+    height: 2px;
+  }
+
+  /* Chapters */
+
+  .change-chap-box {
+    max-width: 900px;
+    height: 40px;
+    padding-top: 10px;
+  }
+
+  .prev-btn, .next-btn {
+    width: 100px;
+    height: 38px;
+  }
+
+  select {
+    font-size: 14px;
+    width: 200px;
+    height: 38px;
+  }
+
+  /* Kokuhaku*/
+  /* Prologue */
+
+  .kp-box {
+    margin: 15px auto;
+    max-width: 900px;
+    height: 865px;
+  }
+
+  .kokuhaku-prologue, .kc1 {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+
+  /* Ch1 */
+
+  .kc1-box {
+    max-width: 900px;
+    height: 3855px;
+    margin: 15px auto;
+  }
+}
+
+/* Mobile 880 ver */
+
+@media screen and (max-width: 880px) {
+  header {
+    max-width: 100%;
+    padding-left: 100px; 
+  }
+
   .logo img {
     width: 150px;
     height: auto;
   }
   
   nav li {
-    margin-right: 6px;
+    margin-right: 16px;
   }
   
   nav a {
@@ -610,33 +801,35 @@ select {
 
   .dropdown-content {
     padding: 15px;
-    left: 34.2%;
+    left: 35.5%;
   }
 
   .dropdown:nth-child(3) .dropdown-content {
-    left: 45.6%;
+    left: 46.5%;
   }
 
   .dropdown:nth-child(4) .dropdown-content {
-    left: 55%;
+    left: 55.7%;
   }
 
   .dropdown:nth-child(5) .dropdown-content {
-    left: 68.4%;
+    left: 68.5%;
   }
 
   /* Main */
     
   .box {
     margin: 15px auto;
-    max-width: 550px;
+    max-width: 600px;
     height: 277px;
+    border-radius: 10px;
   }
 
   .works-box {
     margin: 15px auto;
-    max-width: 550px;
+    max-width: 600px;
     height: 287px;
+    border-radius: 10px;
   }
   
   .text {
@@ -656,187 +849,177 @@ select {
     height: 2px;
 }
   
-.title-row {
-  margin-top: 34px;
-}
+  .title-row {
+    margin-top: 34px;
+  }
 
-/* About Page */
+  /* About Page */
 
-.about {
-  margin-top: 55px;
-  font-size: 15px;
-}
+  .about-box {
+    margin: 15px auto;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 10px;
+  }
 
-.disclaimer {
-  margin-top: 46px;
-  font-size: 15px;
-}
+  .disclaimer-box {
+    margin: 15px auto;
+    max-width: 600px;
+    height: 200px;
+    border-radius: 10px;
+  }
 
-.about-box {
-  margin: 15px auto;
-  max-width: 550px;
-  height: 300px;
-}
-
-.disclaimer-box {
-  margin: 15px auto;
-  max-width: 550px;
-  height: 200px;
-}
-
-/* Kokuhaku Page */
-
-.description-box {
-  margin: 15px auto;
-  max-width: 550px;
-  height: 405px;
-}
-
-.story-title {
-  font-size: 22px;
-}
-
-.story-title::after {
-  height: 3px;
-}
-
-.story-description {
-  margin-top: 25px;
-  font-size: 13px;
-}
-
-.info-box {
-  margin: 15px auto;
-  max-width: 550px;
-  height: 275px;
-}
-
-.info {
-  font-size: 14px;
-}
-
-.info2 {
-  font-size: 13px;
-}
-
-.source {
-  font-size: 13px;
-}
-
-.chapter-box {
-  margin: 15px auto;
-  max-width: 550px;
-  height: 488px;
-}
-
-.chapter-text {
-  font-size: 22px;
-}
-
-.chapter-text::after {
-  height: 3px;
-}
-
-.chapter-row {
-  margin-top: 20px;
-}
-
-.chapter, .chapter-last {
-  font-size: 14px;
-}
-
-.chapter::after {
-  bottom: -13px;
-  width: 550px;
-  height: 2px;
-}
-
-/* Chapters */
-
-.change-chap-box {
-  max-width: 550px;
-  height: 40px;
-  margin: 15px auto;
-  padding-top: 10px;
-}
-
-.prev-btn, .next-btn {
-  width: 90px;
-  height: 38px;
-}
-
-select {
-  font-size: 14px;
-  width: 190px;
-  height: 38px;
-}
-
-/* Kokuhaku*/
-/* Prologue */
-
-.kp-box {
-  margin: 15px auto;
-  max-width: 550px;
-  height: 1180px;
-}
-
-.kokuhaku-prologue, .kc1 {
-  margin-top: 8px;
-  font-size: 13px;
-}
-
-/* Ch1 */
-
-.kc1-box {
-  max-width: 550px;
-  height: 4000px;
-  margin: 15px auto;
-}
-
-/* Back to top btn */
-
-#backToTopBtn {
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  font-size: 16px;
-  padding: 10px;
-  border: none;
-  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
-  color: #fff;
-  cursor: pointer;
-  font-family: outfit;
-  border-radius: 7px;
-  opacity: 0; /* Start with 0 opacity */
-  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
-}
-
-/* Footer */
-  
-footer {
-    max-width: 100%;
+  .about {
+    margin-top: 70px;
     font-size: 14px;
-    padding: 18px;
-    margin-top: auto;
-}
+  }
+
+  .disclaimer {
+    margin-top: 60px;
+    font-size: 14px;
+  }
+
+  /* Kokuhaku Page */
+
+  .description-box {
+    margin: 15px auto;
+    max-width: 600px;
+    height: 360px;
+    border-radius: 10px;
+  }
+
+  .story-title {
+    font-size: 18px;
+  }
+
+  .story-title::after {
+    height: 3px;
+  }
+
+  .story-description {
+    margin-top: 25px;
+    font-size: 13px;
+  }
+
+  .info-box {
+    margin: 15px auto;
+    max-width: 600px;
+    height: 280px;
+    border-radius: 10px;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+
+  .info2 {
+    font-size: 13px;
+  }
+
+  .source {
+    font-size: 13px;
+  }
+
+  .chapter-box {
+    margin: 15px auto;
+    max-width: 600px;
+    height: 488px;
+    border-radius: 10px;
+  }
+
+  .chapter-text {
+    font-size: 22px;
+  }
+
+  .chapter-text::after {
+    height: 3px;
+  }
+
+  .chapter-row {
+    margin-top: 20px;
+  }
+
+  .chapter, .chapter-last {
+    font-size: 14px;
+  }
+
+  .chapter::after {
+    bottom: -13px;
+    width: 375px;
+    height: 2px;
+  }
+
+  /* Chapters */
+
+  .change-chap-box {
+    max-width: 600px;
+    height: 40px;
+    margin: 15px auto;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+
+  .prev-btn, .next-btn {
+    width: 100px;
+    height: 38px;
+  }
+
+  select {
+    font-size: 14px;
+    width: 200px;
+    height: 38px;
+  }
+
+  /* Kokuhaku*/
+  /* KP */
+
+  .kp-box {
+    margin: 15px auto;
+    max-width: 600px;
+    height: 975px;
+    border-radius: 10px;
+  }
+
+  .kokuhaku-prologue, .kc1 {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+
+  /* KC1 */
+
+  .kc1-box {
+    max-width: 600px;
+    height: 4370px;
+    margin: 15px auto;
+    border-radius: 10px;
+  }
+
+  /* Footer */
+    
+  footer {
+      max-width: 100%;
+      font-size: 14px;
+      padding: 18px;
+      margin-top: auto;
+  }
 
 }
 
-/* Mobile L ver */
+/* Mobile 768 ver */
 
-@media (max-width: 425px) {
+@media screen and (max-width: 768px) {
   header {
     max-width: 100%;
-    padding-left: 10px; 
+    padding-left: 40px; 
   }
-  
+
   .logo img {
     width: 150px;
     height: auto;
   }
   
   nav li {
-    margin-right: 1px;
+    margin-right: 9.8px;
   }
   
   nav a {
@@ -847,464 +1030,44 @@ footer {
 
   .dropdown-content {
     padding: 15px;
-    left: 34.2%;
+    left: 32.2%;
   }
 
   .dropdown:nth-child(3) .dropdown-content {
-    left: 45.6%;
+    left: 43.7%;
   }
 
   .dropdown:nth-child(4) .dropdown-content {
-    left: 55%;
+    left: 53.7%;
   }
 
   .dropdown:nth-child(5) .dropdown-content {
-    left: 68.4%;
+    left: 67.7%;
   }
 
-  /* Main */
+  /* Footer */
     
-  .box {
-    margin: 15px auto;
-    max-width: 375px;
-    height: 277px;
-    border-radius: 0;
+  footer {
+      padding: 16px;
   }
 
-  .works-box {
-    margin: 15px auto;
-    max-width: 375px;
-    height: 287px;
-    border-radius: 0;
-  }
-  
-  .text {
-    font-size: 30px;
-  }
-
-  .title {
-    font-size: 18px;
-  }
-
-  .date, .date-last {
-    font-size: 13px;
-  }
-  
-  .date::after {
-    bottom: -20px;
-    height: 2px;
-}
-  
-.title-row {
-  margin-top: 34px;
 }
 
-/* About Page */
+/* Mobile 680 ver */
 
-.about {
-  margin-top: 28px;
-  font-size: 14px;
-}
-
-.disclaimer {
-  margin-top: 37px;
-  font-size: 14px;
-}
-
-.about-box {
-  margin: 15px auto;
-  max-width: 375px;
-  height: 300px;
-  border-radius: 0;
-}
-
-.disclaimer-box {
-  margin: 15px auto;
-  max-width: 375px;
-  height: 200px;
-  border-radius: 0;
-}
-
-/* Kokuhaku Page */
-
-.description-box {
-  margin: 15px auto;
-  max-width: 375px;
-  height: 502px;
-  border-radius: 0;
-}
-
-.story-title {
-  font-size: 18px;
-}
-
-.story-title::after {
-  height: 3px;
-}
-
-.story-description {
-  margin-top: 25px;
-  font-size: 13px;
-}
-
-.info-box {
-  margin: 15px auto;
-  max-width: 375px;
-  height: 340px;
-  border-radius: 0;
-}
-
-.info {
-  font-size: 14px;
-}
-
-.info2 {
-  font-size: 13px;
-}
-
-.source {
-  font-size: 13px;
-}
-
-.chapter-box {
-  margin: 15px auto;
-  max-width: 375px;
-  height: 488px;
-  border-radius: 0;
-}
-
-.chapter-text {
-  font-size: 22px;
-}
-
-.chapter-text::after {
-  height: 3px;
-}
-
-.chapter-row {
-  margin-top: 20px;
-}
-
-.chapter, .chapter-last {
-  font-size: 14px;
-}
-
-.chapter::after {
-  bottom: -13px;
-  width: 375px;
-  height: 2px;
-}
-
-/* Chapters */
-
-.change-chap-box {
-  max-width: 375px;
-  height: 40px;
-  margin: 15px auto;
-  padding-top: 10px;
-  border-radius: 0;
-}
-
-.prev-btn, .next-btn {
-  width: 90px;
-  height: 38px;
-}
-
-select {
-  font-size: 14px;
-  width: 190px;
-  height: 38px;
-}
-
-/* Kokuhaku*/
-/* Prologue */
-
-.kp-box {
-  margin: 15px auto;
-  max-width: 375px;
-  height: 1328px;
-  border-radius: 0;
-}
-
-.kokuhaku-prologue, .kc1 {
-  margin-top: 8px;
-  font-size: 13px;
-}
-
-/* Ch1 */
-
-.kc1-box {
-  max-width: 375px;
-  height: 4730px;
-  margin: 15px auto;
-  border-radius: 0;
-}
-
-/* Footer */
-  
-footer {
-    max-width: 100%;
-    font-size: 14px;
-    padding: 18px;
-    margin-top: auto;
-}
-
-}
-
-/* Mobile M ver */
-
-@media (max-width: 375px) {
-  header {
-    max-width: 100%;
-    padding-left: 10px; 
-  }
-  
-  .logo img {
-    width: 150px;
-    height: auto;
-  }
-  
-  nav li {
-    margin-right: 1px;
-  }
-  
-  nav a {
-    font-size: 16px;
-  }
-
-  /* Dropdown Content */
-
-  .dropdown-content {
-    padding: 15px;
-    left: 34.2%;
-  }
-
-  .dropdown:nth-child(3) .dropdown-content {
-    left: 45.6%;
-  }
-
-  .dropdown:nth-child(4) .dropdown-content {
-    left: 55%;
-  }
-
-  .dropdown:nth-child(5) .dropdown-content {
-    left: 68.4%;
-  }
-
-  /* Main */
-    
-  .box {
-    margin: 15px auto;
-    max-width: 325px;
-    height: 277px;
-    border-radius: 0;
-  }
-
-  .works-box {
-    margin: 15px auto;
-    max-width: 325px;
-    height: 287px;
-    border-radius: 0;
-  }
-  
-  .text {
-    font-size: 30px;
-  }
-
-  .title {
-    font-size: 18px;
-  }
-
-  .date, .date-last {
-    font-size: 13px;
-  }
-  
-  .date::after {
-    bottom: -20px;
-    height: 2px;
-}
-  
-.title-row {
-  margin-top: 34px;
-}
-
-/* About Page */
-
-.about {
-  margin-top: 28px;
-  font-size: 14px;
-}
-
-.disclaimer {
-  margin-top: 37px;
-  font-size: 14px;
-}
-
-.about-box {
-  margin: 15px auto;
-  max-width: 325px;
-  height: 320px;
-  border-radius: 0;
-}
-
-.disclaimer-box {
-  margin: 15px auto;
-  max-width: 325px;
-  height: 200px;
-  border-radius: 0;
-}
-
-/* Kokuhaku Page */
-
-.description-box {
-  margin: 15px auto;
-  max-width: 325px;
-  height: 545px;
-  border-radius: 0;
-}
-
-.story-title {
-  font-size: 18px;
-}
-
-.story-title::after {
-  height: 3px;
-}
-
-.story-description {
-  margin-top: 25px;
-  font-size: 13px;
-}
-
-.info-box {
-  margin: 15px auto;
-  max-width: 325px;
-  height: 380px;
-  border-radius: 0;
-}
-
-.info {
-  font-size: 14px;
-}
-
-.info2 {
-  font-size: 13px;
-}
-
-.source {
-  font-size: 13px;
-}
-
-.chapter-box {
-  margin: 15px auto;
-  max-width: 325px;
-  height: 488px;
-  border-radius: 0;
-}
-
-.chapter-text {
-  font-size: 22px;
-}
-
-.chapter-text::after {
-  height: 3px;
-}
-
-.chapter-row {
-  margin-top: 20px;
-}
-
-.chapter, .chapter-last {
-  font-size: 14px;
-}
-
-.chapter::after {
-  bottom: -13px;
-  width: 325px;
-  height: 2px;
-}
-
-/* Chapters */
-
-.change-chap-box {
-  max-width: 325px;
-  height: 40px;
-  margin: 15px auto;
-  padding-top: 10px;
-  border-radius: 0;
-}
-
-.prev-btn, .next-btn {
-  width: 90px;
-  height: 38px;
-}
-
-select {
-  font-size: 14px;
-  width: 135px;
-  height: 38px;
-}
-
-/* Kokuhaku*/
-/* Prologue */
-
-.kp-box {
-  margin: 15px auto;
-  max-width: 325px;
-  height: 1410px;
-  border-radius: 0;
-}
-
-.kokuhaku-prologue, .kc1 {
-  margin-top: 8px;
-  font-size: 13px;
-}
-
-/* Ch1 */
-
-.kc1-box {
-  max-width: 325px;
-  height: 5170px;
-  margin: 15px auto;
-  border-radius: 0;
-}
-
-/* Comments */
-
-.comments-box {
-  border: 0;
-  padding: 30px;
-  margin-bottom: 40px;
-  max-width: 325px;
-  border-radius: 0;
-}
-    
-/* Footer */
-  
-footer {
-    max-width: 100%;
-    font-size: 14px;
-    padding: 18px;
-    margin-top: auto;
-}
-
-}
-
-/* Mobile S ver */
-
-@media (max-width: 320px) {
+@media screen and (max-width: 680px) {
   header {
     max-width: 100%;
     padding-left: 10px; 
   }
-  
+
   .logo img {
     width: 150px;
     height: auto;
   }
   
   nav li {
-    margin-right: 1px;
+    margin-right: 16px;
   }
   
   nav a {
@@ -1315,207 +1078,381 @@ footer {
 
   .dropdown-content {
     padding: 15px;
-    left: 34.2%;
+    left: 35.5%;
   }
 
   .dropdown:nth-child(3) .dropdown-content {
-    left: 45.6%;
+    left: 46.5%;
   }
 
   .dropdown:nth-child(4) .dropdown-content {
-    left: 55%;
+    left: 55.7%;
   }
 
   .dropdown:nth-child(5) .dropdown-content {
-    left: 68.4%;
+    left: 68.5%;
   }
 
   /* Main */
     
-  .box {
-    margin: 15px auto;
-    max-width: 270px;
-    height: 277px;
-    border-radius: 0;
+  .box, .works-box {
+    border-radius: 4px;
   }
 
-  .works-box {
-    margin: 15px auto;
-    max-width: 270px;
-    height: 287px;
-    border-radius: 0;
-  }
-  
-  .text {
-    font-size: 30px;
+  /* About Page */
+
+  .about-box, .disclaimer-box {
+    border-radius: 4px;
   }
 
-  .title {
-    font-size: 18px;
+  /* Kokuhaku Page */
+
+  .description-box, .info-box, .chapter-box {
+    border-radius: 4px;
   }
 
-  .date, .date-last {
-    font-size: 13px;
+  /* Chapters */
+
+  .change-chap-box {
+    border-radius: 4px;
   }
-  
-  .date::after {
-    bottom: -20px;
-    height: 2px;
-}
-  
-.title-row {
-  margin-top: 34px;
-}
 
-/* About Page */
+  /* Kokuhaku*/
 
-.about {
-  margin-top: 28px;
-  font-size: 14px;
+  .kp-box, .kc1-box {
+    border-radius: 4px;
+  }
+
+  /* Footer */
+    
+  footer {
+      padding: 16px;
+  }
+
 }
 
-.disclaimer {
-  margin-top: 30px;
-  font-size: 14px;
-}
+/* Mobile 640 ver */
 
-.about-box {
-  margin: 15px auto;
-  max-width: 270px;
-  height: 360px;
-  border-radius: 0;
-}
-
-.disclaimer-box {
-  margin: 15px auto;
-  max-width: 270px;
-  height: 200px;
-  border-radius: 0;
-}
-
-/* Kokuhaku Page */
-
-.description-box {
-  margin: 15px auto;
-  max-width: 270px;
-  height: 670px;
-  border-radius: 0;
-}
-
-.story-title {
-  font-size: 18px;
-}
-
-.story-title::after {
-  height: 3px;
-}
-
-.story-description {
-  margin-top: 25px;
-  font-size: 13px;
-}
-
-.info-box {
-  margin: 15px auto;
-  max-width: 290px;
-  height: 380px;
-  border-radius: 0;
-}
-
-.info {
-  font-size: 14px;
-}
-
-.info2 {
-  font-size: 13px;
-}
-
-.source {
-  font-size: 13px;
-}
-
-.chapter-box {
-  margin: 15px auto;
-  max-width: 270px;
-  height: 488px;
-  border-radius: 0;
-}
-
-.chapter-text {
-  font-size: 22px;
-}
-
-.chapter-text::after {
-  height: 3px;
-}
-
-.chapter-row {
-  margin-top: 20px;
-}
-
-.chapter, .chapter-last {
-  font-size: 14px;
-}
-
-.chapter::after {
-  bottom: -13px;
-  width: 270px;
-  height: 2px;
-}
-
-/* Chapters */
-
-.change-chap-box {
-  max-width: 270px;
-  height: 40px;
-  margin: 15px auto;
-  padding-top: 10px;
-  border-radius: 0;
-}
-
-.prev-btn, .next-btn {
-  width: 90px;
-  height: 38px;
-}
-
-select {
-  font-size: 14px;
-  width: 100px;
-  height: 38px;
-}
-
-/* Kokuhaku*/
-/* Prologue */
-
-.kp-box {
-  margin: 15px auto;
-  max-width: 270px;
-  height: 1570px;
-  border-radius: 0;
-}
-
-.kokuhaku-prologue, .kc1 {
-  margin-top: 8px;
-  font-size: 13px;
-}
-
-/* Ch1 */
-
-.kc1-box {
-  max-width: 270px;
-  height: 5730px;
-  margin: 15px auto;
-  border-radius: 0;
-}
-
-/* Footer */
-  
-footer {
+@media screen and (max-width: 640px) {
+  header {
     max-width: 100%;
-    font-size: 14px;
-    padding: 18px;
-    margin-top: auto;
+    padding-left: 10px; 
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav li {
+    margin-right: 16px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Dropdown Content */
+
+  .dropdown-content {
+    padding: 15px;
+    left: 35.5%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 46.5%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 55.7%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 68.5%;
+  }
+
+  /* Main */
+    
+  .box, .works-box {
+    margin: 5px auto;
+    max-width: 580px;
+    border-radius: 0;
+  }
+
+  /* About Page */
+
+  .about-box, .disclaimer-box {
+    margin: 5px auto;
+    max-width: 580px;
+    border-radius: 0;
+  }
+
+  /* Kokuhaku Page */
+
+  .description-box, .info-box, .chapter-box {
+    margin: 5px auto;
+    max-width: 580px;
+    border-radius: 0;
+  }
+
+  /* Chapters */
+
+  .change-chap-box {
+    margin: 5px auto;
+    max-width: 580px;
+    border-radius: 0;
+  }
+
+  .chapter::after {
+    width: 580px;
+  }
+
+  /* Kokuhaku*/
+
+  .kp-box {
+    margin: 5px auto;
+    max-width: 580px;
+    border-radius: 0;
+  }
+
+  .kc1-box {
+    margin: 5px auto;
+    max-width: 580px;
+    height: 4450px;
+    border-radius: 0;
+  }
+
+  /* Footer */
+    
+  footer {
+      padding: 16px;
+  }
+
 }
+
+/* Mobile 480 ver */
+
+@media screen and (max-width: 480px) {
+  header {
+    max-width: 100%;
+    padding-left: 10px; 
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav li {
+    margin-right: 16px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Dropdown Content */
+
+  .dropdown-content {
+    padding: 15px;
+    left: 35.5%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 46.5%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 55.7%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 68.5%;
+  }
+
+  /* Main */
+    
+  .box, .works-box {
+    margin: 5px auto;
+    max-width: 420px;
+    border-radius: 0;
+  }
+
+  /* About Page */
+
+  .about-box, .disclaimer-box {
+    margin: 5px auto;
+    max-width: 420px;
+    border-radius: 0;
+  }
+
+  /* Kokuhaku Page */
+
+  .description-box {
+    max-width: 420px;
+    height: 460px;
+  }
+
+  .info-box {
+    max-width: 420px;
+    height: 320px;
+  }
+
+  .chapter-box {
+    max-width: 420px;
+    border-radius: 0;
+  }
+
+  .chapter::after {
+    width: 420px;
+  }
+
+  /* Chapters */
+
+  .change-chap-box {
+    margin: 5px auto;
+    max-width: 420px;
+    border-radius: 0;
+  }
+
+
+  /* Kokuhaku*/
+
+  .kp-box {
+    max-width: 420px;
+    height: 1320px;
+  }
+
+  .kc1-box {
+    max-width: 420px;
+    height: 6440px;
+  }
+
+  /* Footer */
+    
+  footer {
+      padding: 16px;
+  }
+
+}
+
+/* Mobile 380 ver */
+
+@media screen and (max-width: 380px) {
+  header {
+    max-width: 100%;
+    padding-left: 10px; 
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav li {
+    margin-right: 16px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Dropdown Content */
+
+  .dropdown-content {
+    padding: 15px;
+    left: 35.5%;
+  }
+
+  .dropdown:nth-child(3) .dropdown-content {
+    left: 46.5%;
+  }
+
+  .dropdown:nth-child(4) .dropdown-content {
+    left: 55.7%;
+  }
+
+  .dropdown:nth-child(5) .dropdown-content {
+    left: 68.5%;
+  }
+
+  /* Main */
+    
+  .box, .works-box {
+    max-width: 320px;
+  }
+
+  /* About Page */
+
+  .about-box {
+    max-width: 320px;
+    height: 322px;
+  }
+
+  .disclaimer-box {
+    max-width: 320px;
+  }
+  
+  .about {
+    margin-top: 30px;
+  }
+
+  .disclaimer {
+    margin-top: 45px;
+  }
+
+  /* Kokuhaku Page */
+
+  .description-box {
+    max-width: 320px;
+    height: 565px;
+  }
+
+  .info-box {
+    max-width: 320px;
+    height: 385px;
+  }
+
+  .chapter-box {
+    max-width: 320px;
+
+  }
+
+  .chapter::after {
+    width: 320px;
+  }
+
+  /* Chapters */
+
+  .change-chap-box {
+    max-width: 320px;
+  }
+
+  .prev-btn, .next-btn {
+    width: 87px;
+  }
+
+  select {
+    width: 120px;
+  }
+
+  /* Kokuhaku*/
+
+  .kp-box {
+    max-width: 320px;
+    height: 1570px;
+  }
+
+  .kc1-box {
+    max-width: 320px;
+    height: 7450px;
+  }
+
+  /* Footer */
+    
+  footer {
+      padding: 16px;
+  }
 
 }
 
