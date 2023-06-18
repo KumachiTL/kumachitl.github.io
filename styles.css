@@ -1056,7 +1056,7 @@ select {
   .comments-box {
     max-width: 300px;
     border: none;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   #disqus_thread {
@@ -1196,7 +1196,7 @@ select {
   .box, .works-box {
     margin: 5px auto;
     max-width: 580px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   /* About Page */
@@ -1204,7 +1204,7 @@ select {
   .about-box, .disclaimer-box {
     margin: 5px auto;
     max-width: 580px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   /* Kokuhaku Page */
@@ -1212,7 +1212,7 @@ select {
   .description-box, .info-box, .chapter-box {
     margin: 5px auto;
     max-width: 580px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   /* Chapters */
@@ -1220,7 +1220,7 @@ select {
   .change-chap-box {
     margin: 5px auto;
     max-width: 580px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   .chapter::after {
@@ -1232,13 +1232,13 @@ select {
   .kp-box {
     margin: 5px auto;
     max-width: 580px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   .kc1-box {
     margin: 5px auto;
     max-width: 580px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   /* Comments */
@@ -1246,7 +1246,7 @@ select {
   .comments-box {
     max-width: 580px;
     border: none;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   #disqus_thread {
@@ -1306,7 +1306,7 @@ select {
   .box, .works-box {
     margin: 5px auto;
     max-width: 420px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   /* About Page */
@@ -1314,7 +1314,7 @@ select {
   .about-box, .disclaimer-box {
     margin: 5px auto;
     max-width: 420px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   /* Kokuhaku Page */
@@ -1329,7 +1329,7 @@ select {
 
   .chapter-box {
     max-width: 420px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   .chapter::after {
@@ -1341,7 +1341,7 @@ select {
   .change-chap-box {
     margin: 5px auto;
     max-width: 420px;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
 
@@ -1360,7 +1360,7 @@ select {
   .comments-box {
     max-width: 420px;
     border: none;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   #disqus_thread {
@@ -1609,7 +1609,7 @@ select {
   .comments-box {
     max-width: 310px;
     border: none;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   #disqus_thread {
