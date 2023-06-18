@@ -1592,4 +1592,14 @@ select {
     max-width: 300px;
   }
 
+  /* Comments */
+
+  .comments-box {
+    max-width: 300px;
+  }
+
+  #disqus_thread {
+    max-width: 300px;
+  }
+
 }
