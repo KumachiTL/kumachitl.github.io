@@ -1368,13 +1368,7 @@ select {
   /* Comments */
 
   .comments-box {
-    border: 0;
-    padding: 20px;
-    background-color: #292929;
-    margin-bottom: 30px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    border: none;
     border-radius: 0;
   }
 
