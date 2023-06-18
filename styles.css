@@ -949,7 +949,7 @@ select {
   .change-chap-box {
     max-width: 600px;
     margin: 15px auto;
-    padding-top: 10px;
+    padding-top: 10px 15px;
     border-radius: 10px;
   }
 
@@ -1571,7 +1571,7 @@ select {
   /* Chapters */
 
   .change-chap-box {
-    max-width: 320px;
+    max-width: 300px;
   }
 
   .prev-btn, .next-btn {
