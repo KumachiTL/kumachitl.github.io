@@ -566,6 +566,29 @@ select {
   opacity: 1;
 }
 
+/* Disqus comments */
+
+.comments-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #292929;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1075px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+#disqus_thread {
+  width: 100%;
+  max-width: 1075px;
+}
+
+#disqus_thread a {
+  color: #8C52FF;
+}
+
 /* Footer */
   
   footer {
@@ -1499,27 +1522,4 @@ select {
     width: 100%;
   }
 
-}
-
-/* Disqus comments */
-
-.comments-box {
-  border: 1px solid #ccc;
-  padding: 20px;
-  background-color: #292929;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 1075px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-}
-
-#disqus_thread {
-  width: 100%;
-  max-width: 1075px;
-}
-
-#disqus_thread a {
-  color: #8C52FF;
 }
