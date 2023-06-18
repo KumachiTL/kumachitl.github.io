@@ -1392,7 +1392,7 @@ select {
   /* Comments */
 
   .comments-box {
-    max-width: 100%;
+    max-width: 422px;
     border: 1px solid #ccc;
     border-radius: 0;
   }
