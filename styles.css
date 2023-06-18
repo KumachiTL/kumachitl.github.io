@@ -572,7 +572,7 @@ select {
   border: 1px solid #ccc;
   padding: 20px;
   background-color: #292929;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 100%;
   max-width: 1075px;
   margin-left: auto;
@@ -583,6 +583,7 @@ select {
 #disqus_thread {
   width: 100%;
   max-width: 1075px;
+  padding-top: 20px;
 }
 
 #disqus_thread a {
