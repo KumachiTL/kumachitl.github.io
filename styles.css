@@ -774,6 +774,13 @@ select {
     height: 3855px;
     margin: 15px auto;
   }
+
+  /* Comments */
+
+  #disqus_thread {
+    width: 100%;
+  }
+
 }
 
 /* Mobile 880 ver */
@@ -1003,6 +1010,12 @@ select {
       margin-top: auto;
   }
 
+  /* Comments */
+
+  #disqus_thread {
+    width: 100%;
+  }
+
 }
 
 /* Mobile 768 ver */
@@ -1049,6 +1062,12 @@ select {
     
   footer {
       padding: 16px;
+  }
+
+  /* Comments */
+
+  #disqus_thread {
+    width: 100%;
   }
 
 }
@@ -1127,6 +1146,12 @@ select {
     
   footer {
       padding: 16px;
+  }
+
+  /* Comments */
+
+  #disqus_thread {
+    width: 100%;
   }
 
 }
@@ -1226,6 +1251,12 @@ select {
     
   footer {
       padding: 16px;
+  }
+
+  /* Comments */
+
+  #disqus_thread {
+    width: 100%;
   }
 
 }
@@ -1332,6 +1363,12 @@ select {
     
   footer {
       padding: 16px;
+  }
+
+  /* Comments */
+
+  #disqus_thread {
+    width: 100%;
   }
 
 }
@@ -1452,6 +1489,12 @@ select {
     
   footer {
       padding: 16px;
+  }
+
+  /* Comments */
+
+  #disqus_thread {
+    width: 100%;
   }
 
 }
