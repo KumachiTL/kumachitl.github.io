@@ -565,7 +565,7 @@ select {
 #disqus_thread {
   width: 100%;
   max-width: 1075px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 #disqus_thread a {
