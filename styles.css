@@ -772,8 +772,12 @@ select {
 
   /* Comments */
 
+  .comments-box {
+    max-width: 900px;
+  }
+
   #disqus_thread {
-    width: 100%;
+    max-width: 900px;
   }
 
 }
@@ -986,6 +990,16 @@ select {
     border-radius: 10px;
   }
 
+  /* Comments */
+
+  .comments-box {
+    max-width: 600px;
+  }
+
+  #disqus_thread {
+    max-width: 600px;
+  }
+
   /* Footer */
     
   footer {
@@ -993,12 +1007,6 @@ select {
       font-size: 14px;
       padding: 18px;
       margin-top: auto;
-  }
-
-  /* Comments */
-
-  #disqus_thread {
-    width: 100%;
   }
 
 }
@@ -1043,6 +1051,18 @@ select {
     left: 67.7%;
   }
 
+  /* Comments */
+
+  .comments-box {
+    max-width: 300px;
+    border: none;
+    border-radius: 0;
+  }
+
+  #disqus_thread {
+    max-width: 300px;
+  }
+
   /* Footer */
     
   footer {
@@ -1050,16 +1070,6 @@ select {
   }
 
   /* Comments */
-
-  .comments-box {
-    max-width: 100%;
-    border: none;
-    border-radius: 0;
-  }
-
-  #disqus_thread {
-    width: 100%;
-  }
 
 }
 
@@ -1137,12 +1147,6 @@ select {
     
   footer {
       padding: 16px;
-  }
-
-  /* Comments */
-
-  #disqus_thread {
-    width: 100%;
   }
 
 }
@@ -1234,20 +1238,25 @@ select {
   .kc1-box {
     margin: 5px auto;
     max-width: 580px;
-    height: 4450px;
     border-radius: 0;
+  }
+
+  /* Comments */
+
+  .comments-box {
+    max-width: 580px;
+    border: none;
+    border-radius: 0;
+  }
+
+  #disqus_thread {
+    max-width: 580px;
   }
 
   /* Footer */
     
   footer {
       padding: 16px;
-  }
-
-  /* Comments */
-
-  #disqus_thread {
-    width: 100%;
   }
 
 }
@@ -1346,19 +1355,22 @@ select {
     max-width: 420px;
   }
 
+  /* Comments */
+
+  .comments-box {
+    max-width: 420px;
+    border: none;
+    border-radius: 0;
+  }
+
+  #disqus_thread {
+    max-width: 300px;
+  }
+
   /* Footer */
     
   footer {
       padding: 16px;
-  }
-
-  /* Comments */
-
-  .comments-box {
-    max-width: 100%;
-    width: 420px;
-    border: none;
-    border-radius: 0;
   }
 
 }
@@ -1596,6 +1608,8 @@ select {
 
   .comments-box {
     max-width: 300px;
+    border: none;
+    border-radius: 0;
   }
 
   #disqus_thread {
