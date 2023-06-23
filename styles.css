@@ -33,7 +33,7 @@ nav ul {
   
 nav li {
     display: inline;
-    margin-right: 30px;
+    margin-right: 15px;
   }
   
 nav a {
@@ -245,20 +245,6 @@ nav a:hover{
 
 /* About Page */
 
-.about {
-  color: lightgrey;
-  margin-top: 45px;
-  font-size: 16px;
-  font-family: "Poppins";
-}
-
-.disclaimer {
-  color: lightgrey;
-  margin-top: 50px;
-  font-size: 16px;
-  font-family: "Poppins";
-}
-
 .about-box {
   width: 100%;
   max-width: 1075px;
@@ -270,7 +256,6 @@ nav a:hover{
   flex-direction: column;
   padding: 0 25px;
   padding-top: 20px;
-  padding-right: 25px;
   align-items: left;
   color: #ffffff;
   font-family: "Outfit", sans-serif;
@@ -290,6 +275,20 @@ nav a:hover{
   align-items: left;
   color: #ffffff;
   font-family: "Outfit", sans-serif;
+}
+
+.about {
+  color: lightgrey;
+  margin: 45px 0;
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+.disclaimer {
+  color: lightgrey;
+  margin: 50px 0;
+  font-size: 16px;
+  font-family: "Poppins";
 }
 
 .about-menu a {
