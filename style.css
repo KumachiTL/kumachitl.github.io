@@ -144,31 +144,8 @@ nav a:hover{
 }
 
 /* Main */
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}  
     
-.box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
-  background-color: #292929;
-  margin: 25px auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 25px;
-  align-items: left;
-  color: #ffffff;
-  font-family: "Outfit", sans-serif;
-}
-
-.works-box {
+.box, .works-box {
   width: 100%;
   max-width: 1075px;
   height: auto;
@@ -185,6 +162,7 @@ nav a:hover{
   
 .row {
   left: auto;
+  padding-top: 10px;
 }
   
 .text {
@@ -210,6 +188,7 @@ nav a:hover{
   font-size: 22px;
   text-decoration: underline;
   color: white;
+  margin-top: 100px;
 }
 
 .title:hover {
@@ -217,51 +196,29 @@ nav a:hover{
   transition: 0.3s;
   }
 
-.date, .date-last {
+.date {
   color: lightgray;
   font-size: 16px;
-  margin-top: 0;
+  margin-bottom: 15px;
   position: relative;
 }
+
+.date-last {
+  color: lightgray;
+}
   
-.date::after {
-  content: "";
-  position: absolute;
-  bottom: -22px;
-  left: 0;
+.line {
   width: 100%;
   height: 3px;
+  border-radius: 10px;
   background-color: #383838;
-  border-radius: 2px;
-}
-  
-.date-row {
-  margin-bottom: 300px;
-}
-  
-.title-row {
-  margin-top: 35px;
+  margin-top: 5px;
+  border: none;
 }
 
 /* About Page */
 
-.about-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
-  background-color: #292929;
-  margin: 25px auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 25px;
-  padding-top: 20px;
-  align-items: left;
-  color: #ffffff;
-  font-family: "Outfit", sans-serif;
-}
-
-.disclaimer-box {
+.about-box, .disclaimer-box {
   width: 100%;
   max-width: 1075px;
   height: auto;
