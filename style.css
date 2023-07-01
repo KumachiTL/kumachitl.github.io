@@ -358,6 +358,21 @@ nav a:hover{
 
 /* Chapters */
 
+.button-container {
+  flex-direction: column;
+  align-items: center;
+  max-width: 1075px;
+  width: 100%;
+  height: auto;
+  background-color: #292929;
+  margin: 25px auto;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px 25px;
+  color: #ffffff;
+  justify-content: center;
+}
+
 .change-chap-box {
   width: 100%;
   max-width: 1075px;
@@ -369,6 +384,12 @@ nav a:hover{
   padding: 20px 25px;
   color: #ffffff;
   justify-content: center;
+}
+
+.change-chap-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
 }
 
 .prev-btn, .next-btn {
@@ -401,10 +422,56 @@ select {
   color: #1E1E1E;
 }
 
+.separator {
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #383838;
+  margin: 10px 0;
+  border: none;
+}
+
+/* Font size */
+
+.button {
+  width: 40px;
+  height: 40px;
+  margin: 10px 3px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: outfit;
+}
+
+#content {
+  font-size: 16px;
+}
+
+#resetBtn {
+  width: 90px;
+}
+
+.button-container button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
 /* Kokuhaku*/
-/* Prologue */
 
-.kp-box {
+.toc {
+  color: white;
+  text-decoration: none;
+}
+
+.toc:hover {
+  color: #9619d0;
+  transition: .3s;
+}
+
+.kp-box, .kc1-box {
   width: 100%;
   max-width: 1075px;
   height: auto;
@@ -419,35 +486,14 @@ select {
   font-family: "Outfit", sans-serif;
 }
 
-.kokuhaku-prologue {
+.kp, .kc1 {
   color: lightgrey;
-  margin-top: 30px;
   font-size: 16px;
   font-family: "Poppins";
 }
 
-/* Ch1 */
-
-.kc1-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
-  background-color: #292929;
-  margin: 25px auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 25px;
-  align-items: left;
-  color: #ffffff;
-  font-family: "Outfit", sans-serif;
-}
-
-.kc1 {
-  color: lightgrey;
-  margin-top: 30px;
-  font-size: 16px;
-  font-family: "Poppins";
+p#content {
+  margin: 5px 0;
 }
 
 /* Back to top btn */
