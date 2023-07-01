@@ -171,6 +171,7 @@ nav a:hover{
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  margin-bottom: 30px;
 }
   
 .text::after {
@@ -254,7 +255,7 @@ nav a:hover{
 
 /* Kokuhaku Page */
 
-.description-box {
+.description-box, .info-box, .chapter-box {
   width: 100%;
   max-width: 1075px;
   height: auto;
@@ -293,21 +294,7 @@ nav a:hover{
   color: lightgrey;
   font-size: 16px;
   font-family: "Poppins";
-}
-
-.info-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
-  background-color: #292929;
-  margin: 25px auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 25px;
-  align-items: left;
-  color: #ffffff;
-  font-family: "Outfit", sans-serif;
+  line-height: 30px;
 }
 
 .info {
@@ -317,6 +304,7 @@ nav a:hover{
 .info2 {
   font-family: poppins;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .source {
@@ -331,27 +319,13 @@ nav a:hover{
   transition: 0.3s;
 }
 
-.chapter-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
-  background-color: #292929;
-  margin: 25px auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 25px;
-  align-items: left;
-  color: #ffffff;
-  font-family: "Outfit", sans-serif;
-}
-
 .chapter-text {
   font-size: 35px;
   text-shadow: inset 0 0 10px #000000;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  margin-bottom: 30px;
 }
 
 .chapter-text::after {
@@ -366,7 +340,8 @@ nav a:hover{
 }
 
 .chapter-row {
-  margin-top: 35px; /* Adjust the value as needed */
+  margin-top: 10px;
+  margin-bottom: 14px;
 }
 
 .chapter, .chapter-last {
@@ -379,17 +354,6 @@ nav a:hover{
 .chapter:hover {
   color: #8C52FF;
   transition: 0.3s;
-}
-
-.chapter::after {
-  content: "";
-  position: absolute;
-  bottom: -22px;
-  left: 0;
-  width: 1075px;
-  height: 3px;
-  background-color: #383838;
-  border-radius: 2px;
 }
 
 /* Chapters */
