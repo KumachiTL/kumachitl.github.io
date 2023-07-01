@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -68,30 +68,34 @@
 
 <div class="button-container">
   <div class="change-chap-buttons">
+    <a href="kokuhaku-prologue.html" class="prev-link">
+      <button class="prev-btn"><i class="fas fa-angle-left" style="color: white;"></i> Prev</button>
+    </a>
     <form>
-      <select id="dropdown1" onchange="navigateToLink('dropdown1')">
-        <option value="/kokuhaku-chapter-8">Chapter 8</option>
-        <option value="/kokuhaku-chapter-7">Chapter 7</option>
-        <option value="/kokuhaku-chapter-6">Chapter 6</option>
-        <option value="/kokuhaku-chapter-5">Chapter 5</option>
-        <option value="/kokuhaku-chapter-4">Chapter 4</option>
-        <option value="/kokuhaku-chapter-3">Chapter 3</option>
-        <option value="/kokuhaku-chapter-2">Chapter 2</option>
-        <option value="/kokuhaku-chapter-1" selected>Chapter 1</option>
-        <option value="/kokuhaku-prologue">Prologue</option>
-      </select>
+        <select id="dropdown1" onchange="navigateToLink('dropdown1')">
+          <option value="#">Chapter 10</option>
+          <option value="#">Chapter 9</option>
+          <option value="#">Chapter 8</option>
+          <option value="#">Chapter 7</option>
+          <option value="#">Chapter 6</option>
+          <option value="#">Chapter 5</option>
+          <option value="#">Chapter 4</option>
+          <option value="#">Chapter 3</option>
+          <option value="#">Chapter 2</option>
+          <option value="/kokuhaku-chapter-1" selected>Chapter 1</option>
+          <option value="/kokuhaku-prologue">Prologue</option>
+        </select>
     </form>
-    <a href="/kokuhaku-chapter-2" class="next-link">  
+    <a href="#" class="next-link">  
       <button class="next-btn">Next <i class="fas fa-angle-right" style="color: white;"></i></button>
     </a>
-  </div>
+  </div>  
   <hr class="separator" />
   <div class="font-size-buttons">
     <button id="decreaseBtn" class="button"><i class="fas fa-minus"></i></button>
     <button id="resetBtn" class="button">Default</button>
     <button id="increaseBtn" class="button"><i class="fas fa-plus"></i></button>
   </div>
-</div>
 
 <div class="kc1-box">
   <div class="text-row">
@@ -102,7 +106,7 @@
           <br>An inexplicable event occurred for me, Shijo Haruto.<br>
           <br>"What is this..."<br>
           <br>I found an envelope in my shoe box. It was sealed with a pink heart-shaped sticker.<br>
-          <br>Upon checking the contents, I found a favorable message written specifically for me, and at the end, it said, "Please come to the courtyard after school" in rounded handwriting<sup><a href="#footnote1">[1]</a></sup>.<br>
+          <br>Upon checking the contents, I found a favorable message written specifically for me, and at the end, it said, "Please come to the courtyard after school" in rounded handwriting<sup><a id="footnote-1-ref" href="#footnote-1" style="color: #9619D0;">[1]</a></sup>.<br>
           <br>If I were to accept it straightforwardly, it would be considered a love letter.<br>
           <br>However, my mood remains at a low altitude. In fact, sighs escape me from time to time.<br>
           <br>"...Haa."<br>
@@ -138,7 +142,7 @@
           <br>Just as I was about to head there, a classmate called out to me. Using a gentle and appealing tone that seemed to be popular among guys.<br>
           <br>Hiiragi Hina. She is a beautiful girl with softly wavy flaxen hair and big sparkling blue eyes as her distinctive features.<br>
           <br>She has the admirable quality of treating everyone equally and willingly taking on even troublesome tasks.<br>
-          <br>One could say she's a true "sunshine character"<sup><a href="#footnote2">[2]></a></sup>. She has an impeccable appearance and personality, leaving no room for criticism.<br>
+          <br>One could say she's a true "sunshine character"<sup><a id="footnote-2-ref" href="#footnote-2" style="color: #9619D0;">[2]</a></sup>. She has an impeccable appearance and personality, leaving no room for criticism.<br>
           <br>I wonder why Hiiragi-san would have any business with me. Is it about swapping cleaning duties or something? But Hiiragi-san isn't the type of person to do something like that.<br>
           <br>"Y-Yeah, it's fine. Do you need something?"<br>
           <br>Feeling perplexed and unable to gather my thoughts, I respond with a puzzled tone.<br>
@@ -156,7 +160,7 @@
           <br>A consultation, huh. I don't understand why she chose me as her consultant, but I can see why she wanted to change the location. It's difficult to have a conversation like that in a crowded place like the classroom.<br>
           <br>"You know, I've never had a boyfriend before. But now that I've entered my second year, I've been thinking that it's time for me to get at least one boyfriend, you know~ So, um, I'm looking for a boyfriend!"<br>
           <br>Hiiragi-san's cheeks turned red—or rather, they became completely flushed—as she said that.<br>
-          <br>Does she think of me as some kind of matching app bulletin board<sup><a href="#footnote3">[3]</a></sup> or something? If she's looking for a boyfriend, I wish she would do it in a more appropriate setting....<br>
+          <br>Does she think of me as some kind of matching app bulletin board<sup><a id="footnote-3-ref" href="#footnote-3" style="color: #9619D0;">[3]</a></sup> or something? If she's looking for a boyfriend, I wish she would do it in a more appropriate setting....<br>
           <br>"Um, if you want a boyfriend, why don't you just confess to someone directly?"<br>
           <br>"N-No way, it's impossible! I can't imagine myself recovering if I were rejected. So, Shijo-kun, could you please somehow help me find a boyfriend!?"<br>
           <br>What does she really think of me? Does she see me as some kind of handyman? Even a handyman wouldn't be asked for such a request.<br>
@@ -181,43 +185,42 @@
           <br>Hiiragi-san showed no signs of leaving the place. On the contrary, she placed her hand on her chest and began taking deep breaths, inhaling and exhaling repeatedly.<br>
           <br>I looked at her in bewilderment, and then Hiiragi-san stared at me intently.<br>
           <br>"I've liked you for a long time, Shijo-kun. Please, go out with me!"<br>
-          <br>
-          <hr>
-          <div id="footnotes">
-            <a id="footnote1"></a>
-              <br>1. "丸字" (maruji) refers to rounded or circular handwriting style. It is characterized by writing characters with rounded strokes rather than angular or straight ones. It is often associated with a softer, more casual, and sometimes childlike or playful writing style. <a href="#footnote1">↩</a><br>
-            <a id="footnote2"></a>  
-              <br>2. A "sunshine character" refers to someone who embodies a bright and positive personality, radiating warmth and happiness to those around them. They are often seen as cheerful, friendly, and optimistic individuals who bring a positive energy to any situation. <a href="#footnote2">↩</a><br>
-            <a id="footnote3"></a>  
-              <br>3. Something like Tinder, etc. <a href="#footnote3">↩</a><br>
+          <br><hr>
+          <br><u><b>Notes:</b></u>
+          </p>
+          <div class="footnotes">
+            <p id="footnote-1"> 1. "丸字" (maruji) refers to rounded or circular handwriting style. It is characterized by writing characters with rounded strokes rather than angular or straight ones. It is often associated with a softer, more casual, and sometimes childlike or playful writing style. <a href="#footnote-1-ref" style="color: #9619D0;">↩</a></p>
+            <p id="footnote-2"> 2. Refers to someone who embodies a bright and positive personality, radiating warmth and happiness to those around them. They are often seen as cheerful, friendly, and optimistic individuals who bring a positive energy to any situation. <a href="#footnote-2-ref" style="color: #9619D0;">↩</a></p>
+            <p id="footnote-3"> 3. A platform within a dating or matchmaking application where users can post information about themselves and their preferences to search for compatible partners. <a href="#footnote-3-ref" style="color: #9619D0;">↩</a></p>
           </div>
-          <br>PS: You can also suggest any stories/novels in the comments. (As long as they're webnovels)
-        </p>
+          <br><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#9619D0', 'L3L0E4VZZ');kofiwidget2.draw();</script> 
       </div>
-    </div>
+  </div>
 </div>
   
-<div class="change-chap-box">
-  <a href="/kokuhaku-prologue" class="prev-link">
-    <button class="prev-btn"><i class="fas fa-angle-left" style="color: white;"></i> Prev</button>
-  </a>
-  <form>
-    <select id="dropdown2" onchange="navigateToLink('dropdown2')">
-      <option value="/kokuhaku-chapter-8">Chapter 8</option>
-      <option value="/kokuhaku-chapter-7">Chapter 7</option>
-      <option value="/kokuhaku-chapter-6">Chapter 6</option>
-      <option value="/kokuhaku-chapter-5">Chapter 5</option>
-      <option value="/kokuhaku-chapter-4">Chapter 4</option>
-      <option value="/kokuhaku-chapter-3">Chapter 3</option>
-      <option value="/kokuhaku-chapter-2">Chapter 2</option>
-      <option value="/kokuhaku-chapter-1" selected>Chapter 1</option>
-      <option value="/kokuhaku-prologue">Prologue</option>
-    </select>
-  </form>
-  <a href="/kokuhaku-chapter-2" class="next-link">  
-    <button class="next-btn">Next <i class="fas fa-angle-right" style="color: white;"></i></button>
-  </a>
-</div>
+  <div class="change-chap-box">
+    <a href="/kokuhaku-prologue" class="prev-link">
+        <button class="prev-btn"><i class="fas fa-angle-left" style="color: white;"></i> Prev</button>
+    </a>
+    <form>
+        <select id="dropdown2" onchange="navigateToLink('dropdown2')">
+            <option value="#">Chapter 10</option>
+            <option value="#">Chapter 9</option>
+            <option value="#">Chapter 8</option>
+            <option value="#">Chapter 7</option>
+            <option value="#">Chapter 6</option>
+            <option value="#">Chapter 5</option>
+            <option value="#">Chapter 4</option>
+            <option value="#">Chapter 3</option>
+            <option value="#">Chapter 2</option>
+            <option value="/kokuhaku-chapter-1" selected>Chapter 1</option>
+            <option value="/kokuhaku-prologue">Prologue</option>
+        </select>
+    </form>
+    <a href="#" class="next-link">  
+      <button class="next-btn">Next <i class="fas fa-angle-right" style="color: white;"></i></button>
+    </a>
+  </div> 
 
 <!-- Comments -->
 
