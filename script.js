@@ -36,9 +36,46 @@ searchInput.addEventListener("keydown", (event) => {
 
 function performSearch() {
   const searchTerm = searchInput.value;
+
   // Perform search logic here
-  console.log("Search term:", searchTerm);
+  // You can replace the following code with your actual search logic
+  const searchResults = [
+    {
+      title: "Result 1",
+      description: "This is the first search result",
+    },
+    {
+      title: "Result 2",
+      description: "This is the second search result",
+    },
+    {
+      title: "Result 3",
+      description: "This is the third search result",
+    },
+  ];
+
+  displaySearchResults(searchResults);
 }
+
+function displaySearchResults(results) {
+  const searchResultsContainer = document.getElementById("searchResults");
+  searchResultsContainer.innerHTML = "";
+
+  if (results.length === 0) {
+    searchResultsContainer.innerHTML = "No results found.";
+    return;
+  }
+
+  results.forEach((result) => {
+    const resultItem = document.createElement("div");
+    resultItem.innerHTML = `
+      <h3>${result.title}</h3>
+      <p>${result.description}</p>
+    `;
+    searchResultsContainer.appendChild(resultItem);
+  });
+}
+
 
 // CHANGE CHAPTER
 
