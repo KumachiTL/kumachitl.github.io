@@ -14,4 +14,22 @@
       "Kokuhaku - Chapter 10"
     ]
   }
+
+  {
+    "results": [
+      {
+        "title": "Result 1",
+        "description": "Lorem ipsum dolor sit amet."
+      },
+      {
+        "title": "Result 2",
+        "description": "Consectetur adipiscing elit."
+      },
+      {
+        "title": "Result 3",
+        "description": "Sed do eiusmod tempor incididunt."
+      }
+    ]
+  }
+  
   

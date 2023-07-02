@@ -21,60 +21,33 @@ dropdowns.forEach(dropdown => {
 
 // SEARCH
 
-const searchInput = document.getElementById("searchInput");
-const searchIcon = document.querySelector(".search-icon");
+// JavaScript to handle search bar functionality
+const searchInput = document.getElementById('searchInput');
+const searchIcon = document.querySelector('.search-icon');
+const searchURL = 'results.html';
 
-searchIcon.addEventListener("click", () => {
-  searchInput.focus();
-});
-
-searchInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    performSearch();
-  }
-});
-
-function performSearch() {
-  const searchTerm = searchInput.value;
-
-  // Perform search logic here
-  // You can replace the following code with your actual search logic
-  const searchResults = [
-    {
-      title: "Result 1",
-      description: "This is the first search result",
-    },
-    {
-      title: "Result 2",
-      description: "This is the second search result",
-    },
-    {
-      title: "Result 3",
-      description: "This is the third search result",
-    },
-  ];
-
-  displaySearchResults(searchResults);
+// Show/hide search bar and handle search submission
+function toggleSearchBar() {
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.classList.toggle('active');
+    searchInput.focus();
 }
 
-function displaySearchResults(results) {
-  const searchResultsContainer = document.getElementById("searchResults");
-  searchResultsContainer.innerHTML = "";
-
-  if (results.length === 0) {
-    searchResultsContainer.innerHTML = "No results found.";
-    return;
-  }
-
-  results.forEach((result) => {
-    const resultItem = document.createElement("div");
-    resultItem.innerHTML = `
-      <h3>${result.title}</h3>
-      <p>${result.description}</p>
-    `;
-    searchResultsContainer.appendChild(resultItem);
-  });
+// Handle search submission
+function submitSearch() {
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm !== '') {
+        window.location.href = `${searchURL}?q=${encodeURIComponent(searchTerm)}`;
+    }
 }
+
+// Event listeners
+searchIcon.addEventListener('click', toggleSearchBar);
+searchInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        submitSearch();
+    }
+});
 
 
 // CHANGE CHAPTER
