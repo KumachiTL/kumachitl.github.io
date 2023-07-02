@@ -21,8 +21,6 @@ dropdowns.forEach(dropdown => {
 
 // SEARCH
 
-// Assuming you have the JSON data stored in a file called 'data.json'
-
 // Load the JSON data
 fetch('data.json')
   .then(response => response.json())
