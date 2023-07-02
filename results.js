@@ -16,14 +16,20 @@ function displaySearchResults(results) {
     if (results.length === 0) {
         resultsContainer.innerHTML = '<p>No results found.</p>';
     } else {
-        results.forEach(result => {
-            const resultElement = document.createElement('div');
-            resultElement.innerHTML = `
-                <h2>${result.title}</h2>
-                <p>${result.description}</p>
-                <hr>
-            `;
-            resultsContainer.appendChild(resultElement);
-        });
+        const searchTerm = searchQuery.toLowerCase();
+        const filteredResults = results.filter(result => result.toLowerCase().includes(searchTerm));
+
+        if (filteredResults.length === 0) {
+            resultsContainer.innerHTML = '<p>No matching results found.</p>';
+        } else {
+            filteredResults.forEach(result => {
+                const resultElement = document.createElement('div');
+                resultElement.innerHTML = `
+                    <h2>${result}</h2>
+                    <hr>
+                `;
+                resultsContainer.appendChild(resultElement);
+            });
+        }
     }
 }
