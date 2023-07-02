@@ -50,7 +50,7 @@ function handleSearch() {
 
       // Redirect to search results page if there are matching results
       if (searchResults.length > 0) {
-        const url = `results.html?search=${encodeURIComponent(searchTerm)}`;
+        const url = `/results?search=${encodeURIComponent(searchTerm)}`;
         window.location.href = url;
       } else {
         alert('No results found.');
