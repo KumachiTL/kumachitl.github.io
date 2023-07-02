@@ -21,39 +21,24 @@ dropdowns.forEach(dropdown => {
 
 // SEARCH
 
-// Assuming you have the JSON data stored in a file called 'data.json'
+const searchInput = document.getElementById("searchInput");
+const searchIcon = document.querySelector(".search-icon");
 
-// Load the JSON data
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    // Store the loaded data
-    const contentData = data.contents;
+searchIcon.addEventListener("click", () => {
+  searchInput.focus();
+});
 
-    // Get references to the HTML elements
-    const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    performSearch();
+  }
+});
 
-    // Add event listener to the search button
-    searchButton.addEventListener('click', performSearch);
-
-    function performSearch() {
-      const searchTerm = searchInput.value.trim().toLowerCase();
-      const searchResults = contentData.filter(item => item.toLowerCase().includes(searchTerm));
-
-      // Redirect to search results page if there are matching results
-      if (searchResults.length > 0) {
-        const url = `results.html?search=${encodeURIComponent(searchTerm)}`;
-        window.location.href = url;
-      } else {
-        alert('No results found.');
-      }
-    }
-  })
-  .catch(error => {
-    console.error('Error loading JSON data:', error);
-  });
-
+function performSearch() {
+  const searchTerm = searchInput.value;
+  // Perform search logic here
+  console.log("Search term:", searchTerm);
+}
 
 // CHANGE CHAPTER
 
