@@ -217,6 +217,10 @@ nav a:hover{
   border: none;
 }
 
+.home {
+  color: #8C52FF;
+}
+
 /* About Page */
 
 .about-box, .disclaimer-box {
