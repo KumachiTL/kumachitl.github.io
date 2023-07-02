@@ -1,16 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" href="assets/fav.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Results</title>
+  <title>Kumachi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Search Results</h1>
+  <header>
+    <div class="logo">
+        <a href="/">
+            <img src="assets/logo.png" title="Home" alt="Kumachi Logo">
+          </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="menu">Ongoing<i class="fas fa-angle-down"></i></a></a>
+            <div class="dropdown-content">
+              <a href="/kokuhaku">• The Beautiful Girls in the School Confessed to Me Almost at the Same Time and I Misunderstood That They Were Making Fun of Me so I Decided To Go Out With All of Them but I Was Too Shy!</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="menu">Hiatus<i class="fas fa-angle-down"></i></a></a>
+            <div class="dropdown-content">
+              <a href="#">• I Don't Know Souseki~I Had A Girlfriend Before I Knew It~</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="menu">Completed<i class="fas fa-angle-down"></i></a></a>
+            <div class="dropdown-content">
+              <a href="#">• The Hero Cucked Me of My Childhood Friend, so I Think I'll Steal His Fiancee</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="menu">Dropped<i class="fas fa-angle-down"></i></a></a>
+            <div class="dropdown-content">
+              <a href="#">• Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis?</a>
+            </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="menu">Original Works<i class="fas fa-angle-down"></i></a></a>
+          <div class="dropdown-content">
+            <a href="#">• My Ex-Wife's Daughter</a>
+            <a href="#">• The Daily Life of a Former Office Worker [18+]</a>
+            <a href="#">• Reconciliation of Two Old Lovers</a>
+            <a href="#">• My Late Wife is My Guardian Angel</a>
+          </div>
+        </li>
+        <li><a href="/about">About</a></li>
+        <span class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">
+          <i class="fas fa-search"></i>
+        </button>
+        </span>
+      </ul>
+    </nav>
+     
+  </header>
 
-  <!-- Display search results here -->
-  <div id="resultsContainer"></div>
+  <h1 id="headerText"></h1>
 
-  <script src="script.js" defer></script>
+  <main id="resultsContainer">
+    <p>Loading...</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 <a href="/" style="color: #9619D0;">Kumachi</a>. All rights reserved.</p>
+  </footer>  
+
+  <script src="script.js"></script>
+
+  <script>
+    // Get the search term from the URL query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchTerm = urlParams.get('search');
+
+    // Display the search term on the page
+    const headerText = document.getElementById('headerText');
+    headerText.textContent = searchTerm ? `${searchTerm} Results` : 'Search Results';
+
+    // Load the search results
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Filter the data based on the search term
+        const searchResults = data.contents.filter(item => item.toLowerCase().includes(searchTerm));
+
+        // Generate HTML for the search results
+        const resultsContainer = document.getElementById('resultsContainer');
+        resultsContainer.innerHTML = '';
+        if (searchResults.length > 0) {
+          const ul = document.createElement('ul');
+          ul.classList.add('search-results'); // Add a class for the search results <ul>
+          searchResults.forEach(result => {
+            const li = document.createElement('li');
+            li.classList.add('search-result-item'); // Add a class for the search result <li>
+            const a = document.createElement('a');
+            a.textContent = result;
+
+            // Set the link URL based on the search result
+            if (result === 'Kokuhaku') {
+              a.href = 'https://kumachitl.netlify.app/kokuhaku';
+            } else if (result === 'Kokuhaku - Prologue') {
+              a.href = 'https://kumachitl.netlify.app/kokuhaku-prologue';
+            } else if (result === 'Kokuhaku - Chapter 1') {
+              a.href = 'https://kumachitl.netlify.app/kokuhaku-chapter-1';
+            } else {
+              // Add logic for other chapters if needed
+            }
+
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+          resultsContainer.appendChild(ul);
+        } else {
+          resultsContainer.innerHTML = '<p>No results found.</p>';
+        }
+
+      })
+      .catch(error => {
+        console.error('Error loading JSON data:', error);
+      });
+  </script>
+
 </body>
 </html>

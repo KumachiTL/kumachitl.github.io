@@ -117,46 +117,92 @@ nav a:hover{
   
 /* Search */
 
-/* CSS for search bar */
-.search-bar {
-  position: relative;
-  width: 250px;
-  margin: 20px;
-}
-
-.search-bar input {
-  width: 100%;
+.search-container {
+  display: inline-flex;
+  align-items: center;
   height: 40px;
-  padding: 10px;
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid #1E1E1E;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#searchInput {
+  height: 40px;
+  width: 200px;
+  font-family: 'poppins', sans-serif;
   border: none;
-  border-radius: 5px;
+  background-color: white;
+  padding: 0 10px;
   outline: none;
-  transition: width 0.4s;
-  font-family: outfit;
+  font-size: 15px;
+  color: #1E1E1E;
 }
 
-.search-bar .search-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+#searchButton {
+  height: 40px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  color: white;
   cursor: pointer;
-  transition: transform 0.4s;
 }
 
-.search-icon {
-  color: darkgray;
-  font-size: 16px;
-  display: block;
+/* Search Results */
+
+#headerText {
+  font-size: 35px;
+  color: white;
+  text-shadow: inset 0 0 10px #000000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 120px;
 }
 
-.search-bar.active input {
-  width: 400px;
+#headerText::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #8C52FF;
 }
 
-.search-bar.active .search-icon {
-  transform: rotate(360deg);
+.search-results {
+  margin: 10px 100px;
+  padding: 10px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
 }
 
+.search-result-item {
+  margin-bottom: 20px;
+  background-color: #292929;
+  padding: 45px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.search-result-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-result-item a:hover {
+  color: #8C52FF;
+  transition: .3s;
+}
 
 /* Main */
     

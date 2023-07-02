@@ -21,33 +21,45 @@ dropdowns.forEach(dropdown => {
 
 // SEARCH
 
-// JavaScript to handle search bar functionality
-const searchInput = document.getElementById('searchInput');
-const searchIcon = document.querySelector('.search-icon');
-const searchURL = 'results.html';
+// Assuming you have the JSON data stored in a file called 'data.json'
 
-// Show/hide search bar and handle search submission
-function toggleSearchBar() {
-    const searchBar = document.querySelector('.search-bar');
-    searchBar.classList.toggle('active');
-    searchInput.focus();
-}
+// Load the JSON data
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    // Store the loaded data
+    const contentData = data.contents;
 
-// Handle search submission
-function submitSearch() {
-    const searchTerm = searchInput.value.trim();
-    if (searchTerm !== '') {
-        window.location.href = `${searchURL}?q=${encodeURIComponent(searchTerm)}`;
-    }
-}
+    // Get references to the HTML elements
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
 
-// Event listeners
-searchIcon.addEventListener('click', toggleSearchBar);
-searchInput.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        submitSearch();
-    }
+// Add event listener to the search button
+searchButton.addEventListener('click', handleSearch);
+
+// Add event listener to the Enter key press on the search input field
+searchInput.addEventListener('keydown', function(event) {
+  if (event.keyCode === 13) {
+    handleSearch();
+  }
 });
+
+function handleSearch() {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+  const searchResults = contentData.filter(item => item.toLowerCase().includes(searchTerm));
+
+      // Redirect to search results page if there are matching results
+      if (searchResults.length > 0) {
+        const url = `results.html?search=${encodeURIComponent(searchTerm)}`;
+        window.location.href = url;
+      } else {
+        alert('No results found.');
+      }
+    }
+  })
+  .catch(error => {
+    console.error('Error loading JSON data:', error);
+  });
 
 
 // CHANGE CHAPTER
