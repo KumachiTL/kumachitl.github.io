@@ -207,11 +207,8 @@ nav a:hover{
 /* Main */
     
 .box, .works-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
   background-color: #292929;
-  margin: 25px auto;
+  margin: 25px 122px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -285,11 +282,8 @@ nav a:hover{
 /* About Page */
 
 .about-box, .disclaimer-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
   background-color: #292929;
-  margin: 25px auto;
+  margin: 25px 122px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -323,11 +317,8 @@ nav a:hover{
 /* Kokuhaku Page */
 
 .description-box, .info-box, .chapter-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
   background-color: #292929;
-  margin: 25px auto;
+  margin: 25px 122px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -428,11 +419,8 @@ nav a:hover{
 .button-container {
   flex-direction: column;
   align-items: center;
-  max-width: 1075px;
-  width: 100%;
-  height: auto;
   background-color: #292929;
-  margin: 25px auto;
+  margin: 25px 122px;
   border-radius: 10px;
   display: flex;
   padding: 10px 25px;
@@ -441,14 +429,11 @@ nav a:hover{
 }
 
 .change-chap-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
   background-color: #292929;
-  margin: 25px auto;
+  margin: 25px 122px;
   border-radius: 10px;
   display: flex;
-  padding: 20px 25px;
+  padding: 10px 25px;
   color: #ffffff;
   justify-content: center;
 }
@@ -483,8 +468,7 @@ select {
   font-size: 16px;
   width: 200px;
   height: 40px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px 0;
   border-radius: 4px;
   color: #1E1E1E;
 }
@@ -539,11 +523,8 @@ select {
 }
 
 .kp-box, .kc1-box {
-  width: 100%;
-  max-width: 1075px;
-  height: auto;
   background-color: #292929;
-  margin: 25px auto;
+  margin: 25px 122px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -593,16 +574,11 @@ p#content {
   padding: 20px;
   background-color: #292929;
   margin-bottom: 10px;
-  width: 100%;
-  max-width: 1075px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 25px 122px;
   border-radius: 10px;
 }
 
 #disqus_thread {
-  width: 100%;
-  max-width: 1075px;
   margin-top: 20px;
 }
 
@@ -612,22 +588,13 @@ p#content {
 
 /* Footer */
   
-  footer {
-    background-color: #292929;
-    padding: 15px;
-    text-align: center;
-    color: white;
-    margin-top: auto;
-  }
-
-  footer a {
-    color: #8C52FF;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #FF6F00;
-  }
+footer {
+  background-color: #292929;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+}
 
 /* Mobile 1178 ver */
 
