@@ -1,22 +1,47 @@
 // SUBMENU
 
-const dropdowns = document.querySelectorAll('.dropdown');
-
-dropdowns.forEach(dropdown => {
-  const menu = dropdown.querySelector('.menu');
-  const submenu = dropdown.querySelector('.dropdown-content');
-
-  menu.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default link behavior
-    submenu.classList.toggle('show');
+$(document).ready(function () {
+  $('.navbar .fas.fa-bars').click(function () {
+    $('.navbar .nav-links').toggleClass('show');
+    $('.navbar .nav-links').animate({ 'left': '0' });
   });
 
-  // Close the dropdown if clicked outside
-  document.addEventListener('click', event => {
-    if (!dropdown.contains(event.target)) {
-      submenu.classList.remove('show');
+  $('.navbar .menu .dropdown-toggle').click(function () {
+    $(this).next('.submenu').slideToggle();
+    $(this).toggleClass('collapsed');
+  }); 
+
+  $('.navbar .sidebar-logo .fas.fa-times').click(function () {
+    $('.navbar .nav-links').animate({ 'left': '-100%' }, function () {
+      $('.navbar .nav-links').removeClass('show');
+    });
+  });
+
+  // Animation for media query
+  $(window).resize(function () {
+    if ($(window).width() > 768) {
+      $('.navbar .nav-links').css('display', 'block');
+      $('.navbar .nav-links').css('left', '0');
+    } else {
+      $('.navbar .nav-links').css('display', 'none');
+      $('.navbar .nav-links').css('left', '-100%');
+      $('.navbar .nav-links').removeClass('show');
     }
   });
+});
+
+// search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .fa-search");
+let searchBoxCancel = document.querySelector(".search-box .fa-times");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("fa-search" ,"fa-times");
+  }else {
+    searchBox.classList.replace("fa-times" ,"fa-search");
+  }
 });
 
 // SEARCH
@@ -30,10 +55,6 @@ fetch('data.json')
 
     // Get references to the HTML elements
     const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
-
-// Add event listener to the search button
-searchButton.addEventListener('click', handleSearch);
 
 // Add event listener to the Enter key press on the search input field
 searchInput.addEventListener('keydown', function(event) {
@@ -48,7 +69,7 @@ function handleSearch() {
 
       // Redirect to search results page if there are matching results
       if (searchResults.length > 0) {
-        const url = `/results?search=${encodeURIComponent(searchTerm)}`;
+        const url = `results.html?search=${encodeURIComponent(searchTerm)}`;
         window.location.href = url;
       } else {
         alert('No results found.');
@@ -58,7 +79,6 @@ function handleSearch() {
   .catch(error => {
     console.error('Error loading JSON data:', error);
   });
-
 
 // CHANGE CHAPTER
 
