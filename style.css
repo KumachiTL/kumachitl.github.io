@@ -267,6 +267,7 @@ nav {
 .search-result-item a:hover {
   color: #8C52FF;
   transition: .3s;
+  cursor: pointer;
 }
 
 /* Main */
