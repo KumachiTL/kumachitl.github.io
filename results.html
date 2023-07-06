@@ -11,60 +11,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <div class="logo">
-        <a href="/">
-            <img src="assets/logo.png" title="Home" alt="Kumachi Logo">
-          </a>
+  <nav>
+    <div class="navbar">
+      <i class="fas fa-bars"></i>
+      <div class="logo">
+      <a href="/"><img src="assets/logo.png" title="Home" alt="Kumachi Logo"></a>
+      </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <a href="/"><img src="assets/logo.png" title="Home" alt="Kumachi Logo"></a>
+          <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu">
+          <li class="dropdown"><a href="index.html">Home</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Ongoing</a>
+            <ul class="submenu">
+              <li><a href="kokuhaku.html">The Beautiful Girls in the School Confessed to Me Almost at the Same Time and I Misunderstood That They Were Making Fun of Me so I Decided To Go Out With All of Them but I Was Too Shy!</a></li>
+              <!-- <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li> -->
+              </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Hiatus</a>
+            <ul class="submenu">
+              <li><a href="#">I Don't Know Souseki~I Had A Girlfriend Before I Knew It~</a></li>
+              <!-- <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li> -->
+            </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Completed</a>
+            <ul class="submenu">
+              <li><a href="#">The Hero Cucked Me of My Childhood Friend, so I Think I'll Steal His Fiancee</a></li>
+              <!-- <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li> -->
+            </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Dropped</a>
+            <!-- <ul class="submenu">
+              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nam velit est? Corporis, quos unde?</a></li>
+              <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li>
+            </ul> -->
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Original Works</a>
+            <!-- <ul class="submenu">
+              <li><a href="#">My Ex-Wife's Daughter</a></li>
+              <li><a href="#">The Daily Life of a Former Office Worker [18+]</a></li>
+              <li><a href="#">Reconciliation of Two Old Lovers</a></li>
+              <li><a href="#">My Late Wife is My Guardian Angel</a></li>
+            </ul> -->
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
     </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li class="dropdown">
-            <a href="#" class="menu">Ongoing<i class="fas fa-angle-down"></i></a></a>
-            <div class="dropdown-content">
-              <a href="/kokuhaku">• The Beautiful Girls in the School Confessed to Me Almost at the Same Time and I Misunderstood That They Were Making Fun of Me so I Decided To Go Out With All of Them but I Was Too Shy!</a>
-            </div>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="menu">Hiatus<i class="fas fa-angle-down"></i></a></a>
-            <div class="dropdown-content">
-              <a href="#">• I Don't Know Souseki~I Had A Girlfriend Before I Knew It~</a>
-            </div>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="menu">Completed<i class="fas fa-angle-down"></i></a></a>
-            <div class="dropdown-content">
-              <a href="#">• The Hero Cucked Me of My Childhood Friend, so I Think I'll Steal His Fiancee</a>
-            </div>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="menu">Dropped<i class="fas fa-angle-down"></i></a></a>
-            <div class="dropdown-content">
-              <a href="#">• Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis?</a>
-            </div>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="menu">Original Works<i class="fas fa-angle-down"></i></a></a>
-          <div class="dropdown-content">
-            <a href="#">• My Ex-Wife's Daughter</a>
-            <a href="#">• The Daily Life of a Former Office Worker [18+]</a>
-            <a href="#">• Reconciliation of Two Old Lovers</a>
-            <a href="#">• My Late Wife is My Guardian Angel</a>
-          </div>
-        </li>
-        <li><a href="/about">About</a></li>
-        <span class="search-container">
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <div class="input-box">
         <input type="text" id="searchInput" placeholder="Search...">
-        <button id="searchButton">
-          <i class="fas fa-search"></i>
-        </button>
-        </span>
-      </ul>
-    </nav>
-     
-  </header>
+      </div>
+    </div>
+   </div>
+  </nav>
 
   <h1 id="headerText"></h1>
 
