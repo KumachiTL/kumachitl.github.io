@@ -1255,4 +1255,10 @@ footer {
     margin: 5px;
     border-radius: 5px;
   }
+
+  /* COMMENTS */
+
+  .comments-box {
+    margin: 5px;
+  }
 }
