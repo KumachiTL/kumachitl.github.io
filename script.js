@@ -1,32 +1,12 @@
 // SUBMENU
 
 $(document).ready(function () {
-  $('.navbar .fas.fa-bars').click(function () {
-    $('.navbar .nav-links').toggleClass('show');
-    setTimeout(function () {
-      $('.navbar .nav-links').animate({ 'left': '0' });
-    }, 100);
-  });
-
-  $('.navbar .menu .dropdown-toggle').click(function () {
-    $(this).next('.submenu').slideToggle();
-    $(this).toggleClass('collapsed');
-  });
-
-  $('.navbar .sidebar-logo .fas.fa-times').click(function () {
-    $('.navbar .nav-links').animate({ 'left': '-100%' }, function () {
-      $('.navbar .nav-links').removeClass('show');
-    });
-  });
-
   // Animation for media query
   $(window).resize(function () {
     if ($(window).width() > 768) {
-      $('.navbar .nav-links').css('display', 'block');
-      $('.navbar .nav-links').css('left', '0');
+      $('.navbar .nav-links').css({ 'display': 'block', 'left': '0' });
     } else {
-      $('.navbar .nav-links').css('display', 'none');
-      $('.navbar .nav-links').css('left', '-100%');
+      $('.navbar .nav-links').css({ 'display': 'none', 'left': '-100%' });
       $('.navbar .nav-links').removeClass('show');
     }
   });
