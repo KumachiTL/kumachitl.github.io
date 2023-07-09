@@ -3,13 +3,15 @@
 $(document).ready(function () {
   $('.navbar .fas.fa-bars').click(function () {
     $('.navbar .nav-links').toggleClass('show');
-    $('.navbar .nav-links').animate({ 'left': '0' });
+    setTimeout(function () {
+      $('.navbar .nav-links').animate({ 'left': '0' });
+    }, 100);
   });
 
   $('.navbar .menu .dropdown-toggle').click(function () {
     $(this).next('.submenu').slideToggle();
     $(this).toggleClass('collapsed');
-  }); 
+  });
 
   $('.navbar .sidebar-logo .fas.fa-times').click(function () {
     $('.navbar .nav-links').animate({ 'left': '-100%' }, function () {
@@ -29,6 +31,7 @@ $(document).ready(function () {
     }
   });
 });
+
 
 // search-box open close js code
 let navbar = document.querySelector(".navbar");
