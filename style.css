@@ -1175,6 +1175,7 @@ footer {
   }
   
   .search-results {
+    grid-template-columns: 1fr;
     gap: 2px;
     margin: 0 2px;
     text-align: center;
