@@ -49,7 +49,7 @@ searchBox.addEventListener("click", ()=>{
 // -Search Results
 
 // Load the JSON data
-fetch('data.json')
+fetch('../data.json')
   .then(response => response.json())
   .then(data => {
     // Store the loaded data
