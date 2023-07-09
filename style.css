@@ -126,7 +126,8 @@ nav {
 .submenu li a:hover {
   background-color: #383838;
 }
-/* Search */
+
+/* SEARCH */
 
 .search-box {
   position: relative;
@@ -213,7 +214,7 @@ nav {
   display: block;
 }
 
-/* Search Results */
+/* SEARCH RESULTS */
 
 #headerText {
   font-size: 35px;
@@ -270,7 +271,7 @@ nav {
   cursor: pointer;
 }
 
-/* Main */
+/* MAIN */
     
 .box, .works-box {
   background-color: #292929;
@@ -327,10 +328,6 @@ nav {
   margin-bottom: 15px;
   position: relative;
 }
-
-.date-last {
-  color: lightgray;
-}
   
 .line {
   width: 100%;
@@ -341,11 +338,7 @@ nav {
   border: none;
 }
 
-.home {
-  color: #8C52FF;
-}
-
-/* About Page */
+/* ABOUT PAGE */
 
 .about-box, .disclaimer-box {
   background-color: #292929;
@@ -360,7 +353,7 @@ nav {
   font-family: "Outfit", sans-serif;
 }
 
-.about {
+.about, .disclaimer {
   color: lightgrey;
   margin-top: 10px;
   margin-bottom: 40px;
@@ -368,19 +361,7 @@ nav {
   font-family: "Poppins";
 }
 
-.disclaimer {
-  color: lightgrey;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-family: "Poppins";
-}
-
-.about-menu {
-  color: #8C52FF;
-}
-
-/* Kokuhaku Page */
+/* KOKUHAKU PAGE */
 
 .description-box, .info-box, .chapter-box {
   background-color: #292929;
@@ -438,7 +419,7 @@ nav {
   font-size: 16px;
 }
 
-.source:hover {
+.source:hover, .chapter:hover {
   color: #8C52FF;
   transition: 0.3s;
 }
@@ -468,19 +449,14 @@ nav {
   margin-bottom: 14px;
 }
 
-.chapter, .chapter-last {
+.chapter {
   font-size: 19px;
   text-decoration: underline;
   color: white;
   position: relative;
 }
 
-.chapter:hover {
-  color: #8C52FF;
-  transition: 0.3s;
-}
-
-/* Chapters */
+/* BUTTONS */
 
 .button-container {
   flex-direction: column;
@@ -493,6 +469,8 @@ nav {
   color: #ffffff;
   justify-content: center;
 }
+
+/* -Change Chapter */
 
 .change-chap-box {
   background-color: #292929;
@@ -548,7 +526,7 @@ select {
   border: none;
 }
 
-/* Font size */
+/* -Font size */
 
 .button {
   width: 40px;
@@ -576,7 +554,7 @@ select {
   transition: 0.3s;
 }
 
-/* Kokuhaku*/
+/* KOKUHAKU */
 
 .toc {
   color: white;
@@ -610,7 +588,7 @@ p#content {
   margin: 5px 0;
 }
 
-/* Back to top btn */
+/* B2TOP BUTTON */
 
 #backToTopBtn {
   position: fixed;
@@ -633,7 +611,7 @@ p#content {
   opacity: 1;
 }
 
-/* Disqus comments */
+/* COMMENTS */
 
 .comments-box {
   border: 1px solid #ccc;
@@ -652,7 +630,7 @@ p#content {
   color: #8C52FF;
 }
 
-/* Footer */
+/* FOOTER */
   
 footer {
   background-color: #292929;
@@ -750,10 +728,7 @@ footer {
     left: 0;
   }
 
-  .dropdown:nth-child(3) .submenu,
-  .dropdown:nth-child(4) .submenu,
-  .dropdown:nth-child(5) .submenu,
-  .dropdown:nth-child(6) .submenu {
+  .dropdown:nth-child(3) .submenu, .dropdown:nth-child(4) .submenu, .dropdown:nth-child(5) .submenu, .dropdown:nth-child(6) .submenu {
     left: 0;
   }
 
@@ -776,7 +751,7 @@ footer {
     width: 250px;
   }
 
-  /* Main */
+  /* MAIN */
     
   .box, .works-box {
     margin: 25px 80px;
@@ -790,11 +765,11 @@ footer {
     font-size: 18px;
   }
 
-  .date, .date-last {
+  .date {
     font-size: 13px;
   }
 
-  /* About Page */
+  /* ABOUT PAGE */
 
   .about-box, .disclaimer-box {
     margin: 25px 80px;
@@ -804,7 +779,7 @@ footer {
     font-size: 15px;
   }
 
-  /* Kokuhaku Page */
+  /* KOKUHAKU PAGE */
 
   .description-box, .info-box, .chapter-box {
     margin: 25px 80px;
@@ -823,7 +798,7 @@ footer {
     line-height: 25px;
   }
 
-  .info, .chapter, .chapter-last {
+  .info, .chapter {
     font-size: 14px;
   }
 
@@ -835,7 +810,7 @@ footer {
     font-size: 22px;
   }
 
-  /* Chapters */
+  /* BUTTONS */
 
   .button-container {
     margin: 25px 80px;
@@ -860,7 +835,7 @@ footer {
     margin: 4px;
   }
 
-  /* Kokuhaku*/
+  /* KOKUHAKU */
 
   .kp-box, .kc1-box {
     margin: 25px 80px;
@@ -871,7 +846,7 @@ footer {
   }
 
   .footnotes {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 

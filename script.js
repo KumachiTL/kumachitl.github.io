@@ -1,4 +1,4 @@
-// SUBMENU
+// SIDEMENU
 
 $(document).ready(function () {
   $('.navbar .fas.fa-bars').click(function () {
@@ -29,8 +29,10 @@ $(document).ready(function () {
   });
 });
 
+// SEARCH
 
-// search-box open close js code
+// -Search Box
+
 let navbar = document.querySelector(".navbar");
 let searchBox = document.querySelector(".search-box .fa-search");
 let searchBoxCancel = document.querySelector(".search-box .fa-times");
@@ -44,7 +46,7 @@ searchBox.addEventListener("click", ()=>{
   }
 });
 
-// SEARCH
+// -Search Results
 
 // Load the JSON data
 fetch('data.json')
