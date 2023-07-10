@@ -388,8 +388,7 @@ nav {
 
 .about, .disclaimer {
   color: lightgrey;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-size: 16px;
   font-family: "Poppins";
 }
@@ -443,8 +442,11 @@ nav {
 .info2 {
   font-family: poppins;
   font-size: 16px;
-  font-style: italic;
   line-height: 26px;
+}
+
+.info2::first-line {
+  font-style: italic;
 }
 
 .source {
