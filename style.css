@@ -17,6 +17,7 @@ nav {
   background: #292929;
   padding: 10px 100px;
   color: #9619d0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
   
 .navbar {

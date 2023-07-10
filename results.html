@@ -88,6 +88,12 @@
     <p>Loading...</p>
   </main>
 
+  <div id="loadingScreen">
+    <div class="loadingText">
+      Loading...
+    </div>
+  </div>
+
 <!-- Footer -->
 
   <footer>
@@ -98,6 +104,12 @@
   <script src="script.js"></script>
 
   <script>
+
+    window.addEventListener('load', function () {
+      const loadingScreen = document.getElementById('loadingScreen');
+      loadingScreen.style.display = 'none';
+    });
+
     // Get the search term from the URL query parameters
     const urlParams = new URLSearchParams(window.location.search);
     const searchTerm = urlParams.get('search');
