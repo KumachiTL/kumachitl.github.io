@@ -84,10 +84,6 @@
 
   <h1 id="headerText"></h1>
 
-  <main id="resultsContainer">
-    <p>Loading...</p>
-  </main>
-
   <div id="loadingScreen">
     <div class="loadingText">
       Loading...
@@ -105,8 +101,12 @@
 
   <script>
 
+    // Show the loading screen
+    const loadingScreen = document.getElementById('loadingScreen');
+    loadingScreen.style.display = 'flex';
+
+    // Hide the loading screen when the page is fully loaded
     window.addEventListener('load', function () {
-      const loadingScreen = document.getElementById('loadingScreen');
       loadingScreen.style.display = 'none';
     });
 
