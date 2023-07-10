@@ -217,6 +217,12 @@ nav {
 
 /* SEARCH RESULTS */
 
+.loading {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 #headerText {
   font-size: 35px;
   color: white;
