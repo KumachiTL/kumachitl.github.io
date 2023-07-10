@@ -324,7 +324,7 @@ nav {
   
 .text {
   font-size: 35px;
-  text-shadow: inset 0 0 10px #000000;
+  text-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   position: relative;
   display: inline-block;
