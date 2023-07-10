@@ -324,7 +324,7 @@ nav {
   
 .text {
   font-size: 35px;
-  text-shadow: inset 0px 2px 3px rgba(255, 255, 255, 0.8);
+  text-shadow: inset 0px 2px 3px rgba(14, 12, 12, 0.8);
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
