@@ -217,27 +217,19 @@ nav {
 
 /* SEARCH RESULTS */
 
-/* .loading {
-  justify-content: center;
-  align-items: center;
-  color: white;
-} */
+/* -Loading Screen */
 
 #loadingScreen {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #292929;
 }
-
-/* .loadingText {
-  font-size: 24px;
-} */
 
 .spinner {
   border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #1E1E1E;
   border-radius: 50%;
   width: 120px;
   height: 120px;
