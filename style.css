@@ -445,11 +445,11 @@ nav {
   line-height: 26px;
 }
 
-.info2::first-line {
+.info2::first-line, .info2::second-line {
   font-style: italic;
 }
 
-.info2::third-line {
+.info2::fourth-line {
   font-style: bold;
 }
 
