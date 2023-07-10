@@ -353,6 +353,7 @@ nav {
   align-items: left;
   color: #ffffff;
   font-family: "Outfit", sans-serif;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .about, .disclaimer {
@@ -375,6 +376,7 @@ nav {
   align-items: left;
   color: #ffffff;
   font-family: "Outfit", sans-serif;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .story-title {
@@ -470,6 +472,7 @@ nav {
   padding: 10px 25px;
   color: #ffffff;
   justify-content: center;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 /* -Change Chapter */
@@ -578,6 +581,7 @@ select {
   align-items: left;
   color: #ffffff;
   font-family: "Outfit", sans-serif;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .kp, .kc1 {
@@ -622,6 +626,7 @@ p#content {
   margin-bottom: 10px;
   margin: 25px 122px;
   border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #disqus_thread {
