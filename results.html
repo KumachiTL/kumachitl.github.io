@@ -84,8 +84,16 @@
 
   <h1 id="headerText"></h1>
 
+  <!-- Loading screen -->
+  <div id="loadingScreen">
+    <div class="loadingText">
+      Loading...
+    </div>
+    <div class="spinner"></div>
+  </div>
+
   <main id="resultsContainer">
-    <p class="loading">Loading...</p>
+
   </main>
 
 <!-- Footer -->
@@ -98,6 +106,17 @@
   <script src="script.js"></script>
 
   <script>
+
+    // Show the loading screen
+    const loadingScreen = document.getElementById('loadingScreen');
+    loadingScreen.style.display = 'flex';
+
+    // Hide the loading screen when the page is fully loaded
+    window.addEventListener('load', function () {
+      loadingScreen.style.display = 'none';
+    });
+
+
     // Get the search term from the URL query parameters
     const urlParams = new URLSearchParams(window.location.search);
     const searchTerm = urlParams.get('search');
