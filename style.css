@@ -449,6 +449,10 @@ nav {
   font-style: italic;
 }
 
+.info2::third-line {
+  font-style: bold;
+}
+
 .source {
   color: white;
   text-decoration: none;
