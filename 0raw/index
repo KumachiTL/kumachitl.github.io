@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="assets/fav.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KumachiTL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class="fas fa-bars"></i>
+      <div class="logo">
+        <a href="/"><img src="assets/logo.png" title="Home" alt="Kumachi Logo"></a>
+      </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <a href="/"><img src="assets/logo.png" title="Home" alt="Kumachi Logo"></a>
+          <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu">
+          <li class="dropdown"><a href="/" style="color: #8C52FF;">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Ongoing</a>
+            <ul class="submenu">
+              <li><a href="/kokuhaku">The Beautiful Girls in the School Confessed to Me Almost at the Same Time and I Misunderstood That They Were Making Fun of Me so I Decided To Go Out With All of Them but I Was Too Shy!</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Hiatus</a>
+            <ul class="submenu">
+              <li><a href="#">I Don't Know Souseki~I Had A Girlfriend Before I Knew It~</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Completed</a>
+            <ul class="submenu">
+              <li><a href="#">The Hero Cucked Me of My Childhood Friend, so I Think I'll Steal His Fiancee</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Dropped</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Original Works</a>
+          </li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      <div class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-sun sun-icon"></i>
+        <i class="fas fa-moon moon-icon"></i>
+      </div>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <div class="input-box">
+          <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+
+  <div class="box">
+    <div class="text-row">
+      <div class="text">Latest</div>
+    </div>
+    <div class="row">
+      <a href="#" class="title">Kokuhaku - Chapter 10</a>
+      <div class="date">August 30, 2022</div>
+    </div>
+    <hr class="line">
+    <div class="row">
+      <a href="#" class="title">Kokuhaku - Chapter 9</a>
+      <div class="date">August 27, 2022</div>
+    </div>
+    <hr class="line">
+    <div class="row">
+      <a href="#" class="title">Kokuhaku - Chapter 8</a>
+      <div class="date">August 24, 2022</div>
+    </div>
+  </div>
+
+  <div class="works-box">
+    <div class="text-row">
+      <div class="text">Works</div>
+    </div>
+    <div class="row">
+      <a href="/kokuhaku" class="title">Kokuhaku</a>
+      <div class="date">Yorunosora (ヨルノソラ)</div>
+    </div>
+    <hr class="line">
+    <div class="row">
+      <a href="#" class="title">Netorou</a>
+      <div class="date">Hayabusa (ハヤブサ)</div>
+    </div>
+    <hr class="line">
+    <div class="row">
+      <a href="#" class="title">Souseki</a>
+      <div class="date">Cost</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 <a href="/" style="color: #9619D0;">Kumachi</a>. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Ko-fi -->
+
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('kumachi', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#794bc4',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
+</body>
+
+</html>
