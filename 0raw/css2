@@ -478,7 +478,7 @@ nav {
   border-radius: 10px;
   display: flex;
   padding: 10px 25px;
-  color: #ffffff;
+  color: white;
   justify-content: center;
 }
 
@@ -488,7 +488,7 @@ nav {
   border-radius: 10px;
   display: flex;
   padding: 10px 25px;
-  color: #ffffff;
+  color: white;
   justify-content: center;
 }
 
@@ -544,7 +544,7 @@ select {
   margin: 10px 3px;
   font-size: 16px;
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
-  color: #ffffff;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -584,7 +584,7 @@ select {
   flex-direction: column;
   padding: 20px 25px;
   align-items: left;
-  color: #ffffff;
+  color: white;
   font-family: "Outfit", sans-serif;
 }
 
@@ -609,7 +609,7 @@ p#content {
   padding: 10px;
   border: none;
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
-  color: #fff;
+  color: white;
   cursor: pointer;
   font-family: outfit;
   border-radius: 7px;
@@ -635,26 +635,26 @@ footer {
 
 body.dark-mode {
   background-color: #1f1f1f;
-  color: #fff;
+  color: white;
 }
 
 .dark-mode .navbar {
   background-color: #1f1f1f;
-  color: #fff;
+  color: white;
 }
 
 .dark-mode .nav-links a {
-  color: #fff;
+  color: white;
 }
 
 .dark-mode .search-box {
   background-color: #1f1f1f;
-  color: #fff;
+  color: white;
 }
 
 .dark-mode input[type="text"] {
   background-color: #1f1f1f;
-  color: #fff;
+  color: white;
 }
 
 /* Add styles for dark mode toggle */
@@ -695,14 +695,14 @@ body.dark-mode {
   top: 50%;
   right: 2px;
   transform: translateY(-50%);
-  color: #fff;
+  color: white;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .dark-mode-toggle.dark-mode:before {
   transform: translateX(20px);
-  background-color: #fff;
+  background-color: white;
 }
 
 .dark-mode-toggle.dark-mode .sun-icon {

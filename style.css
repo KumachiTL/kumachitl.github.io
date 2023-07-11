@@ -468,7 +468,6 @@ nav {
 .chapter {
   font-size: 19px;
   text-decoration: underline;
-  color: white;
   position: relative;
 }
 
@@ -491,7 +490,7 @@ nav {
 /* -Change Chapter */
 
 .change-chap-box {
-  background-color: #292929;
+  background-color: white;
   margin: 25px 122px;
   border-radius: 10px;
   display: flex;
@@ -553,7 +552,7 @@ select {
   margin: 10px 3px;
   font-size: 16px;
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
-  color: #ffffff;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -593,14 +592,13 @@ select {
   flex-direction: column;
   padding: 20px 25px;
   align-items: left;
-  color: #ffffff;
+  color: #1E1E1E;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: background-color 0.3s ease;
 
 }
 
 .kp, .kc1 {
-  color: #1E1E1E;
   font-size: 16px;
   font-family: "Poppins";
 }
@@ -620,7 +618,7 @@ p#content {
   padding: 10px;
   border: none;
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
-  color: #fff;
+  color: white;
   cursor: pointer;
   font-family: outfit;
   border-radius: 7px;
@@ -635,9 +633,9 @@ p#content {
 /* COMMENTS */
 
 .comments-box {
-  border: 1px solid #ccc;
+  border: 1px solid #1E1E1E;
   padding: 20px;
-  background-color: #292929;
+  background-color: white;
   margin-bottom: 10px;
   margin: 25px 122px;
   border-radius: 10px;
@@ -664,31 +662,8 @@ footer {
 
 /* DARK MODE */
 
-body.dark-mode {
-  background-color: #1f1f1f;
-  color: #fff;
-}
+/* -Dark Mode Button */
 
-.dark-mode .navbar {
-  background-color: #1f1f1f;
-  color: #fff;
-}
-
-.dark-mode .nav-links a {
-  color: #fff;
-}
-
-.dark-mode .search-box {
-  background-color: #1f1f1f;
-  color: #fff;
-}
-
-.dark-mode input[type="text"] {
-  background-color: #1f1f1f;
-  color: #fff;
-}
-
-/* Add styles for dark mode toggle */
 .dark-mode-toggle {
   position: relative;
   width: 40px;
@@ -726,14 +701,14 @@ body.dark-mode {
   top: 50%;
   right: 2px;
   transform: translateY(-50%);
-  color: #fff;
+  color: white;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .dark-mode-toggle.dark-mode:before {
   transform: translateX(20px);
-  background-color: #fff;
+  background-color: white;
 }
 
 .dark-mode-toggle.dark-mode .sun-icon {
@@ -743,6 +718,125 @@ body.dark-mode {
 .dark-mode-toggle.dark-mode .moon-icon {
   opacity: 1;
 }
+
+/* -Dark Mode */
+
+body.dark-mode {
+  background-color: #292929;
+}
+
+nav.dark-mode {
+  background-color: #383838;
+}
+
+.dark-mode .navbar .menu li a {
+  color: white;
+}
+
+.dark-mode .navbar .submenu {
+  background-color: #292929;
+}
+
+/* --Search (Dark) */
+
+.dark-mode .search-box,
+.dark-mode .search-box .input-box input {
+  background-color: white;
+}
+
+.dark-mode input[type="text"] {
+  background-color: white;
+  color: #000;
+}
+
+.dark-mode .search-box i {
+  color: white;
+}
+
+.dark-mode .search-box .input-box,
+.dark-mode .navbar.showInput .search-box .input-box,
+.dark-mode .search-box .input-box::before {
+  background: #383838;
+}
+
+/* ---Search Results (Dark) */
+
+.dark-mode #headerText,
+.dark-mode .search-result-item a {
+  color: white;
+}
+
+.dark-mode .search-result-item,
+.dark-mode #loadingScreen {
+  background-color: #292929;
+}
+
+/* --Main (Dark) */
+
+.dark-mode .box, .dark-mode .works-box,
+.dark-mode .about-box, .dark-mode .disclaimer-box {
+  background-color: #292929;
+  color: white;
+}
+
+.dark-mode .title {
+  color: white;
+}
+
+.dark-mode .date {
+  color: gray;
+}
+
+.dark-mode .line {
+  background-color: #292929;
+}
+
+.dark-mode .about, .dark-mode .disclaimer {
+  color: white;
+}
+
+.dark-mode .description-box,
+.dark-mode .info-box, .dark-mode .chapter-box {
+  background-color: #292929;
+  color: white;
+}
+
+/* ---Buttons */
+
+.dark-mode .button-container,
+.dark-mode .change-chap-box {
+  background-color: #292929;
+}
+
+.dark-mode .separator {
+  background-color: #383838;
+}
+
+/* --Kokuhaku */
+
+.dark-mode .toc {
+  color: white;
+}
+
+.dark-mode .kp-box, .dark-mode .kc1-box {
+  background-color: #292929;
+  color: white;
+}
+
+/* ---Comments */
+
+.dark-mode .comments-box {
+  border: 1px solid #ccc;
+  background-color: #292929;
+}
+
+/* --Footer */
+
+footer.dark-mode {
+  background-color: #292929;
+  color: white;
+}
+
 
 /* Mobile 1024 ver */
 
@@ -951,6 +1045,20 @@ body.dark-mode {
   .footnotes {
     font-size: 13px;
   }
+
+  /* DARK MODE */
+
+  .dark-mode .fa-bars,
+  .dark-mode .navbar .sidebar-logo .fas.fa-times
+  .dark-mode .navbar .menu li a,
+  .dark-mode .navbar .submenu li a {
+    color: white;
+  }
+
+  .dark-mode .navbar .show {
+    background-color: #292929;
+  }
+
 }
 
 /* Mobile 768 ver */
@@ -988,14 +1096,14 @@ body.dark-mode {
 
   .navbar .show {
     display: block;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 250px;
     padding: 20px;
-    background-color: #292929;
-    z-index: 1000; */
+    background-color: white;
+    z-index: 1000;
   }
 
   .navbar .sidebar-logo {
@@ -1146,6 +1254,19 @@ body.dark-mode {
     margin: 15px 25px;
   }
 
+  /* DARK MODE */
+
+  .dark-mode .fa-bars,
+  .dark-mode .sidebar-logo .fas.fa-times,
+  .dark-mode .navbar .menu li a,
+  .dark-mode .navbar .submenu li a {
+    color: white;
+  }
+
+  .dark-mode .navbar .show {
+    background-color: white;
+  }
+
 }
 
 /* Mobile 480 ver */
@@ -1193,14 +1314,14 @@ body.dark-mode {
 
   .navbar .show {
     display: block;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 250px;
     padding: 20px;
-    background-color: #292929;
-    z-index: 1000; */
+    background-color: white;
+    z-index: 1000;
   }
 
   .navbar .sidebar-logo {
@@ -1352,4 +1473,18 @@ body.dark-mode {
   .comments-box {
     margin: 5px;
   }
+
+  /* DARK MODE */
+
+  .dark-mode .fa-bars,
+  .dark-mode .sidebar-logo .fas.fa-times,
+  .dark-mode .navbar .menu li a,
+  .dark-mode .navbar .submenu li a {
+    color: white;
+  }
+
+  .dark-mode .navbar .show {
+    background-color: #292929;
+  }
+
 }

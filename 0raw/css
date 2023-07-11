@@ -46,7 +46,7 @@ nav {
 
 .navbar .menu li a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-size: 17px;
 }
 
@@ -139,7 +139,7 @@ nav {
 
 .search-box .fas.fa-search {
   font-size: 20px;
-  color: #ffffff;
+  color: white;
   cursor: pointer;
 }
 
@@ -150,7 +150,7 @@ nav {
   line-height: 40px;
   text-align: center;
   font-size: 22px;
-  color: #fff;
+  color: white;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -312,7 +312,7 @@ nav {
   flex-direction: column;
   padding: 20px 25px;
   align-items: left;
-  color: #ffffff;
+  color: white;
   font-family: "Outfit", sans-serif;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -381,7 +381,7 @@ nav {
   padding: 0 25px;
   padding-top: 20px;
   align-items: left;
-  color: #ffffff;
+  color: white;
   font-family: "Outfit", sans-serif;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -403,7 +403,7 @@ nav {
   flex-direction: column;
   padding: 20px 25px;
   align-items: left;
-  color: #ffffff;
+  color: white;
   font-family: "Outfit", sans-serif;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -479,7 +479,7 @@ nav {
   border-radius: 10px;
   display: flex;
   padding: 10px 25px;
-  color: #ffffff;
+  color: white;
   justify-content: center;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -492,7 +492,7 @@ nav {
   border-radius: 10px;
   display: flex;
   padding: 10px 25px;
-  color: #ffffff;
+  color: white;
   justify-content: center;
 }
 
@@ -548,7 +548,7 @@ select {
   margin: 10px 3px;
   font-size: 16px;
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
-  color: #ffffff;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -588,7 +588,7 @@ select {
   flex-direction: column;
   padding: 20px 25px;
   align-items: left;
-  color: #ffffff;
+  color: white;
   font-family: "Outfit", sans-serif;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -614,7 +614,7 @@ p#content {
   padding: 10px;
   border: none;
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
-  color: #fff;
+  color: white;
   cursor: pointer;
   font-family: outfit;
   border-radius: 7px;
