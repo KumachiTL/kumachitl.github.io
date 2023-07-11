@@ -303,6 +303,7 @@ nav {
   text-decoration: none;
   color: #1E1E1E;
   align-items: center;
+  justify-content: center;
 }
 
 .search-result-item a:hover {
