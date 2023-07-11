@@ -177,6 +177,9 @@ function toggleDarkMode() {
 const storedDarkMode = localStorage.getItem("darkMode");
 
 if (storedDarkMode === "true") {
-  body.classList.toggle("dark-mode");
-  nav.classList.toggle('dark-mode');
+  body.classList.add("dark-mode");
+  nav.classList.add('dark-mode');
+} else {
+  body.classList.remove("dark-mode");
+  nav.classList.remove('dark-mode');
 }
