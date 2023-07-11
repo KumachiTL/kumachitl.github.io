@@ -722,11 +722,11 @@ footer {
 /* -Dark Mode */
 
 body.dark-mode {
-  background-color: #292929;
+  background-color: #383838;
 }
 
-nav.dark-mode {
-  background-color: #383838;
+.dark-mode nav {
+  background-color: #292929;
 }
 
 .dark-mode .navbar .menu li a {
@@ -773,13 +773,15 @@ nav.dark-mode {
 
 /* --Main (Dark) */
 
-.dark-mode .box, .dark-mode .works-box,
-.dark-mode .about-box, .dark-mode .disclaimer-box {
+.dark-mode .box, .dark-mode .works-box, .dark-mode .about-box, 
+.dark-mode .disclaimer-box, .dark-mode .description-box,
+.dark-mode .info-box, .dark-mode .chapter-box {
   background-color: #292929;
   color: white;
 }
 
-.dark-mode .title {
+.dark-mode .title, .dark-mode .about, .dark-mode .disclaimer,
+.dark-mode .source, .dark-mode .chapter-row  {
   color: white;
 }
 
@@ -788,17 +790,7 @@ nav.dark-mode {
 }
 
 .dark-mode .line {
-  background-color: #292929;
-}
-
-.dark-mode .about, .dark-mode .disclaimer {
-  color: white;
-}
-
-.dark-mode .description-box,
-.dark-mode .info-box, .dark-mode .chapter-box {
-  background-color: #292929;
-  color: white;
+  background-color: #383838;
 }
 
 /* ---Buttons */
@@ -832,7 +824,7 @@ nav.dark-mode {
 
 /* --Footer */
 
-footer.dark-mode {
+.dark-mode footer {
   background-color: #292929;
   color: white;
 }
