@@ -173,10 +173,7 @@ function toggleDarkMode() {
   icon.classList.toggle('fa-sun');
 }
 
-// Check if dark mode preference is stored in local storage
-const storedDarkMode = localStorage.getItem("darkMode");
-
-if (storedDarkMode === "true") {
+if (isDarkMode === "true") {
   body.classList.add("dark-mode");
   nav.classList.add('dark-mode');
 } else {
