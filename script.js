@@ -12,30 +12,30 @@
     // Apply the appropriate dark mode preference
     if (savedDarkModePreference === 'true' || (savedDarkModePreference === null && prefersDarkMode)) {
       enableDarkMode();
-      darkModeToggle.checked = true;
     }
 
     // Toggle dark mode when the toggle switch is clicked
-    darkModeToggle.addEventListener('change', () => {
-      if (darkModeToggle.checked) {
-        enableDarkMode();
-        localStorage.setItem('darkMode', 'true');
-      } else {
+    darkModeToggle.addEventListener('click', () => {
+      if (darkModeToggle.classList.contains('dark-mode')) {
         disableDarkMode();
         localStorage.setItem('darkMode', 'false');
+      } else {
+        enableDarkMode();
+        localStorage.setItem('darkMode', 'true');
       }
     });
 
     // Enable dark mode
     function enableDarkMode() {
       document.body.classList.add('dark-mode');
+      darkModeToggle.classList.add('dark-mode');
     }
 
     // Disable dark mode
     function disableDarkMode() {
       document.body.classList.remove('dark-mode');
+      darkModeToggle.classList.remove('dark-mode');
     }
-
 
 // SIDEBAR MENU
 
