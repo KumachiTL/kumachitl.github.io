@@ -659,21 +659,10 @@ footer {
 
 /* DARK MODE */
 
-body.dark-mode {
+.dark-mode {
   background-color: #333;
-  color: #f2f2f2;
+  color: #fff;
 }
-
-.dark-mode-button {
-  background-color: #333;
-  color: #f2f2f2;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 
 /* Mobile 1024 ver */
 

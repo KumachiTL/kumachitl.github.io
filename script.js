@@ -160,11 +160,7 @@ backToTopButton.onclick = function() {
 
 // DARK MODE
 
-const darkModeButton = document.getElementById('darkModeButton');
-const body = document.body;
-
-darkModeButton.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  darkModeButton.classList.toggle('dark-mode-button-active');
-});
-
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+}
