@@ -162,7 +162,10 @@ backToTopButton.onclick = function() {
 
 function toggleDarkMode() {
   const body = document.querySelector('body');
-  const navbar = document.querySelector('nav');
+  const nav = document.querySelector('nav');
+
   body.classList.toggle("dark-mode");
-  navbar.classList.toggle('dark-mode');
+  nav.classList.toggle('dark-mode');
+  darkModeBtn.classList.toggle('fas.fa-sun')
+  darkModeBtn.classList.removeClass('fas.fa-moon')
 }
