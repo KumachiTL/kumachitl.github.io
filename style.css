@@ -711,7 +711,7 @@ body.dark-mode {
   top: 50%;
   left: 2px;
   transform: translateY(-50%);
-  color: white;
+  color: #f1c40f;
   opacity: 1;
   transition: opacity 0.3s;
 }
@@ -728,7 +728,7 @@ body.dark-mode {
 
 .dark-mode-toggle.dark-mode:before {
   transform: translateX(20px);
-  background-color: #292929;
+  background-color: #fff;
 }
 
 .dark-mode-toggle.dark-mode .sun-icon {
