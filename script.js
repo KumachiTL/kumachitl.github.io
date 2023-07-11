@@ -1,4 +1,4 @@
-// SIDEMENU
+// SIDEBAR MENU
 
 $(document).ready(function () {
   $('.navbar .fas.fa-bars').click(function () {
