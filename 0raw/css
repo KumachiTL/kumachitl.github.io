@@ -366,7 +366,8 @@ nav {
   height: 3px;
   border-radius: 10px;
   background-color: #383838;
-  margin: 20px;
+  margin: 0;
+  padding: 20px 0;
   border: none;
 }
 
