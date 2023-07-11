@@ -725,7 +725,7 @@ body.dark-mode {
   background-color: #383838;
 }
 
-.dark-mode nav {
+.dark-mode nav, .dark-mode .navbar .submenu {
   background-color: #292929;
 }
 
@@ -733,13 +733,17 @@ body.dark-mode {
   color: white;
 }
 
-.dark-mode .navbar .submenu {
+.dark-mode .navbar .menu a:hover {
+  color: #8C52FF;
+  transition: .3s;
+}
+
+.submenu li a:hover {
   background-color: #292929;
 }
 
 /* --Search (Dark) */
 
-.dark-mode .search-box,
 .dark-mode .search-box .input-box input {
   background-color: white;
 }
@@ -749,6 +753,8 @@ body.dark-mode {
   color: #000;
 }
 
+.dark-mode .search-box .fas.fa-search,
+.dark-mode .search-box .fas.fas.fa-times,
 .dark-mode .search-box i {
   color: white;
 }
@@ -757,6 +763,12 @@ body.dark-mode {
 .dark-mode .navbar.showInput .search-box .input-box,
 .dark-mode .search-box .input-box::before {
   background: #383838;
+}
+
+.dark-mode .search-box .fas.fa-search:hover,
+.dark-mode .search-box .fas.fa-times:hover {
+  color: #8C52FF;
+  transition: .3s;
 }
 
 /* ---Search Results (Dark) */
