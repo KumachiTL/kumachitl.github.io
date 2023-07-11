@@ -659,13 +659,9 @@ footer {
 
 /* DARK MODE */
 
-.dark-mode {
+body.dark-mode {
   background-color: #333;
   color: #f2f2f2;
-}
-
-.dark-mode nav {
-  background-color: #1E1E1E;
 }
 
 .dark-mode-button {
@@ -678,13 +674,6 @@ footer {
   cursor: pointer;
 }
 
-.dark-mode-button .fas.fa-sun {
-  display: none;
-}
-
-.dark-mode .dark-mode-button .fas.fa-sun {
-  display: block;
-}
 
 /* Mobile 1024 ver */
 

@@ -165,8 +165,6 @@ const body = document.body;
 
 darkModeButton.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
-
-  const icon = document.getElementById('icon');
-  icon.classList.toggle('fa-moon');
-  icon.classList.toggle('fa-sun');
+  darkModeButton.classList.toggle('dark-mode-button-active');
 });
+
