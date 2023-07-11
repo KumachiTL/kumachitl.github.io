@@ -657,6 +657,23 @@ footer {
   margin-top: auto;
 }
 
+/* DARK MODE */
+
+.dark-mode {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+.dark-mode-button {
+  background-color: #333;
+  color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* Mobile 1024 ver */
 
 @media screen and (max-width: 1024px) {
