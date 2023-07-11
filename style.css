@@ -461,11 +461,6 @@ nav {
   transition: 0.3s;
 }
 
-.chapter-row {
-  margin-top: 10px;
-  margin-bottom: 14px;
-}
-
 .chapter {
   font-size: 19px;
   text-decoration: underline;
