@@ -171,12 +171,13 @@ function toggleDarkMode() {
   const icon = document.getElementById('icon');
   icon.classList.toggle('fa-moon');
   icon.classList.toggle('fa-sun');
-}
 
-if (isDarkMode === "true") {
-  body.classList.add("dark-mode");
-  nav.classList.add('dark-mode');
-} else {
-  body.classList.remove("dark-mode");
-  nav.classList.remove('dark-mode');
+  if (isDarkMode === "true") {
+    body.classList.add("dark-mode");
+    nav.classList.add('dark-mode');
+  } else {
+    body.classList.remove("dark-mode");
+    nav.classList.remove('dark-mode');
+  }
+
 }
