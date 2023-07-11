@@ -11,6 +11,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add styles for dark mode */
+    body.dark-mode {
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+
+    .dark-mode .navbar {
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+
+    .dark-mode .nav-links a {
+      color: #fff;
+    }
+
+    .dark-mode .search-box {
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+
+    .dark-mode input[type="text"] {
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,9 +44,9 @@
     <div class="navbar">
       <i class="fas fa-bars"></i>
       <div class="logo">
-      <a href="/"><img src="assets/logo.png" title="Home" alt="Kumachi Logo"></a>
-    </div>
-    <div class="nav-links">
+        <a href="/"><img src="assets/logo.png" title="Home" alt="Kumachi Logo"></a>
+      </div>
+      <div class="nav-links">
         <div class="sidebar-logo">
           <a href="/"><img src="assets/logo.png" title="Home" alt="Kumachi Logo"></a>
           <i class="fas fa-times"></i>
@@ -28,60 +54,43 @@
         <ul class="menu">
           <li class="dropdown"><a href="/" style="color: #8C52FF;">Home</a></li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Ongoing</a>
+            <a href="#" class="dropdown-toggle">Ongoing</a>
             <ul class="submenu">
               <li><a href="/kokuhaku">The Beautiful Girls in the School Confessed to Me Almost at the Same Time and I Misunderstood That They Were Making Fun of Me so I Decided To Go Out With All of Them but I Was Too Shy!</a></li>
-              <!-- <li><a href="#">Submenu Item 2</a></li>
-              <li><a href="#">Submenu Item 3</a></li> -->
-              </ul>
+            </ul>
           </li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Hiatus</a>
+            <a href="#" class="dropdown-toggle">Hiatus</a>
             <ul class="submenu">
               <li><a href="#">I Don't Know Souseki~I Had A Girlfriend Before I Knew It~</a></li>
-              <!-- <li><a href="#">Submenu Item 2</a></li>
-              <li><a href="#">Submenu Item 3</a></li> -->
             </ul>
           </li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Completed</a>
+            <a href="#" class="dropdown-toggle">Completed</a>
             <ul class="submenu">
               <li><a href="#">The Hero Cucked Me of My Childhood Friend, so I Think I'll Steal His Fiancee</a></li>
-              <!-- <li><a href="#">Submenu Item 2</a></li>
-              <li><a href="#">Submenu Item 3</a></li> -->
             </ul>
           </li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Dropped</a>
-            <!-- <ul class="submenu">
-              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nam velit est? Corporis, quos unde?</a></li>
-              <li><a href="#">Submenu Item 2</a></li>
-              <li><a href="#">Submenu Item 3</a></li>
-            </ul> -->
+            <a href="#" class="dropdown-toggle">Dropped</a>
           </li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Original Works</a>
-            <!-- <ul class="submenu">
-              <li><a href="#">My Ex-Wife's Daughter</a></li>
-              <li><a href="#">The Daily Life of a Former Office Worker [18+]</a></li>
-              <li><a href="#">Reconciliation of Two Old Lovers</a></li>
-              <li><a href="#">My Late Wife is My Guardian Angel</a></li>
-            </ul> -->
+            <a href="#" class="dropdown-toggle">Original Works</a>
           </li>
           <li><a href="/about">About</a></li>
         </ul>
-    </div>
-    <div class="dark-mode-toggle">
-      <input type="checkbox" id="darkModeToggle">
-      <label for="darkModeToggle"></label>
-    </div>
-    <div class="search-box">
-      <i class="fas fa-search"></i>
-      <div class="input-box">
-        <input type="text" id="searchInput" placeholder="Search...">
+      </div>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <div class="input-box">
+          <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+      </div>
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle"></label>
       </div>
     </div>
-   </div>
   </nav>
 
   <!-- Main -->
@@ -124,14 +133,52 @@
       <a href="#" class="title">Souseki</a>
       <div class="date">Cost</div>
     </div>
-  </div>  
+  </div>
 
   <footer>
     <p>&copy; 2023 <a href="/" style="color: #9619D0;">Kumachi</a>. All rights reserved.</p>
-  </footer>  
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js" defer></script>
+
+  <script>
+    // Get the dark mode toggle element
+    const darkModeToggle = document.getElementById('darkModeToggle');
+
+    // Check if the user has a preference for dark mode
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Check if there's a previously saved dark mode preference
+    const savedDarkModePreference = localStorage.getItem('darkMode');
+
+    // Apply the appropriate dark mode preference
+    if (savedDarkModePreference === 'true' || (savedDarkModePreference === null && prefersDarkMode)) {
+      enableDarkMode();
+      darkModeToggle.checked = true;
+    }
+
+    // Toggle dark mode when the toggle switch is clicked
+    darkModeToggle.addEventListener('change', () => {
+      if (darkModeToggle.checked) {
+        enableDarkMode();
+        localStorage.setItem('darkMode', 'true');
+      } else {
+        disableDarkMode();
+        localStorage.setItem('darkMode', 'false');
+      }
+    });
+
+    // Enable dark mode
+    function enableDarkMode() {
+      document.body.classList.add('dark-mode');
+    }
+
+    // Disable dark mode
+    function disableDarkMode() {
+      document.body.classList.remove('dark-mode');
+    }
+  </script>
 
   <!-- Ko-fi -->
 
