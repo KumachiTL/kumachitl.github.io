@@ -1,3 +1,42 @@
+// DARK MODE
+
+    // Get the dark mode toggle element
+    const darkModeToggle = document.getElementById('darkModeToggle');
+
+    // Check if the user has a preference for dark mode
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Check if there's a previously saved dark mode preference
+    const savedDarkModePreference = localStorage.getItem('darkMode');
+
+    // Apply the appropriate dark mode preference
+    if (savedDarkModePreference === 'true' || (savedDarkModePreference === null && prefersDarkMode)) {
+      enableDarkMode();
+      darkModeToggle.checked = true;
+    }
+
+    // Toggle dark mode when the toggle switch is clicked
+    darkModeToggle.addEventListener('change', () => {
+      if (darkModeToggle.checked) {
+        enableDarkMode();
+        localStorage.setItem('darkMode', 'true');
+      } else {
+        disableDarkMode();
+        localStorage.setItem('darkMode', 'false');
+      }
+    });
+
+    // Enable dark mode
+    function enableDarkMode() {
+      document.body.classList.add('dark-mode');
+    }
+
+    // Disable dark mode
+    function disableDarkMode() {
+      document.body.classList.remove('dark-mode');
+    }
+
+
 // SIDEBAR MENU
 
 $(document).ready(function () {
@@ -157,7 +196,3 @@ backToTopButton.onclick = function() {
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
 };
-
-// DARK MODE
-
-

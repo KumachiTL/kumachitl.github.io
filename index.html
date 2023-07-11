@@ -11,32 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Add styles for dark mode */
-    body.dark-mode {
-      background-color: #1f1f1f;
-      color: #fff;
-    }
-
-    .dark-mode .navbar {
-      background-color: #1f1f1f;
-      color: #fff;
-    }
-
-    .dark-mode .nav-links a {
-      color: #fff;
-    }
-
-    .dark-mode .search-box {
-      background-color: #1f1f1f;
-      color: #fff;
-    }
-
-    .dark-mode input[type="text"] {
-      background-color: #1f1f1f;
-      color: #fff;
-    }
-  </style>
 </head>
 
 <body>
@@ -80,15 +54,15 @@
           <li><a href="/about">About</a></li>
         </ul>
       </div>
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle"></label>
+      </div>
       <div class="search-box">
         <i class="fas fa-search"></i>
         <div class="input-box">
           <input type="text" id="searchInput" placeholder="Search...">
         </div>
-      </div>
-      <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle">
-        <label for="darkModeToggle"></label>
       </div>
     </div>
   </nav>
@@ -140,45 +114,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js" defer></script>
-
-  <script>
-    // Get the dark mode toggle element
-    const darkModeToggle = document.getElementById('darkModeToggle');
-
-    // Check if the user has a preference for dark mode
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    // Check if there's a previously saved dark mode preference
-    const savedDarkModePreference = localStorage.getItem('darkMode');
-
-    // Apply the appropriate dark mode preference
-    if (savedDarkModePreference === 'true' || (savedDarkModePreference === null && prefersDarkMode)) {
-      enableDarkMode();
-      darkModeToggle.checked = true;
-    }
-
-    // Toggle dark mode when the toggle switch is clicked
-    darkModeToggle.addEventListener('change', () => {
-      if (darkModeToggle.checked) {
-        enableDarkMode();
-        localStorage.setItem('darkMode', 'true');
-      } else {
-        disableDarkMode();
-        localStorage.setItem('darkMode', 'false');
-      }
-    });
-
-    // Enable dark mode
-    function enableDarkMode() {
-      document.body.classList.add('dark-mode');
-    }
-
-    // Disable dark mode
-    function disableDarkMode() {
-      document.body.classList.remove('dark-mode');
-    }
-  </script>
+  <script src="script.js"></script>
 
   <!-- Ko-fi -->
 

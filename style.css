@@ -659,7 +659,29 @@ footer {
 
 /* DARK MODE */
 
+body.dark-mode {
+  background-color: #1f1f1f;
+  color: #fff;
+}
 
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-mode .nav-links a {
+  color: #fff;
+}
+
+.dark-mode .search-box {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-mode input[type="text"] {
+  background-color: #1f1f1f;
+  color: #fff;
+}
 
 /* Mobile 1024 ver */
 
