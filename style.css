@@ -664,6 +664,15 @@ footer {
   color: #fff;
 }
 
+.dark-mode .navbar {
+  background: #1E1E1E;
+  color: #ffffff;
+}
+
+.dark-mode .navbar .menu a {
+  color: #ffffff;
+}
+
 /* Mobile 1024 ver */
 
 @media screen and (max-width: 1024px) {

@@ -161,6 +161,8 @@ backToTopButton.onclick = function() {
 // DARK MODE
 
 function toggleDarkMode() {
-  const body = document.body;
+  const body = document.querySelector('body');
+  const navbar = document.querySelector('nav');
   body.classList.toggle("dark-mode");
+  navbar.classList.toggle('dark-mode');
 }
