@@ -163,9 +163,6 @@ backToTopButton.onclick = function() {
 function toggleDarkMode() {
   const body = document.querySelector('body');
   const nav = document.querySelector('nav');
-
-  body.classList.toggle("dark-mode");
-  nav.classList.toggle('dark-mode');
   
       // Store the preference in local storage
       const isDarkMode = body.classList.contains("dark-mode");
@@ -182,7 +179,8 @@ function toggleDarkMode() {
 
     if (storedDarkMode === "true") {
       // If dark mode is enabled, add the dark-mode class to the body
-      document.body.classList.add("dark-mode");
+      body.classList.toggle("dark-mode");
+      nav.classList.toggle('dark-mode');
 
       // Change icon to sun
       const darkModeBtn = document.querySelector(".dark-mode-btn");
