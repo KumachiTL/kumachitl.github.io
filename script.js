@@ -166,7 +166,9 @@ function toggleDarkMode() {
 
   body.classList.toggle("dark-mode");
   nav.classList.toggle('dark-mode');
-  darkModeBtn.classList.toggle('fas.fa-sun')
-  darkModeBtn.classList.remove('fas.fa-moon')
+
+  const icon = document.getElementById('icon');
+  icon.classList.toggle('fa-moon');
+  icon.classList.toggle('fa-sun');
   
 }
