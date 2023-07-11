@@ -160,35 +160,39 @@ backToTopButton.onclick = function() {
 
 // DARK MODE
 
-// Check if the user has a preferred color scheme
+// Get the dark mode toggle element
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+// Check if the user has a preference for dark mode
 const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-// Check if the user has manually toggled the dark mode before
-const isDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+// Check if there's a previously saved dark mode preference
+const savedDarkModePreference = localStorage.getItem('darkMode');
 
-// Set the initial mode based on the above conditions
-if ((isDarkMode === null && prefersDarkMode) || isDarkMode) {
+// Apply the appropriate dark mode preference
+if (savedDarkModePreference === 'true' || (savedDarkModePreference === null && prefersDarkMode)) {
   enableDarkMode();
+  darkModeToggle.checked = true;
 }
 
-// Function to enable dark mode
-function enableDarkMode() {
-  document.body.classList.add('dark-mode');
-  localStorage.setItem('darkMode', true);
-}
-
-// Function to disable dark mode
-function disableDarkMode() {
-  document.body.classList.remove('dark-mode');
-  localStorage.setItem('darkMode', false);
-}
-
-// Toggle dark mode when the button is clicked
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-darkModeToggle.addEventListener('click', () => {
-  if (document.body.classList.contains('dark-mode')) {
-    disableDarkMode();
-  } else {
+// Toggle dark mode when the toggle switch is clicked
+darkModeToggle.addEventListener('change', () => {
+  if (darkModeToggle.checked) {
     enableDarkMode();
+    localStorage.setItem('darkMode', 'true');
+  } else {
+    disableDarkMode();
+    localStorage.setItem('darkMode', 'false');
   }
 });
+
+// Enable dark mode
+function enableDarkMode() {
+  document.body.classList.add('dark-mode');
+}
+
+// Disable dark mode
+function disableDarkMode() {
+  document.body.classList.remove('dark-mode');
+}
+
