@@ -302,8 +302,6 @@ nav {
 .search-result-item a {
   text-decoration: none;
   color: #1E1E1E;
-  align-items: center;
-  justify-content: center;
 }
 
 .search-result-item a:hover {
@@ -1215,6 +1213,8 @@ body.dark-mode {
   
   .search-result-item {
     padding: 40px 0;
+    justify-content: center;
+    align-items: center;
   }
   
   .search-result-item a {
