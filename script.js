@@ -166,7 +166,25 @@ function toggleDarkMode() {
 
   body.classList.toggle("dark-mode");
   nav.classList.toggle('dark-mode');
-  darkModeBtn.classList.add('fas.fa-sun')
-  darkModeBtn.classList.replace('fas.fa-moon')
   
-}
+      // Store the preference in local storage
+      const isDarkMode = body.classList.contains("dark-mode");
+      localStorage.setItem("darkMode", isDarkMode);
+
+      // Toggle icon
+      const darkModeBtn = document.querySelector(".dark-mode-btn");
+      darkModeBtn.classList.toggle("fa-sun");
+      darkModeBtn.classList.toggle("fa-moon");
+    }
+
+    // Check if dark mode preference is stored in local storage
+    const storedDarkMode = localStorage.getItem("darkMode");
+
+    if (storedDarkMode === "true") {
+      // If dark mode is enabled, add the dark-mode class to the body
+      document.body.classList.add("dark-mode");
+
+      // Change icon to sun
+      const darkModeBtn = document.querySelector(".dark-mode-btn");
+      darkModeBtn.classList.add("fa-sun");
+    }
