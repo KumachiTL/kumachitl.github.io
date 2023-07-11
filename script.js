@@ -164,11 +164,19 @@ function toggleDarkMode() {
   const body = document.querySelector('body');
   const nav = document.querySelector('nav');
 
-  body.classList.toggle("dark-mode");
-  nav.classList.toggle('dark-mode');
-
+  // Store the preference in local storage
+  const isDarkMode = body.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode);
+  
   const icon = document.getElementById('icon');
   icon.classList.toggle('fa-moon');
   icon.classList.toggle('fa-sun');
-  
+}
+
+// Check if dark mode preference is stored in local storage
+const storedDarkMode = localStorage.getItem("darkMode");
+
+if (storedDarkMode === "true") {
+  body.classList.add("dark-mode");
+  nav.classList.add('dark-mode');
 }
