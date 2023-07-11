@@ -420,6 +420,7 @@ nav {
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .story-title::after {
@@ -434,7 +435,6 @@ nav {
 }
 
 .story-description {
-  margin-top: 25px;
   font-size: 16px;
   font-family: "Poppins";
   line-height: 30px;
@@ -597,10 +597,6 @@ select {
 .kp, .kc1 {
   font-size: 16px;
   font-family: "Poppins";
-}
-
-p#content {
-  margin: 5px 0;
 }
 
 /* B2TOP BUTTON */
