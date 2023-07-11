@@ -173,19 +173,13 @@ if ((isDarkMode === null && prefersDarkMode) || isDarkMode) {
 
 // Function to enable dark mode
 function enableDarkMode() {
-  const body = document.querySelector('body');
-  const nav = document.querySelector('nav');
-  body.classList.add("dark-mode");
-  nav.classList.add('dark-mode');
+  document.body.classList.add('dark-mode');
   localStorage.setItem('darkMode', true);
 }
 
 // Function to disable dark mode
 function disableDarkMode() {
-  const body = document.querySelector('body');
-  const nav = document.querySelector('nav');
-  body.classList.remove("dark-mode");
-  nav.classList.remove('dark-mode');
+  document.body.classList.remove('dark-mode');
   localStorage.setItem('darkMode', false);
 }
 
