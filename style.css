@@ -302,6 +302,7 @@ nav {
 .search-result-item a {
   text-decoration: none;
   color: #1E1E1E;
+  align-items: center;
 }
 
 .search-result-item a:hover {
@@ -1282,7 +1283,7 @@ body.dark-mode {
   }
 
   .dark-mode .navbar .show {
-    background-color: white;
+    background-color: #292929;
   }
 
 }
