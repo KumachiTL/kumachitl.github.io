@@ -259,7 +259,7 @@ nav {
 
 #headerText {
   font-size: 35px;
-  color: white;
+  color: #1E1E1E;
   text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   position: relative;
@@ -361,7 +361,7 @@ nav {
 .title:hover {
   color: #8C52FF;
   transition: 0.3s;
-  }
+}
 
 .date {
   color: #585656;
@@ -636,6 +636,7 @@ p#content {
   border: 1px solid #1E1E1E;
   padding: 20px;
   background-color: white;
+  color: #1E1E1E;
   margin-bottom: 10px;
   margin: 25px 122px;
   border-radius: 10px;
@@ -739,7 +740,7 @@ body.dark-mode {
 }
 
 .submenu li a:hover {
-  background-color: #292929;
+  background-color: #3d3a3a;
 }
 
 /* --Search (Dark) */
@@ -783,6 +784,11 @@ body.dark-mode {
   background-color: #292929;
 }
 
+.dark-mode .search-result-item a:hover {
+  color: #8C52FF;
+  transition: .3s;
+}
+
 /* --Main (Dark) */
 
 .dark-mode .box, .dark-mode .works-box, .dark-mode .about-box, 
@@ -803,6 +809,12 @@ body.dark-mode {
 
 .dark-mode .line {
   background-color: #383838;
+}
+
+.dark-mode .title:hover, .dark-mode .source:hover,
+.dark-mode .chapter:hover, .dark-mode .toc:hover {
+  color: #8C52FF;
+  transition: 0.3s;
 }
 
 /* ---Buttons */
@@ -832,6 +844,7 @@ body.dark-mode {
 .dark-mode .comments-box {
   border: 1px solid #ccc;
   background-color: #292929;
+  color: white;
 }
 
 /* --Footer */
