@@ -512,7 +512,12 @@ nav {
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
-  font-family: outfit;
+  font-family: "Outfit";
+}
+
+.read-first {
+  width: 120px;
+  margin: 0 0 25px;
 }
 
 .prev-btn:hover, .next-btn:hover, .read-first:hover {
@@ -521,7 +526,7 @@ nav {
 }
 
 select {
-  font-family: outfit;
+  font-family: "Outfit";
   font-size: 16px;
   width: 200px;
   height: 40px;
