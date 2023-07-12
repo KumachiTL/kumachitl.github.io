@@ -383,11 +383,9 @@ nav {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 0 25px;
-  padding-top: 20px;
+  padding: 20px 25px;
   align-items: left;
   color: #1E1E1E;
-  font-family: "Outfit", sans-serif;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
