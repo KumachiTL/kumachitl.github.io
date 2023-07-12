@@ -19,7 +19,6 @@ nav {
   color: #9619d0;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  transition: background-color 0.3s ease;
 }
   
 .navbar {
@@ -323,7 +322,6 @@ nav {
   color: #1E1E1E;
   font-family: "Outfit", sans-serif;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  transition: background-color 0.3s ease;
 }
   
 .row {
@@ -379,7 +377,7 @@ nav {
 
 /* ABOUT PAGE */
 
-.about-box, .disclaimer-box {
+.about-box, .disclaimer-box, .features-box {
   background-color: white;
   margin: 25px 122px;
   border-radius: 10px;
@@ -391,10 +389,9 @@ nav {
   color: #1E1E1E;
   font-family: "Outfit", sans-serif;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  transition: background-color 0.3s ease;
 }
 
-.about, .disclaimer {
+.about, .disclaimer, .features {
   margin-bottom: 25px;
   font-size: 16px;
   font-family: "Poppins";
@@ -409,7 +406,6 @@ nav {
   border-radius: 10px;
   padding: 20px 25px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  transition: background-color 0.3s ease;
 }
 
 .story-title {
@@ -487,7 +483,6 @@ nav {
   color: #1E1E1E;
   justify-content: center;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  transition: background-color 0.3s ease;
 }
 
 /* -Change Chapter */
@@ -500,7 +495,6 @@ nav {
   padding: 10px 25px;
   color: white;
   justify-content: center;
-  transition: background-color 0.3s ease;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
@@ -598,8 +592,6 @@ select {
   align-items: left;
   color: #1E1E1E;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  transition: background-color 0.3s ease;
-
 }
 
 .kp, .kc1 {
@@ -676,7 +668,6 @@ footer {
   background-color: #8C52FF;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .dark-mode-toggle:before {
