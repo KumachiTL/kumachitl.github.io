@@ -462,7 +462,12 @@ nav {
 
 .chapter {
   font-size: 19px;
-  text-decoration: underline;
+  position: relative;
+}
+
+.chapter-date {
+  color: #585656;
+  font-size: 16px;
   position: relative;
 }
 
