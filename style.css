@@ -787,14 +787,14 @@ body.dark-mode {
 /* --Main (Dark) */
 
 .dark-mode .box, .dark-mode .works-box, .dark-mode .about-box, 
-.dark-mode .disclaimer-box, .dark-mode .description-box,
-.dark-mode .info-box, .dark-mode .chapter-box {
+.dark-mode .disclaimer-box, .dark-mode .features-box, 
+.dark-mode .description-box, .dark-mode .info-box, .dark-mode .chapter-box {
   background-color: #292929;
   color: white;
 }
 
 .dark-mode .title, .dark-mode .about, .dark-mode .disclaimer,
-.dark-mode .source, .dark-mode .chapter  {
+.dark-mode .features, .dark-mode .source, .dark-mode .chapter  {
   color: white;
 }
 
