@@ -133,6 +133,8 @@ function navigateToLink(dropdownId) {
 
 // FONT SIZE
 
+// FONT SIZE
+
 const content = document.getElementById('content');
 const decreaseBtn = document.getElementById('decreaseBtn');
 const resetBtn = document.getElementById('resetBtn');
@@ -141,18 +143,31 @@ const increaseBtn = document.getElementById('increaseBtn');
 // Store the default font size
 const defaultFontSize = parseInt(window.getComputedStyle(content).fontSize);
 
+// Retrieve the font size from localStorage on page load
+const savedFontSize = localStorage.getItem('fontSize');
+
+if (savedFontSize) {
+  content.style.fontSize = savedFontSize;
+}
+
 // Event listener for the decrease button
 decreaseBtn.addEventListener('click', () => {
   // Get the current font size
   const currentFontSize = parseInt(window.getComputedStyle(content).fontSize);
   // Decrease the font size by 2 pixels
-  content.style.fontSize = `${currentFontSize - 2}px`;
+  const newFontSize = `${currentFontSize - 2}px`;
+  // Update the font size in the content element
+  content.style.fontSize = newFontSize;
+  // Save the font size to localStorage
+  localStorage.setItem('fontSize', newFontSize);
 });
 
 // Event listener for the reset button
 resetBtn.addEventListener('click', () => {
   // Set the font size back to the default
   content.style.fontSize = `${defaultFontSize}px`;
+  // Remove the saved font size from localStorage
+  localStorage.removeItem('fontSize');
 });
 
 // Event listener for the increase button
@@ -160,7 +175,11 @@ increaseBtn.addEventListener('click', () => {
   // Get the current font size
   const currentFontSize = parseInt(window.getComputedStyle(content).fontSize);
   // Increase the font size by 2 pixels
-  content.style.fontSize = `${currentFontSize + 2}px`;
+  const newFontSize = `${currentFontSize + 2}px`;
+  // Update the font size in the content element
+  content.style.fontSize = newFontSize;
+  // Save the font size to localStorage
+  localStorage.setItem('fontSize', newFontSize);
 });
 
 // PREV AND NEXT BY KBD
