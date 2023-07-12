@@ -1,12 +1,12 @@
 html {
   font-family: "Outfit", sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 body {
   margin: 0;
   padding: 0;
   background: rgb(220, 202, 236);
-  transition: background-color 0.3s ease;
 }
 
 .logo img {
@@ -471,6 +471,7 @@ nav {
   color: #585656;
   font-size: 14px;
   position: relative;
+  padding-left: 20px;
 }
 
 /* BUTTONS */
@@ -500,6 +501,7 @@ nav {
   color: white;
   justify-content: center;
   transition: background-color 0.3s ease;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .change-chap-buttons {
@@ -805,7 +807,7 @@ body.dark-mode {
   color: white;
 }
 
-.dark-mode .date {
+.dark-mode .date, .dark-mode .chapter-date {
   color: gray;
 }
 

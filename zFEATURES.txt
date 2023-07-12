@@ -1,0 +1,10 @@
+(CHANGE) 
+* chapter-date: COLOR (.dark-mode)
+** chapter-date: SPACE (padding-left)
+
+(ADD) change-chap-box: BOX SHADOW
+
+(MINOR ADDITION) 
+* features box in about page
+* announcement box in home page
+* read first, read last/latest chapters
