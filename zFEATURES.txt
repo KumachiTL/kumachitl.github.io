@@ -21,4 +21,4 @@
 *** footnotes isn't affected by the font size buttons for some reason
 *** when switching to dark mode, disqus comments does not automatically change colors, refresh the page to make it work
 * announcement box in home page
-* read first, read last/latest chapters
+* read first, read last/latest chapters button

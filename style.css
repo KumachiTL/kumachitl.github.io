@@ -394,7 +394,7 @@ nav {
   font-family: "Poppins";
 }
 
-/* KOKUHAKU PAGE */
+/* STORY PAGE */
 
 .description-box, .info-box, .chapter-box {
   background-color: white;
@@ -465,6 +465,25 @@ nav {
   font-size: 16px;
   position: relative;
   padding-left: 25px;
+}
+
+.read-first {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "Outfit";
+}
+
+.read-first:hover {
+    opacity: 0.8;
+  transition: 0.3s;
 }
 
 /* BUTTONS */
