@@ -462,7 +462,7 @@ nav {
 
 .chapter-date {
   color: #585656;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   padding-left: 20px;
 }
@@ -594,10 +594,6 @@ select {
 .kp, .kc1 {
   font-size: 16px;
   font-family: "Poppins";
-}
-
-p#content {
-  margin: 0;
 }
 
 /* B2TOP BUTTON */
@@ -981,11 +977,11 @@ body.dark-mode {
 
   /* ABOUT PAGE */
 
-  .about-box, .disclaimer-box {
+  .about-box, .disclaimer-box, .features-box {
     margin: 25px 80px;
   }
 
-  .about, .disclaimer {
+  .about, .disclaimer, .features {
     font-size: 15px;
   }
 
@@ -1008,16 +1004,12 @@ body.dark-mode {
     line-height: 25px;
   }
 
-  .info, .chapter {
+  .info, .chapter, .chapter-date {
     font-size: 14px;
   }
 
   .info2, .source {
     font-size: 13px;
-  }
-
-  .chapter-text {
-    font-size: 22px;
   }
 
   /* BUTTONS */
@@ -1186,11 +1178,11 @@ body.dark-mode {
 
   /* About Page */
 
-  .about-box, .disclaimer-box {
+  .about-box, .disclaimer-box, .features-box {
     margin: 15px 25px;
   }
 
-  .about, .disclaimer {
+  .about, .disclaimer, .features {
     font-size: 14px;
   }
 
@@ -1418,7 +1410,7 @@ body.dark-mode {
 
   /* Main */
     
-  .box, .works-box, .about-box, .disclaimer-box {
+  .box, .works-box, .about-box, .disclaimer-box, .features-box {
     margin: 5px;
     border-radius: 5px;
   }
