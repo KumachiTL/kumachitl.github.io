@@ -1399,10 +1399,18 @@ body.dark-mode {
     font-size: 25px;
   }
 
+  #content {
+    font-size: 15px;
+  }
+
   /* COMMENTS */
 
   .comments-box {
     margin: 15px 5px;
+  }
+
+  .comments-box .text {
+    font-size: 25px;
   }
 
   /* DARK MODE */
