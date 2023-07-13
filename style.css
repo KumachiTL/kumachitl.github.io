@@ -740,6 +740,10 @@ footer {
   opacity: 1;
 } */
 
+.sun-icon, .moon-icon {
+  display: none;
+}
+
 /* -Dark Mode */
 
 body.dark-mode {
