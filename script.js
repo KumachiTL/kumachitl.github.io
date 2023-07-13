@@ -133,8 +133,6 @@ function navigateToLink(dropdownId) {
 
 // FONT SIZE
 
-// FONT SIZE
-
 const content = document.getElementById('content');
 const decreaseBtn = document.getElementById('decreaseBtn');
 const resetBtn = document.getElementById('resetBtn');

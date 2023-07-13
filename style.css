@@ -395,7 +395,11 @@ nav {
 }
 
 .ftstyle {
-  margin: 0;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.ftstyle2 {
   padding: 0;
 }
 
@@ -534,7 +538,6 @@ select {
   font-size: 16px;
   width: 200px;
   height: 40px;
-  margin: 10px 0;
   border-radius: 4px;
   color: #1E1E1E;
 }
@@ -544,7 +547,7 @@ select {
   height: 3px;
   border-radius: 10px;
   background-color: rgb(220, 202, 236);
-  margin: 10px 0;
+  margin: 20px 0;
   border: none;
 }
 
