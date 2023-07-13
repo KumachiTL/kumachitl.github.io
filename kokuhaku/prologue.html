@@ -202,6 +202,23 @@
 
   <button id="backToTopBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button>
 
+  <script>
+    var backToTopButton = document.getElementById("backToTopBtn");
+
+    window.onscroll = function() {
+      if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+        backToTopButton.classList.add("show");
+      } else {
+        backToTopButton.classList.remove("show");
+      }
+    };
+
+    backToTopButton.onclick = function() {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+  </script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../script.js"></script>
 </body>
