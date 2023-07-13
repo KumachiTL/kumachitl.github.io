@@ -882,115 +882,7 @@ body.dark-mode {
 /* Mobile 1024 ver */
 
 @media screen and (max-width: 1024px) {
-  .navbar .nav-links {
-    display: none;
-  }
 
-  .fa-bars {
-    display: block;
-    color: #1E1E1E;
-    font-size: 20px;
-  }
-
-  .navbar .menu li {
-    margin-bottom: 0;
-  }
-
-  .navbar .menu li a {
-    padding: 15px;
-  }
-
-  .navbar .dropdown-toggle::after {
-    content: '\f107';
-  }
-
-  .navbar .submenu {
-    display: none;
-  }
-
-  .navbar .dropdown-toggle.collapsed::after {
-    content: '\f106';
-  }
-
-  .navbar .show {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 250px;
-    padding: 20px;
-    background-color: white;
-    z-index: 1000;
-  }
-
-  .navbar .sidebar-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  .navbar .sidebar-logo img {
-    display: block;
-    width: 200px;
-    height: auto;
-  }
-
-  .navbar .sidebar-logo .fas.fa-times, .sidebar-logo img {
-    font-size: 20px;
-    cursor: pointer;
-    display: block;
-    color: #1E1E1E;
-  }
-
-  .navbar .menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .navbar .menu li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #1E1E1E;
-  }
-
-  .navbar .submenu {
-    margin: 0 0 0 20px;
-    display: none;
-    position: relative;
-    border-radius: 0;
-    width: auto;
-    box-shadow: none;
-    left: 0;
-  }
-
-  .dropdown:nth-child(3) .submenu, .dropdown:nth-child(4) .submenu, .dropdown:nth-child(5) .submenu, .dropdown:nth-child(6) .submenu {
-    left: 0;
-  }
-
-  .navbar .submenu li {
-    margin-bottom: 10px;
-  }
-
-  .navbar .submenu li a {
-    display: block;
-    padding: 2px;
-    color: #1E1E1E;
-  }
-
-  .search-box {
-    margin: 0;
-  }
-
-  #searchInput {
-    width: 250px;
-  }
-
-  /* MAIN */
-    
   .box, .works-box {
     margin: 25px 80px;
   }
@@ -1048,6 +940,7 @@ body.dark-mode {
 
   .button-container {
     margin: 25px 80px;
+    padding: 15px 20px;
   }
 
   .change-chap-box {
@@ -1066,7 +959,7 @@ body.dark-mode {
   }
 
   .separator {
-    margin: 4px;
+    margin: 15px 0;
   }
 
   /* KOKUHAKU */
@@ -1081,6 +974,12 @@ body.dark-mode {
 
   .footnotes {
     font-size: 13px;
+  }
+
+  /* Comments */
+
+  .comments-box {
+    margin: 25px 80px;
   }
 
   /* DARK MODE */
@@ -1237,13 +1136,22 @@ body.dark-mode {
 
   /* Chapters */
 
-  .button-container, .change-chap-box {
+  .button-container {
+    margin: 20px 25px;
+    padding: 15px 20px;
+  }
+  
+  .change-chap-box {
     margin: 20px 25px;
   }
 
   .prev-btn, .next-btn {
     width: 100px;
     height: 38px;
+  }
+
+  .separator {
+    margin: 15px 0;
   }
 
   select {
@@ -1264,11 +1172,11 @@ body.dark-mode {
     margin: 15px 25px;
   }
 
-  .kp-box .text-row .story-title {
+  .kp-box .text-row .story-title, .kc1-box .text-row .story-title {
     font-size: 30px;
   }
 
-  .kp, .kc1 {
+  #content {
     font-size: 15px;
   }
 
@@ -1427,28 +1335,22 @@ body.dark-mode {
 
   /* Main */
     
-  .box, .works-box, .about-box, .disclaimer-box, .features-box {
+  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box {
     margin: 5px;
     border-radius: 5px;
-  }
-
-  /* Kokuhaku Page */
-
-  .description-box, .info-box, .chapter-box {
-    margin: 5px;
-    border-radius: 5px;
+    margin: 15px 5px;
   }
 
   /* Chapters */
 
   .button-container {
     margin: 5px;
-    padding: 0 10px;
+    padding: 10px;
     border-radius: 5px;
   }
 
   .change-chap-box {
-    margin: 5px;
+    margin: 15px 5px;
     padding: 0;
     border-radius: 5px;
   }
@@ -1488,14 +1390,19 @@ body.dark-mode {
   /* Kokuhaku*/
 
   .kp-box, .kc1-box  {
-    margin: 5px;
+    margin: 15px 5px;
+    padding: 20px 10px;
     border-radius: 5px;
+  }
+
+  .kp-box .text-row .story-title, .kc1-box .text-row .story-title {
+    font-size: 25px;
   }
 
   /* COMMENTS */
 
   .comments-box {
-    margin: 5px;
+    margin: 15px 5px;
   }
 
   /* DARK MODE */
