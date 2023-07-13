@@ -1341,17 +1341,23 @@ body.dark-mode {
     margin: 15px 5px;
   }
 
-  /* Chapters */
-
-  .button-container {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
+  .story-title {
+    font-size: 18.8px;
   }
 
-  .change-chap-box {
+  .chapter-box .text-row .text {
+    font-size: 25px;
+  }
+
+  .chapter-date {
+    font-size: 13px;
+  }
+
+  /* Chapters */
+
+  .button-container, .change-chap-box {
     margin: 15px 5px;
-    padding: 0;
+    padding: 10px;
     border-radius: 5px;
   }
 
