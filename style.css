@@ -707,7 +707,7 @@ footer {
   transition: transform 0.3s;
 }
 
-.dark-mode-toggle .sun-icon {
+/* .dark-mode-toggle .sun-icon {
   position: absolute;
   top: 50%;
   left: 2px;
@@ -725,20 +725,20 @@ footer {
   color: white;
   opacity: 0;
   transition: opacity 0.3s;
-}
+} */
 
 .dark-mode-toggle.dark-mode:before {
   transform: translateX(20px);
   background-color: white;
 }
 
-.dark-mode-toggle.dark-mode .sun-icon {
+/* .dark-mode-toggle.dark-mode .sun-icon {
   opacity: 0;
 }
 
 .dark-mode-toggle.dark-mode .moon-icon {
   opacity: 1;
-}
+} */
 
 /* -Dark Mode */
 
