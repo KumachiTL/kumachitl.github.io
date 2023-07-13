@@ -668,6 +668,20 @@ footer {
   margin-top: auto;
 }
 
+/* ICONS */
+
+.fas.fa-angle-left {
+  font-size: 17px;
+  color: white;
+  padding-right: 5px;
+}
+
+.fas.fa-angle-right {
+  font-size: 17px;
+  color: white;
+  padding-left: 5px;
+}
+
 /* DARK MODE */
 
 /* -Dark Mode Button */
