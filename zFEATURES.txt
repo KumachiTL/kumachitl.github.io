@@ -1,9 +1,6 @@
 (CHANGE)
-* increase margin top & bottom in mobile
-* font size doesnt affect footnotes in mobile 
-* decrease padding in chapters in mobile
-* back2top button change to icon only
-* style features in about page
+* font size doesnt affect footnotes in mobile
+* back2top button change to icon only (done but doesn't show up in kp)
 
 (ADD)
 

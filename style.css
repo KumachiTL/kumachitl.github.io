@@ -888,7 +888,7 @@ body.dark-mode {
 
   .fa-bars {
     display: block;
-    color: #1E1E1E;
+    color: white;
     font-size: 20px;
   }
 
@@ -920,7 +920,7 @@ body.dark-mode {
     height: 100vh;
     width: 250px;
     padding: 20px;
-    background-color: white;
+    background-color: #292929;
     z-index: 1000;
   }
 
@@ -937,11 +937,11 @@ body.dark-mode {
     height: auto;
   }
 
-  .navbar .sidebar-logo .fas.fa-times {
+  .navbar .sidebar-logo .fas.fa-times, .sidebar-logo img {
     font-size: 20px;
     cursor: pointer;
     display: block;
-    color: #1E1E1E;
+    color: white;
   }
 
   .navbar .menu {
@@ -954,7 +954,7 @@ body.dark-mode {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #1E1E1E;
+    color: white;
   }
 
   .navbar .submenu {
@@ -963,6 +963,12 @@ body.dark-mode {
     position: relative;
     border-radius: 0;
     width: auto;
+    box-shadow: none;
+    left: 0;
+  }
+
+  .dropdown:nth-child(3) .submenu, .dropdown:nth-child(4) .submenu, .dropdown:nth-child(5) .submenu, .dropdown:nth-child(6) .submenu {
+    left: 0;
   }
 
   .navbar .submenu li {
@@ -972,7 +978,16 @@ body.dark-mode {
   .navbar .submenu li a {
     display: block;
     padding: 2px;
-    color: #1E1E1E;
+    color: white;
+    list-style-type: circle;
+  }
+
+  .search-box {
+    margin: 0;
+  }
+
+  #searchInput {
+    width: 250px;
   }
 
   /* MAIN */

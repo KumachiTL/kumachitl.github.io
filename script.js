@@ -1,41 +1,31 @@
 // DARK MODE
 
-    // Get the dark mode toggle element
-    const darkModeToggle = document.getElementById('darkModeToggle');
+const darkModeToggle = document.getElementById('darkModeToggle');
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const savedDarkModePreference = localStorage.getItem('darkMode');
 
-    // Check if the user has a preference for dark mode
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    // Check if there's a previously saved dark mode preference
-    const savedDarkModePreference = localStorage.getItem('darkMode');
-
-    // Apply the appropriate dark mode preference
-    if (savedDarkModePreference === 'true' || (savedDarkModePreference === null && prefersDarkMode)) {
+  if (savedDarkModePreference === 'true' || (savedDarkModePreference === null && prefersDarkMode)) {
+    enableDarkMode();
+  }
+  darkModeToggle.addEventListener('click', () => {
+  if (darkModeToggle.classList.contains('dark-mode')) {
+    disableDarkMode();
+    localStorage.setItem('darkMode', 'false');
+  } else {
       enableDarkMode();
-    }
+      localStorage.setItem('darkMode', 'true');
+  }
+  });
 
-    // Toggle dark mode when the toggle switch is clicked
-    darkModeToggle.addEventListener('click', () => {
-      if (darkModeToggle.classList.contains('dark-mode')) {
-        disableDarkMode();
-        localStorage.setItem('darkMode', 'false');
-      } else {
-        enableDarkMode();
-        localStorage.setItem('darkMode', 'true');
-      }
-    });
+function enableDarkMode() {
+  document.body.classList.add('dark-mode');
+  darkModeToggle.classList.add('dark-mode');
+}
 
-    // Enable dark mode
-    function enableDarkMode() {
-      document.body.classList.add('dark-mode');
-      darkModeToggle.classList.add('dark-mode');
-    }
-
-    // Disable dark mode
-    function disableDarkMode() {
-      document.body.classList.remove('dark-mode');
-      darkModeToggle.classList.remove('dark-mode');
-    }
+function disableDarkMode() {
+  document.body.classList.remove('dark-mode');
+  darkModeToggle.classList.remove('dark-mode');
+}
 
 // SIDEBAR MENU
 
@@ -56,7 +46,6 @@ $(document).ready(function () {
     });
   });
 
-  // Animation for media query
   $(window).resize(function () {
     if ($(window).width() > 768) {
       $('.navbar .nav-links').css({ 'display': 'block', 'left': '0' });
@@ -87,17 +76,13 @@ searchBox.addEventListener("click", ()=>{
 
 // -Search Results
 
-// Load the JSON data
 fetch('../data.json')
   .then(response => response.json())
   .then(data => {
-    // Store the loaded data
-    const contentData = data.contents;
+    
+const contentData = data.contents;
+const searchInput = document.getElementById('searchInput');
 
-    // Get references to the HTML elements
-    const searchInput = document.getElementById('searchInput');
-
-// Add event listener to the Enter key press on the search input field
 searchInput.addEventListener('keydown', function(event) {
   if (event.keyCode === 13) {
     handleSearch();
@@ -108,12 +93,11 @@ function handleSearch() {
   const searchTerm = searchInput.value.trim().toLowerCase();
   const searchResults = contentData.filter(item => item.toLowerCase().includes(searchTerm));
 
-      // Redirect to search results page if there are matching results
       if (searchResults.length > 0) {
         const url = `../results.html?search=${encodeURIComponent(searchTerm)}`;
         window.location.href = url;
       } else {
-        alert('No results found.');
+          alert('No results found.');
       }
     }
   })
@@ -137,46 +121,29 @@ const content = document.getElementById('content');
 const decreaseBtn = document.getElementById('decreaseBtn');
 const resetBtn = document.getElementById('resetBtn');
 const increaseBtn = document.getElementById('increaseBtn');
-
-// Store the default font size
 const defaultFontSize = parseInt(window.getComputedStyle(content).fontSize);
-
-// Retrieve the font size from localStorage on page load
 const savedFontSize = localStorage.getItem('fontSize');
 
 if (savedFontSize) {
   content.style.fontSize = savedFontSize;
 }
 
-// Event listener for the decrease button
 decreaseBtn.addEventListener('click', () => {
-  // Get the current font size
   const currentFontSize = parseInt(window.getComputedStyle(content).fontSize);
-  // Decrease the font size by 2 pixels
   const newFontSize = `${currentFontSize - 2}px`;
-  // Update the font size in the content element
   content.style.fontSize = newFontSize;
-  // Save the font size to localStorage
   localStorage.setItem('fontSize', newFontSize);
 });
 
-// Event listener for the reset button
 resetBtn.addEventListener('click', () => {
-  // Set the font size back to the default
   content.style.fontSize = `${defaultFontSize}px`;
-  // Remove the saved font size from localStorage
   localStorage.removeItem('fontSize');
 });
 
-// Event listener for the increase button
 increaseBtn.addEventListener('click', () => {
-  // Get the current font size
   const currentFontSize = parseInt(window.getComputedStyle(content).fontSize);
-  // Increase the font size by 2 pixels
   const newFontSize = `${currentFontSize + 2}px`;
-  // Update the font size in the content element
   content.style.fontSize = newFontSize;
-  // Save the font size to localStorage
   localStorage.setItem('fontSize', newFontSize);
 });
 
@@ -186,13 +153,13 @@ document.addEventListener('keydown', function(event) {
   if (event.key === 'ArrowLeft') {
     var prevButton = document.querySelector('.prev-btn');
     if (prevButton) {
-      prevButton.click(); // Trigger the click event of the previous button
+      prevButton.click();
     }
   }
   if (event.key === 'ArrowRight') {
     var nextButton = document.querySelector('.next-btn');
     if (nextButton) {
-      nextButton.click(); // Trigger the click event of the next button
+      nextButton.click();
     }
   }
 });
