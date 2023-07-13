@@ -1,24 +1,12 @@
-(CHANGE) 
-* chapter-date: COLOR (.dark-mode)
-** chapter-date: SPACE (padding-left)
+(CHANGE)
+* increase margin top & bottom in mobile
+* font size doesnt affect footnotes in mobile 
+* decrease padding in chapters in mobile
+* back2top button change to icon only
+* style features in about page
 
-(ADD) change-chap-box: BOX SHADOW
+(ADD)
+
 
 (MINOR ADDITION) 
-* features box in about page
-** FEATURES:
-*** sidebar menu for media queries (tables and smartphones)
-**** dropdown submenu
-*** search bar (press enter key to submit query)
-*** dark mode button
-*** toc when you hover the short title
-*** change chapter form (click to select chapters)
-*** prev & next chapter button (press left and right arrow keys on keyboard)
-*** font size buttons (decrease, increase & default sizes)
-*** back to top button
-** MALFUNCTIONS
-*** sidebar menu doesn't work properly, when sidebar doesn't appear, refresh the page and try again
-*** footnotes isn't affected by the font size buttons for some reason
-*** when switching to dark mode, disqus comments does not automatically change colors, refresh the page to make it work
-* announcement box in home page
-* read first, read last/latest chapters button
+* announcement box in home page (deciding)

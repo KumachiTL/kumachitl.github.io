@@ -394,6 +394,11 @@ nav {
   font-family: "Poppins";
 }
 
+.ftstyle {
+  margin: 0;
+  padding: 0;
+}
+
 /* STORY PAGE */
 
 .description-box, .info-box, .chapter-box {
@@ -476,7 +481,7 @@ nav {
   margin: 25px 122px;
   border-radius: 10px;
   display: flex;
-  padding: 10px 25px;
+  padding: 20px 25px;
   color: #1E1E1E;
   justify-content: center;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -498,7 +503,7 @@ nav {
 .change-chap-buttons {
   display: flex;
   align-items: center;
-  margin-top: 4px;
+  gap: 10px;
 }
 
 .prev-btn, .next-btn, .read-first {
@@ -508,7 +513,6 @@ nav {
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
   color: white;
   padding: 10px 20px;
-  margin: 10px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
@@ -546,10 +550,16 @@ select {
 
 /* -Font size */
 
+.font-size-buttons {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   width: 40px;
   height: 40px;
-  margin: 10px 3px;
   font-size: 16px;
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
   color: white;
@@ -614,7 +624,6 @@ select {
   background: linear-gradient(135deg, #9619d0 0%, #cd1494 50%, #ab0b6d 100%);
   color: white;
   cursor: pointer;
-  font-family: outfit;
   border-radius: 7px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -1171,26 +1180,6 @@ body.dark-mode {
     width: 250px;
   }
 
-  .search-results {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Main */
-    
-  .box, .works-box {
-    margin: 15px 25px;
-  }
-
-  /* About Page */
-
-  .about-box, .disclaimer-box, .features-box {
-    margin: 15px 25px;
-  }
-
-  .about, .disclaimer, .features {
-    font-size: 14px;
-  }
-
   /* Search Results */
 
   #headerText {
@@ -1201,8 +1190,9 @@ body.dark-mode {
   
   .search-results {
     margin: 10px 20px;
+    grid-template-columns: 1fr 1fr;
   }
-  
+
   .search-result-item {
     padding: 40px 0;
     justify-content: center;
@@ -1213,10 +1203,14 @@ body.dark-mode {
     font-size: 18px;
   }
 
-  /* Kokuhaku Page */
-
-  .description-box, .info-box, .chapter-box {
+  /* Main */
+    
+  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box {
     margin: 15px 25px;
+  }
+
+  .about, .disclaimer, .features {
+    font-size: 14px;
   }
 
   .story-title {
@@ -1246,14 +1240,14 @@ body.dark-mode {
     height: 38px;
   }
 
-  #increaseBtn {
-    margin-right: 10px;
-  }
-
   /* Kokuhaku*/
 
   .kp-box, .kc1-box {
     margin: 15px 25px;
+  }
+
+  .kp-box .text-row .story-title {
+    font-size: 30px;
   }
 
   .kp, .kc1 {
