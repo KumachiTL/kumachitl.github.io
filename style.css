@@ -461,6 +461,11 @@ nav {
   transition: 0.3s;
 }
 
+.chapter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .chapter {
   color: #1E1E1E;
   font-size: 19px;
@@ -472,7 +477,7 @@ nav {
   color: #585656;
   font-size: 16px;
   position: relative;
-  padding-left: 25px;
+  font-style: italic;
 }
 
 /* BUTTONS */
