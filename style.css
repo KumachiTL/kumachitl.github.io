@@ -487,6 +487,13 @@ nav {
   font-style: italic;
 }
 
+.chap-title {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+
 /* BUTTONS */
 
 .button-container {
