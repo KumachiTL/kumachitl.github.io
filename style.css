@@ -439,6 +439,13 @@ nav {
   line-height: 30px;
 }
 
+pre {
+  font-family: "Poppins";
+  margin: 0;
+  white-space: pre-line;
+  line-height: 18px;
+}
+
 .info {
   font-size: 18px;
 }
