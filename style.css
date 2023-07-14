@@ -439,11 +439,11 @@ nav {
   line-height: 30px;
 }
 
-pre {
+.text-row pre {
   font-family: "Poppins";
   margin: 0;
   white-space: pre-line;
-  line-height: 18px;
+  line-height: inherit;
 }
 
 .info {

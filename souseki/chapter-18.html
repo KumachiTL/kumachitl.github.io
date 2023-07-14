@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="../assets/fav.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kokuhaku - Chapter 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class="fas fa-bars"></i>
+      <div class="logo">
+      <a href="/"><img src="../assets/logo.png" title="Home" alt="Kumachi Logo"></a>
+      </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <a href="/"><img src="../assets/logo.png" title="Home" alt="Kumachi Logo"></a>
+          <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu">
+          <li class="dropdown"><a href="/">Home</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Ongoing</a>
+            <ul class="submenu">
+              <li><a href="../kokuhaku">The Beautiful Girls in the School Confessed to Me Almost at the Same Time and I Misunderstood That They Were Making Fun of Me so I Decided To Go Out With All of Them but I Was Too Shy!</a></li>
+              <!-- <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li> -->
+              </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Hiatus</a>
+            <ul class="submenu">
+              <li><a href="../souseki">I Don't Know Souseki~I Had A Girlfriend Before I Knew It~</a></li>
+              <!-- <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li> -->
+            </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Completed</a>
+            <ul class="submenu">
+              <li><a href="#">The Hero Cucked Me of My Childhood Friend, so I Think I'll Steal His Fiancee</a></li>
+              <!-- <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li> -->
+            </ul>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Dropped</a>
+            <!-- <ul class="submenu">
+              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nam velit est? Corporis, quos unde?</a></li>
+              <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Submenu Item 3</a></li>
+            </ul> -->
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Original Works</a>
+            <!-- <ul class="submenu">
+              <li><a href="#">My Ex-Wife's Daughter</a></li>
+              <li><a href="#">The Daily Life of a Former Office Worker [18+]</a></li>
+              <li><a href="#">Reconciliation of Two Old Lovers</a></li>
+              <li><a href="#">My Late Wife is My Guardian Angel</a></li>
+            </ul> -->
+          </li>
+          <li><a href="../about">About</a></li>
+        </ul>
+    </div>
+    <div class="dark-mode-toggle" id="darkModeToggle">
+      <i class="fas fa-sun sun-icon"></i>
+      <i class="fas fa-moon moon-icon"></i>
+    </div>
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <div class="input-box">
+        <input type="text" id="searchInput" placeholder="Search...">
+      </div>
+    </div>
+   </div>
+  </nav>
+
+  <!-- Main -->
+
+  <div class="button-container">
+    <div class="change-chap-buttons">
+      <button onclick="window.location.href='https://marcochiasnarrative.wordpress.com/2021/05/21/chapter-17-the-way-home-4/'" class="prev-btn" target="_blank">
+        <i class="fas fa-angle-left" style="color: white;"></i> Prev
+      </button>    
+      <form>
+        <select id="dropdown1" onchange="navigateToLink('dropdown1')">
+          <option value="#">Chapter 25</option>
+          <option value="#">Chapter 24</option>              
+          <option value="#">Chapter 23</option>
+          <option value="#">Chapter 22</option>
+          <option value="#">Chapter 21</option>
+          <option value="#">Chapter 20</option>
+          <option value="#">Chapter 19</option>
+          <option value="../souseki/chapter-18" selected>Chapter 18</option>
+          <option value="https://marcochiasnarrative.wordpress.com/2021/05/21/chapter-17-the-way-home-4/" target="_blank">Chapter 1-17</option>
+        </select>
+      </form>
+      <button onclick="window.location.href='#'" class="next-btn">Next 
+        <i class="fas fa-angle-right" style="color: white;"></i>
+      </button>
+    </div>  
+    <hr class="separator" />
+    <div class="font-size-buttons">
+      <button id="decreaseBtn" class="button"><i class="fas fa-minus"></i></button>
+      <button id="resetBtn" class="button">Default</button>
+      <button id="increaseBtn" class="button"><i class="fas fa-plus"></i></button>
+    </div>
+  </div>
+
+  <div class="kc1-box">
+    <div class="text-row">
+      <div class="story-title"><a href="../souseki" title="Souseki" class="toc">Souseki</a> - Chapter 18</div>
+      <div class="chap-title">Bench Next to the School Building During Lunch Break</div>
+        <pre id="content">
+            In our high school, benches and tables are installed throughout the outdoor areas, perhaps as places of relaxation. On sunny days, there are quite a few people who use them. Although I have never used them before today, I am now sitting on one of those benches for the first time, enjoying my lunch.
+
+            "I don't agree with it."
+        
+            Anna, who was sitting next to me, said as soon as I started eating. 
+        
+            The reason I'm eating here instead of in the classroom is because Anna asked me to. Anna and I always ate together since we were seated in front of and behind each other, and there was no need to move, but I thought there must be a reason, so I accepted without hesitation.
+        
+            "What do you mean... you don't agree?"
+        
+            After what had happened with Shiori, my conversations with Anna had been awkward. That's why I was relieved when she invited me like this. For me, Anna is my closest friend in class, and I feel comfortable with her. I enjoy spending time talking lightly, and because of this, I feel comfortable in the classroom. I don't want to ruin this relationship.
+        
+            "Of course it's about Ayashiro-san. There are a lot of things I want to ask you, but... first of all, ...what kind of relationship do Isakacchi and Ayashiro-san have? Are you really dating?"
+        
+            "So that's what you mean. Me and Ayashiro... me and Shiori are dating for the time being. Or rather, it's more like we ended up dating." 
+        
+            I told Anna everything I could tell her. How it all started, how it was all a misunderstanding, my past, the fact that Shiori had feelings for me, and how we decided to continue our relationship. I couldn't read what Anna was thinking from her expression when she was listening to me.
+        
+            "...Why would you do that?..." [TL: I think she's referring to the ex-girlfriend(?)]
+        
+            "Hmm? What's wrong?"
+        
+            "Nothing. I didn't know Isakacchi had a girlfriend."
+        
+            "Well, even though we were dating, we were in middle school, so she was cute. We were both so pure.... That's why I was hurt."
+        
+            "I see.... But you're still dragging it out, aren't you? Is it safe to go out with her like that?"
+        
+            "That's right...., but Shiori knew that and said, 'I like you.' She also said, 'I won't betray you.' Not that we shouldn't break up, but at least I don't think she'd cheat on me or anything. Besides, I can't keep dragging this out forever either."
+        
+            "... What does Isakacchi think of Ayashiro-san in the first place? If you don't like her and you're just going out with her, I don't think it's a good idea."
+        
+            "I like Shiori. But that's not the same as romantic feelings. But hey, isn't it pure joy to be liked by someone?"
+        
+            I don't know if it's Manaka's fault, or if it's because I'm not confident to begin with, but even I have my preferences. [TL: Manaka is the ex-girlfriend]
+        
+            "I think I like people who like me. On the contrary, I'm happy when any person likes me, not just Shiori. So it may seem like a convenience, but I'm pretty sure I'm conscious of Shiori."
+        
+            Even an ambiguous relationship can be a good start. It doesn't matter what other people think, as long as Shiori and I are satisfied with it.
+        
+            "... Does that mean it doesn't matter who as long as they like as you like them Isakacchi?"
+        
+            "Not everyone, but... Well, I guess I don't really want anything else."
+        
+            "You mean it's possible that it's not Ayashiro-san?"
+        
+            "Huh? Possible? No, no, I don't care about that right now."
+        
+            "It's not good! Because I also—"
+        
+            "There you are. Mou, I've been searching for you, you know?"
+        
+            I somehow knew that Anna was about to say something important. But her words were interrupted by Shiori, who may or may not have had the right timing.
+          <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#9619D0', 'L3L0E4VZZ');kofiwidget2.draw();</script>
+        </pre>
+    </div>
+  </div>
+    
+  <div class="change-chap-box">
+    <button onclick="window.location.href='https://marcochiasnarrative.wordpress.com/2021/05/21/chapter-17-the-way-home-4/'" class="prev-btn" target="_blank">
+      <i class="fas fa-angle-left"></i> Prev
+    </button>    
+    <form>
+      <select id="dropdown2" onchange="navigateToLink('dropdown2')">
+        <option value="#">Chapter 25</option>
+        <option value="#">Chapter 24</option>              
+        <option value="#">Chapter 23</option>
+        <option value="#">Chapter 22</option>
+        <option value="#">Chapter 21</option>
+        <option value="#">Chapter 20</option>
+        <option value="#">Chapter 19</option>
+        <option value="../souseki/chapter-18" selected>Chapter 18</option>
+        <option value="https://marcochiasnarrative.wordpress.com/2021/05/21/chapter-17-the-way-home-4/" target="_blank">Chapter 1-17</option>
+      </select>
+    </form>
+    <button onclick="window.location.href='#'" class="next-btn">Next 
+      <i class="fas fa-angle-right"></i>
+    </button>
+  </div> 
+
+  <!-- Comments -->
+
+  <div class="comments-box">
+    <div class="text">Comments</div>
+    <div id="disqus_thread"></div>
+  </div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = "https://kumachitl.netlify.app/souseki/chapter-18";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "chapter-1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+   
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://kumachitl.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  <!-- Footer -->
+
+  <footer>
+    <p>&copy; 2023 <a href="/" style="color: #9619D0;">Kumachi</a>. All rights reserved.</p>
+  </footer>  
+
+  <!-- Back to top -->
+
+  <button id="backToTopBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

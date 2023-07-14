@@ -5,6 +5,7 @@
 (ADD)
 * target="_blank" to chapter 1-17 souseki
 * style <pre>
+* souseki chapter 18
 
 (MINOR ADDITION) 
 * announcement box in home page (deciding)
