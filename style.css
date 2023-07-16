@@ -637,7 +637,7 @@ pre#content {
   font-size: 16px;
   margin: 0;
   white-space: pre-line;
-  line-height: inherit;
+  line-height: 20px;
 }
 
 .footnotes {
