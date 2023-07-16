@@ -1,6 +1,8 @@
 (CHANGE)
 * font size doesnt affect footnotes in mobile
 * back2top button change to icon only (done but doesn't show up in kp)
+* kp-box & kc1-box to story-box
+* kp & kc1 to story-content
 
 (ADD)
 * target="_blank" to chapter 1-17 souseki
