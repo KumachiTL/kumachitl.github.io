@@ -443,7 +443,7 @@ nav {
   font-family: "Poppins";
   margin: 0;
   white-space: pre-line;
-  line-height: inherit;
+  line-height: 14px;
 }
 
 .info {
@@ -635,6 +635,14 @@ select {
 .story-content {
   font-size: 16px;
   font-family: "Poppins";
+}
+
+.footnotes {
+  font-family: 'Poppins';
+}
+
+#footnote-1, #footnote-3 {
+  margin: 0;
 }
 
 /* B2TOP BUTTON */
