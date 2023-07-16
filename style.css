@@ -630,6 +630,7 @@ select {
 
 .story-box .text-row .story-title {
   font-size: 35px;
+  margin-bottom: 35px;
 }
 
 pre#content {
