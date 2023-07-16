@@ -604,7 +604,7 @@ select {
   transition: 0.3s;
 }
 
-/* KOKUHAKU */
+/* STORY */
 
 .toc {
   color: #1E1E1E;
@@ -616,7 +616,7 @@ select {
   transition: .3s;
 }
 
-.kp-box, .kc1-box {
+.story-box{
   background-color: white;
   margin: 25px 122px;
   border-radius: 10px;
@@ -628,11 +628,11 @@ select {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.kp-box .text-row .story-title, .kc1-box .text-row .story-title {
+.story-box .text-row .story-title {
   font-size: 35px;
 }
 
-.kp, .kc1 {
+.story-content {
   font-size: 16px;
   font-family: "Poppins";
 }
