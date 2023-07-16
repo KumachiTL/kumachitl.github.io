@@ -404,7 +404,7 @@ nav {
 
 /* STORY PAGE */
 
-.description-box, .info-box, .chapter-box {
+.description-box, .info-box, .chapter-box, .notes-box {
   background-color: white;
   color: #1E1E1E;
   margin: 25px 122px;
@@ -839,7 +839,8 @@ body.dark-mode {
 
 .dark-mode .box, .dark-mode .works-box, .dark-mode .about-box, 
 .dark-mode .disclaimer-box, .dark-mode .features-box, 
-.dark-mode .description-box, .dark-mode .info-box, .dark-mode .chapter-box {
+.dark-mode .description-box, .dark-mode .info-box, .dark-mode .chapter-box, 
+.dark-mode .notes-box {
   background-color: #292929;
   color: white;
 }
@@ -884,7 +885,7 @@ body.dark-mode {
   color: white;
 }
 
-.dark-mode .kp-box, .dark-mode .kc1-box {
+.dark-mode .story-box {
   background-color: #292929;
   color: white;
 }
@@ -1046,7 +1047,7 @@ body.dark-mode {
 
   /* KOKUHAKU PAGE */
 
-  .description-box, .info-box, .chapter-box {
+  .description-box, .info-box, .chapter-box, .notes-box {
     margin: 25px 80px;
   }
 
@@ -1099,11 +1100,11 @@ body.dark-mode {
 
   /* KOKUHAKU */
 
-  .kp-box, .kc1-box {
+  .story-box {
     margin: 25px 80px;
   }
 
-  .kp, .kc1 {
+  .story-content {
     font-size: 13px;
   }
 
@@ -1257,7 +1258,7 @@ body.dark-mode {
 
   /* Main */
     
-  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box {
+  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box, .notes-box {
     margin: 15px 25px;
   }
 
@@ -1303,11 +1304,11 @@ body.dark-mode {
 
   /* Kokuhaku*/
 
-  .kp-box, .kc1-box {
+  .story-box {
     margin: 15px 25px;
   }
 
-  .kp-box .text-row .story-title, .kc1-box .text-row .story-title {
+  .story-box .text-row .story-title {
     font-size: 30px;
   }
 
@@ -1470,7 +1471,7 @@ body.dark-mode {
 
   /* Main */
     
-  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box {
+  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box, .notes-box {
     margin: 5px;
     border-radius: 5px;
     margin: 15px 5px;
@@ -1537,13 +1538,13 @@ body.dark-mode {
 
   /* Kokuhaku*/
 
-  .kp-box, .kc1-box  {
+  .story-box  {
     margin: 15px 5px;
     padding: 20px 10px;
     border-radius: 5px;
   }
 
-  .kp-box .text-row .story-title, .kc1-box .text-row .story-title {
+  .story-box .text-row .story-title {
     font-size: 25px;
   }
 
