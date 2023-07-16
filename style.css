@@ -443,7 +443,7 @@ pre {
   font-family: "Poppins";
   margin: 0;
   white-space: pre-line;
-  line-height: inherit;
+  line-height: 30px;
 }
 
 .info {
@@ -632,9 +632,12 @@ select {
   font-size: 35px;
 }
 
-.story-content {
-  font-size: 16px;
+pre #content {
   font-family: "Poppins";
+  font-size: 16px;
+  margin: 0;
+  white-space: pre-line;
+  line-height: 30px;
 }
 
 .footnotes {
