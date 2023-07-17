@@ -11,6 +11,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <style>
+    .linex {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.linex::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid purple;
+  border-radius: 10px;
+}
+
+  </style>
 </head>
 
 <body>
@@ -123,6 +141,7 @@
 
   <div class="story-box">
       <div class="story-title"><a href="../kokuhaku" title="Kokuhaku" class="toc">Kokuhaku</a> - Chapter 1</div>
+      <div class="linex">TITLE</div>
         <div id="content">
           <br>The first day of school after Golden Week.<br>
           <br>An inexplicable event occurred for me, Shijo Haruto.<br>

@@ -633,7 +633,7 @@ select {
   margin-bottom: 50px;
 }
 
-pre#content {
+#content {
   font-family: "Poppins";
   font-size: 16px;
   margin: 0;
