@@ -630,15 +630,13 @@ select {
 
 .story-box .text-row .story-title {
   font-size: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 #content {
   font-family: "Poppins";
   font-size: 16px;
   margin: 0;
-  white-space: pre-line;
-  line-height: 20px;
 }
 
 .footnotes {
