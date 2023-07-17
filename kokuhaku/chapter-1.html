@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <style>
-    .linex {
+.linex {
   display: inline-block;
   position: relative;
   padding-bottom: 3px;
@@ -27,6 +27,30 @@
   border-bottom: 3px solid purple;
   border-radius: 10px;
 }
+
+.boxx {
+  position: relative;
+  display: inline-block;
+}
+
+.boxx::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.boxx .contentt {
+  position: relative;
+  z-index: 1;
+  background-color: #fff; /* Adjust as needed */
+  padding: 10px; /* Adjust as needed */
+}
+
+
+
 
   </style>
 </head>
@@ -103,6 +127,14 @@
   </nav>
 
   <!-- Main -->
+
+  <div class="boxx">
+    <div class="contentt">
+      <!-- Your content here -->
+      This is a text with a <span class="linex">styled line</span> underneath.
+    </div>
+  </div>
+  
 
   <div class="button-container">
     <div class="change-chap-buttons">
