@@ -644,16 +644,20 @@ select {
   margin: 10px 0 0;
 }
 
-.notes-content b:last-child {
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.notes-box .text-row .story-title .notes-content b:first-child {
-  background: -webkit-linear-gradient(90deg, #3b0979, #d300ff 80%);
+.notes-content b:first-child {
+  background: -webkit-linear-gradient(90deg, #3b0979, #d300ff 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.notes-content b:last-child {
+  background: -webkit-linear-gradient(90deg, #093279, #00a6ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .footnotes {
