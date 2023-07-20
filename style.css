@@ -940,6 +940,13 @@ body.dark-mode {
 /* Mobile 1024 ver */
 
 @media screen and (max-width: 1024px) {
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
   .navbar .nav-links {
     display: none;
   }
@@ -1167,6 +1174,13 @@ body.dark-mode {
 /* Mobile 768 ver */
 
 @media screen and (max-width: 768px) {
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
   .navbar .nav-links {
     display: none;
   }
@@ -1372,7 +1386,10 @@ body.dark-mode {
 
 @media screen and (max-width: 480px) {
   nav {
+    position: sticky;
     padding: 10px;
+    top: 0;
+    z-index: 100;
   }
   
   .logo img {
