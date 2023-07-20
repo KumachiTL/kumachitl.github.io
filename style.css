@@ -641,6 +641,7 @@ select {
 
 .notes-content {
   font-family: 'Poppins';
+  margin: 10px 0 0;
 }
 
 .notes-content b:nth-child(2) {
