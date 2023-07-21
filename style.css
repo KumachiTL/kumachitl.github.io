@@ -433,12 +433,6 @@ nav {
   background-color: #8C52FF;
 }
 
-.story-description {
-  font-size: 16px;
-  font-family: "Poppins";
-  line-height: 30px;
-}
-
 pre {
   font-family: "Poppins";
   margin: 0;
@@ -953,7 +947,7 @@ body.dark-mode {
 
   .fa-bars {
     display: block;
-    color: white;
+    color: #1E1E1E;
     font-size: 20px;
   }
 
@@ -1083,7 +1077,7 @@ body.dark-mode {
     font-size: 15px;
   }
 
-  /* KOKUHAKU PAGE */
+  /* STORY PAGE */
 
   .description-box, .info-box, .chapter-box, .notes-box {
     margin: 25px 80px;
@@ -1097,8 +1091,7 @@ body.dark-mode {
     height: 3px;
   }
 
-  .story-description {
-    font-size: 13px;
+  pre {
     line-height: 25px;
   }
 
@@ -1127,7 +1120,6 @@ body.dark-mode {
   }
 
   select {
-    font-size: 14px;
     width: 200px;
     height: 38px;
   }
@@ -1136,18 +1128,10 @@ body.dark-mode {
     margin: 15px 0;
   }
 
-  /* KOKUHAKU */
+  /* STORY */
 
   .story-box {
     margin: 25px 80px;
-  }
-
-  .story-content {
-    font-size: 13px;
-  }
-
-  .footnotes {
-    font-size: 13px;
   }
 
   /* Comments */
@@ -1168,7 +1152,6 @@ body.dark-mode {
   .dark-mode .navbar .show {
     background-color: #292929;
   }
-
 }
 
 /* Mobile 768 ver */
@@ -1315,6 +1298,18 @@ body.dark-mode {
     font-size: 19px;
   }
 
+  .info, .chapter {
+    font-size: 16px;
+  }
+
+  pre {
+    font-family: "Poppins";
+    margin: 0;
+    white-space: pre-line;
+    line-height: 24px;
+    font-size: 13px;
+  }
+
   /* Chapters */
 
   .button-container {
@@ -1347,7 +1342,7 @@ body.dark-mode {
     height: 38px;
   }
 
-  /* Kokuhaku*/
+  /* STORY*/
 
   .story-box {
     margin: 15px 25px;
@@ -1379,7 +1374,6 @@ body.dark-mode {
   .dark-mode .navbar .show {
     background-color: #292929;
   }
-
 }
 
 /* Mobile 480 ver */
