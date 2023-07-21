@@ -1590,6 +1590,10 @@ body.dark-mode {
     font-size: 25px;
   }
 
+  .chap-title {
+    font-size: 20px;
+  }
+
   #content, .footnotes p {
     font-size: 15px;
   }
