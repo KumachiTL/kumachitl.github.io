@@ -1348,7 +1348,7 @@ body.dark-mode {
     margin: 15px 25px;
   }
 
-  .story-box .text-row .story-title {
+  .story-box .text-row .story-title, .notes-box .story-title {
     font-size: 30px;
   }
 
@@ -1513,7 +1513,7 @@ body.dark-mode {
 
   /* Main */
     
-  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box, .notes-box {
+  .box, .works-box, .about-box, .disclaimer-box, .features-box, .description-box, .info-box, .chapter-box {
     margin: 5px;
     border-radius: 5px;
     margin: 15px 5px;
@@ -1580,13 +1580,13 @@ body.dark-mode {
 
   /* Kokuhaku*/
 
-  .story-box  {
+  .story-box, .notes-box  {
     margin: 15px 5px;
     padding: 20px 10px;
     border-radius: 5px;
   }
 
-  .story-box .text-row .story-title {
+  .story-box .text-row .story-title, .notes-box .story-title {
     font-size: 25px;
   }
 
