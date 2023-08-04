@@ -169,6 +169,19 @@
         console.error('Error loading JSON data:', error);
       });
   </script>
+
+  <!-- Ko-fi -->
+
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('kumachi', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support us',
+      'floating-chat.donateButton.background-color': '#794bc4',
+      'floating-chat.donateButton.text-color': 'white'
+    });
+  </script>
+
 </body>
 
 </html>
